@@ -1,0 +1,203 @@
+prompt = f"Localise the region of {pathology} in the image in a bounding box format."
+e0dc2e79105ad93532484e956ef8a71a,Cardiomegaly,No Cardiomegaly detected.
+e0dc2e79105ad93532484e956ef8a71a,ILD,No ILD detected.
+e0dc2e79105ad93532484e956ef8a71a,Pneumothorax,No pneumothorax detected.
+e0dc2e79105ad93532484e956ef8a71a,Pleural effusion,No pleural effusion detected.
+e0dc2e79105ad93532484e956ef8a71a,Atelectasis,No Atelectasis detected.
+0aed23e64ebdea798486056b4f174424,Pleural effusion,No pleural effusion detected.
+0aed23e64ebdea798486056b4f174424,Infiltration,No Infiltration detected.
+0aed23e64ebdea798486056b4f174424,Consolidation,No consolidation detected.
+aa15cfcfca7605465ca0513902738b95,Pulmonary fibrosis,No pulmonary fibrosis detected.
+aa15cfcfca7605465ca0513902738b95,Pleural thickening,No Pleural thickening detected.
+665c4a6d2693dc0286d65ab479c9b169,Nodule/Mass,No Nodule/Mass detected.
+665c4a6d2693dc0286d65ab479c9b169,ILD,No ILD detected.
+42da2c134b53cb5594774d3d29faac59,Aortic enlargement,No aortic enlargement detected.
+42da2c134b53cb5594774d3d29faac59,Calcification,No Calcification detected.
+42da2c134b53cb5594774d3d29faac59,Cardiomegaly,No Cardiomegaly detected.
+c7179539654a1b3b7977e56e7e3009d5,Aortic enlargement,No Aortic enlargement detected.
+c7179539654a1b3b7977e56e7e3009d5,Cardiomegaly,No Cardiomegaly detected.
+bfd1974dc9778aadb407a11b57ab748f,Aortic enlargement,No Aortic enlargement detected.
+618777b8305b062583337d9a6b7a3d4e,Other lesion,No Other lesion detected.
+618777b8305b062583337d9a6b7a3d4e,ILD,No ILD detected.
+618777b8305b062583337d9a6b7a3d4e,Calcification,No calcification detected.
+e54b5a593bc03c789ecdc18d8270964e,Aortic enlargement,No Aortic enlargement detected.
+e54b5a593bc03c789ecdc18d8270964e,Calcification,No calcification detected.
+e54b5a593bc03c789ecdc18d8270964e,ILD,No ILD detected.
+3019aec706bd013e1e3348564fbfd086,Nodule/Mass,No Nodule/Mass detected.
+3019aec706bd013e1e3348564fbfd086,Pulmonary fibrosis,No pulmonary fibrosis detected.
+3019aec706bd013e1e3348564fbfd086,Pleural thickening,No Pleural thickening detected.
+3019aec706bd013e1e3348564fbfd086,Mediastinal shift,No Mediastinal shift detected.
+efbe54fcf4bdab5041ecdf15af5fcd52,Calcification,No calcification detected.
+40497da14aafc428210b623fc8445288,Cardiomegaly,No Cardiomegaly detected.
+40497da14aafc428210b623fc8445288,Aortic enlargement,No Aortic enlargement detected.
+934e2731a86f3a6d750f7f7d9eaea85c,Pleural effusion,No Pleural effusion detected.
+934e2731a86f3a6d750f7f7d9eaea85c,Pulmonary fibrosis,No pulmonary fibrosis detected.
+934e2731a86f3a6d750f7f7d9eaea85c,Lung Opacity,No Lung Opacity detected.
+934e2731a86f3a6d750f7f7d9eaea85c,Atelectasis,No Atelectasis detected.
+91123b24b8a4c289820bbb2dc6dabdfe,Cardiomegaly,No Cardiomegaly detected.
+91123b24b8a4c289820bbb2dc6dabdfe,Aortic enlargement,No Aortic enlargement detected.
+688ecdb1a4e994d42b5a50a8c4a9736f,Cardiomegaly,No Cardiomegaly detected.
+bf754344a692a87c08c480dccf75e0c6,Calcification,No Calcification detected.
+bf754344a692a87c08c480dccf75e0c6,Pleural thickening,No Pleural thickening detected.
+bf754344a692a87c08c480dccf75e0c6,Pleural effusion,No pleural effusion detected.
+6cbbbc0e77251e60d6f4af673cc19e2a,Pleural effusion,No pleural effusion detected.
+6cbbbc0e77251e60d6f4af673cc19e2a,Pulmonary fibrosis,No pulmonary fibrosis detected.
+6cbbbc0e77251e60d6f4af673cc19e2a,Aortic enlargement,No Aortic enlargement detected.
+6cbbbc0e77251e60d6f4af673cc19e2a,Cardiomegaly,No Cardiomegaly detected.
+6cbbbc0e77251e60d6f4af673cc19e2a,Atelectasis,No Atelectasis detected.
+9b609fc8e82081f4ac5bf83b8a0fbc5c,Aortic enlargement,No Aortic enlargement detected.
+9b609fc8e82081f4ac5bf83b8a0fbc5c,Cardiomegaly,No Cardiomegaly detected.
+9b609fc8e82081f4ac5bf83b8a0fbc5c,Consolidation,No consolidation detected.
+31b4de538dd6272b05e295142c5ccc2a,Aortic enlargement,No Aortic enlargement detected.
+31b4de538dd6272b05e295142c5ccc2a,Other lesion,No Other lesion detected.
+9262bfe5dc41410f1725ebdd26a22334,Cardiomegaly,No Cardiomegaly detected.
+97f0ad3b3ccbfc848bf9cc7e1a76377c,Cardiomegaly,No Cardiomegaly detected.
+97f0ad3b3ccbfc848bf9cc7e1a76377c,Consolidation,No consolidation detected.
+97f0ad3b3ccbfc848bf9cc7e1a76377c,ILD,No ILD detected.
+56237d3770e31568eb965067d2d948af,Cardiomegaly,No Cardiomegaly detected.
+218e819ed8c0fe25c92ee7f1d5b993c7,Pleural effusion,No pleural effusion detected.
+218e819ed8c0fe25c92ee7f1d5b993c7,Calcification,No calcification detected.
+39077a997b195cfedd2287c9e9476b38,Cardiomegaly,No Cardiomegaly detected.
+6cd9d28658e91fe717e33e2f8b10e81a,Cardiomegaly,No Cardiomegaly detected.
+6cd9d28658e91fe717e33e2f8b10e81a,ILD,No ILD detected.
+6cd9d28658e91fe717e33e2f8b10e81a,Pulmonary fibrosis,No pulmonary fibrosis detected.
+6cd9d28658e91fe717e33e2f8b10e81a,Other lesion,No Other lesion detected.
+b4e78fa47b3675c8de1ceae320bc4bf9,Cardiomegaly,No cardiomegaly detected.
+b4e78fa47b3675c8de1ceae320bc4bf9,Aortic enlargement,No aortic enlargement detected.
+b4e78fa47b3675c8de1ceae320bc4bf9,Calcification,No Calcification detected.
+b4e78fa47b3675c8de1ceae320bc4bf9,ILD,No ILD detected.
+b4e78fa47b3675c8de1ceae320bc4bf9,Pleural thickening,No Pleural thickening detected.
+ae764a3ffd1b0317e4496637b3708a20,Lung Opacity,No Lung Opacity detected.
+ae764a3ffd1b0317e4496637b3708a20,Pulmonary fibrosis,No pulmonary fibrosis detected.
+ae764a3ffd1b0317e4496637b3708a20,Other lesion,No Other lesion detected.
+8523b847bfffd922ccc8748667cb4a6b,Aortic enlargement,No Aortic enlargement detected.
+8523b847bfffd922ccc8748667cb4a6b,Nodule/Mass,No Nodule/Mass detected.
+774a27811e9fea0a7551f17f0b00130c,Aortic enlargement,No Aortic enlargement detected.
+774a27811e9fea0a7551f17f0b00130c,Pleural thickening,No pleural thickening detected.
+f890e83cfa9198db05bc36b3ffc14c4d,Cardiomegaly,No Cardiomegaly detected.
+f890e83cfa9198db05bc36b3ffc14c4d,ILD,No ILD detected.
+b7806ab0cae2d0a9e40e009a354e4712,Cardiomegaly,No Cardiomegaly detected.
+b7806ab0cae2d0a9e40e009a354e4712,Pleural thickening,No pleural thickening detected.
+9dac311de884273b67f2623ce139e248,ILD,No ILD detected.
+9dac311de884273b67f2623ce139e248,Aortic enlargement,No Aortic enlargement detected.
+9dac311de884273b67f2623ce139e248,Cardiomegaly,No Cardiomegaly detected.
+9dac311de884273b67f2623ce139e248,Consolidation,No consolidation detected.
+57a1a6b02398e336508aa57ecf962e74,Cardiomegaly,No Cardiomegaly detected.
+57a1a6b02398e336508aa57ecf962e74,Pulmonary fibrosis,No pulmonary fibrosis detected.
+57a1a6b02398e336508aa57ecf962e74,Pleural thickening,No pleural thickening detected.
+552e53af89d7ae4c482cb935ac1542b7,Pleural thickening,No Pleural thickening detected.
+552e53af89d7ae4c482cb935ac1542b7,Pulmonary fibrosis,No pulmonary fibrosis detected.
+cf53ffbeb2ef098612d71ea84d97ebc4,Cardiomegaly,No Cardiomegaly detected.
+cf53ffbeb2ef098612d71ea84d97ebc4,Nodule/Mass,No Nodule/Mass detected.
+cf53ffbeb2ef098612d71ea84d97ebc4,Pulmonary fibrosis,No pulmonary fibrosis detected.
+e52b5e6afc1c45823626dfc0b0c07a8c,ILD,No ILD detected.
+937a353dd57519c0757ce2da3ae2bdc2,Cardiomegaly,No Cardiomegaly detected.
+937a353dd57519c0757ce2da3ae2bdc2,Enlarged PA,No Enlarged PA detected.
+7aa301c90a61603f9b5e2e05a88b4204,Pneumothorax,No pneumothorax detected.
+7aa301c90a61603f9b5e2e05a88b4204,Atelectasis,No Atelectasis detected.
+7aa301c90a61603f9b5e2e05a88b4204,Other lesion,No Other lesion detected.
+53ae3d1a464529cb387ce44aa655846f,Pulmonary fibrosis,No pulmonary fibrosis detected.
+53ae3d1a464529cb387ce44aa655846f,Nodule/Mass,No Nodule/Mass detected.
+2021c6c746096cd28002e71ceb992c69,Nodule/Mass,No Nodule/Mass detected.
+2021c6c746096cd28002e71ceb992c69,Pleural thickening,No pleural thickening detected.
+2021c6c746096cd28002e71ceb992c69,Pulmonary fibrosis,No pulmonary fibrosis detected.
+2021c6c746096cd28002e71ceb992c69,ILD,No ILD detected.
+7073d58de75ee80e16ec3a4458349f90,Cardiomegaly,No Cardiomegaly detected.
+7073d58de75ee80e16ec3a4458349f90,Aortic enlargement,No Aortic enlargement detected.
+7073d58de75ee80e16ec3a4458349f90,Rib fracture,No rib fracture detected.
+7073d58de75ee80e16ec3a4458349f90,Lung Opacity,No Lung Opacity detected.
+7073d58de75ee80e16ec3a4458349f90,ILD,No ILD detected.
+395f2f015b69bcf2e58fcba55ecb6793,Consolidation,No consolidation detected.
+395f2f015b69bcf2e58fcba55ecb6793,Lung cavity,No lung cavity detected.
+379350d6cca599b6a09c5387c9160aad,Pulmonary fibrosis,No pulmonary fibrosis detected.
+379350d6cca599b6a09c5387c9160aad,Lung cavity,No lung cavity detected.
+379350d6cca599b6a09c5387c9160aad,Nodule/Mass,No Nodule/Mass detected.
+134214ffc7f507842719617ecd5bfc52,Aortic enlargement,No Aortic enlargement detected.
+134214ffc7f507842719617ecd5bfc52,Cardiomegaly,No Cardiomegaly detected.
+134214ffc7f507842719617ecd5bfc52,ILD,No ILD detected.
+588634981efe8a011372632c6d76eea0,ILD,No ILD detected.
+4b19ca098b479dd60cc2288ab680e3eb,Pleural thickening,No pleural thickening detected.
+4b19ca098b479dd60cc2288ab680e3eb,ILD,No ILD detected.
+5beee832c007826c93c25ba287ee4d48,Calcification,No Calcification detected.
+5beee832c007826c93c25ba287ee4d48,Aortic enlargement,No Aortic enlargement detected.
+5beee832c007826c93c25ba287ee4d48,Cardiomegaly,No Cardiomegaly detected.
+5beee832c007826c93c25ba287ee4d48,Pleural thickening,No Pleural thickening detected.
+bdf81a571d4164c54e1d57e870bab752,Cardiomegaly,No Cardiomegaly detected.
+bdf81a571d4164c54e1d57e870bab752,Nodule/Mass,No Nodule/Mass detected.
+fb96a81650614fc467bc6e5af94543b8,Cardiomegaly,No Cardiomegaly detected.
+fb96a81650614fc467bc6e5af94543b8,Calcification,No Calcification detected.
+fb96a81650614fc467bc6e5af94543b8,ILD,No ILD detected.
+4c5cda3481350033d181e879d29f0135,Nodule/Mass,No Nodule/Mass detected.
+4c5cda3481350033d181e879d29f0135,Other lesion,No Other lesion detected.
+39949d5d2d8855e391b87d8a932b5aaf,Nodule/Mass,No nodule/mass detected.
+39949d5d2d8855e391b87d8a932b5aaf,ILD,No ILD detected.
+c826c6a366c7ff0a6a2b202e423b2353,Nodule/Mass,No nodule/mass detected.
+c826c6a366c7ff0a6a2b202e423b2353,Aortic enlargement,No Aortic enlargement detected.
+439dc69a4c208bef639794335fc7e8aa,Atelectasis,No Atelectasis detected.
+439dc69a4c208bef639794335fc7e8aa,Nodule/Mass,No nodule/mass detected.
+439dc69a4c208bef639794335fc7e8aa,Cardiomegaly,No Cardiomegaly detected.
+439dc69a4c208bef639794335fc7e8aa,Calcification,No calcification detected.
+878e449975ff3b3fe915c976e7b8349e,Cardiomegaly,No Cardiomegaly detected.
+878e449975ff3b3fe915c976e7b8349e,Other lesion,No other lesion detected.
+878e449975ff3b3fe915c976e7b8349e,ILD,No ILD detected.
+878e449975ff3b3fe915c976e7b8349e,Calcification,No calcification detected.
+2127bbf73b1d0f150ca12bfa5ca2b91d,Pleural effusion,No pleural effusion detected.
+2127bbf73b1d0f150ca12bfa5ca2b91d,Nodule/Mass,No nodule/mass detected.
+2127bbf73b1d0f150ca12bfa5ca2b91d,ILD,No ILD detected.
+2127bbf73b1d0f150ca12bfa5ca2b91d,Aortic enlargement,No Aortic enlargement detected.
+2127bbf73b1d0f150ca12bfa5ca2b91d,Pleural thickening,No pleural thickening detected.
+2127bbf73b1d0f150ca12bfa5ca2b91d,Other lesion,No Other lesion detected.
+2eae70b57d68947a20d6d0cc8f9f2e58,ILD,No ILD detected.
+2eae70b57d68947a20d6d0cc8f9f2e58,Nodule/Mass,No Nodule/Mass detected.
+885cb27d4cf51dc3aa6fa71b3aff08d8,Pleural effusion,No pleural effusion detected.
+885cb27d4cf51dc3aa6fa71b3aff08d8,Consolidation,No consolidation detected.
+67f342c22873acfcf19d3b6501e53802,ILD,No ILD detected.
+67f342c22873acfcf19d3b6501e53802,Atelectasis,No Atelectasis detected.
+754d373b98400f931d1070778c25e2d2,Cardiomegaly,No Cardiomegaly detected.
+754d373b98400f931d1070778c25e2d2,Calcification,No calcification detected.
+754d373b98400f931d1070778c25e2d2,Lung Opacity,No Lung Opacity detected.
+e154120eb7eb235ddb471c94deff2ee6,Aortic enlargement,No Aortic enlargement detected.
+e154120eb7eb235ddb471c94deff2ee6,Cardiomegaly,No Cardiomegaly detected.
+e154120eb7eb235ddb471c94deff2ee6,Lung Opacity,No Lung Opacity detected.
+e154120eb7eb235ddb471c94deff2ee6,Pulmonary fibrosis,No pulmonary fibrosis detected.
+e154120eb7eb235ddb471c94deff2ee6,Calcification,No Calcification detected.
+7a74f4e463b72f018838f26cf7aabdf2,Aortic enlargement,No Aortic enlargement detected.
+7a74f4e463b72f018838f26cf7aabdf2,Nodule/Mass,No Nodule/Mass detected.
+ee29da033302291107e61a87de63aee3,Pulmonary fibrosis,No pulmonary fibrosis detected.
+ee29da033302291107e61a87de63aee3,Nodule/Mass,No Nodule/Mass detected.
+cf46419b1583aff3e8ca76705dd5e584,Aortic enlargement,No Aortic enlargement detected.
+cf46419b1583aff3e8ca76705dd5e584,ILD,No ILD detected.
+f688540fa7c5a58e3f5f0d0908a15164,Aortic enlargement,No Aortic enlargement detected.
+f688540fa7c5a58e3f5f0d0908a15164,Cardiomegaly,No Cardiomegaly detected.
+f688540fa7c5a58e3f5f0d0908a15164,ILD,No ILD detected.
+8b92de834e67f5a072af66d59aacc825,Pleural effusion,No pleural effusion detected.
+8b92de834e67f5a072af66d59aacc825,Atelectasis,No Atelectasis detected.
+8b92de834e67f5a072af66d59aacc825,Cardiomegaly,No Cardiomegaly detected.
+0e68445ef76f193664ea018630544d95,Enlarged PA,No enlarged PA detected.
+0e68445ef76f193664ea018630544d95,Pulmonary fibrosis,No pulmonary fibrosis detected.
+0e68445ef76f193664ea018630544d95,Atelectasis,No Atelectasis detected.
+03f00327702f48c4b6726a0e1649a157,Cardiomegaly,No Cardiomegaly detected.
+03f00327702f48c4b6726a0e1649a157,Nodule/Mass,No Nodule/Mass detected.
+940635db4ae037a40c8a95a81de062d6,Calcification,No Calcification detected.
+940635db4ae037a40c8a95a81de062d6,Aortic enlargement,No Aortic enlargement detected.
+940635db4ae037a40c8a95a81de062d6,Cardiomegaly,No Cardiomegaly detected.
+9aec9e6e04ea05b1715969f8f20c86bc,Aortic enlargement,No Aortic enlargement detected.
+9aec9e6e04ea05b1715969f8f20c86bc,Cardiomegaly,No Cardiomegaly detected.
+8d612aaeaf1b5a01971cbdba49b37fdb,Pleural effusion,No pleural effusion detected.
+8d612aaeaf1b5a01971cbdba49b37fdb,Atelectasis,No Atelectasis detected.
+7f15c433dbc249a491b86b27e5a6c180,Pleural thickening,No pleural thickening detected.
+7f15c433dbc249a491b86b27e5a6c180,Pulmonary fibrosis,No pulmonary fibrosis detected.
+ba1cf5031a6f73a997901af57110de77,Aortic enlargement,No Aortic enlargement detected.
+ba1cf5031a6f73a997901af57110de77,Cardiomegaly,No Cardiomegaly detected.
+ba1cf5031a6f73a997901af57110de77,Consolidation,No consolidation detected.
+0ecaae458f6ca4c8f4dd9975d62a6fa4,Aortic enlargement,No Aortic enlargement detected.
+0ecaae458f6ca4c8f4dd9975d62a6fa4,Cardiomegaly,No Cardiomegaly detected.
+0ecaae458f6ca4c8f4dd9975d62a6fa4,Other lesion,No Other lesion detected.
+287422bed1d9d153387361889619abed,Cardiomegaly,No cardiomegaly detected.
+287422bed1d9d153387361889619abed,Aortic enlargement,No aortic enlargement detected.
+bb3cb6e89c003ad4be9c6141b1d66723,Nodule/Mass,No nodule/mass detected.
+bb3cb6e89c003ad4be9c6141b1d66723,Atelectasis,No Atelectasis detected.
+bb3cb6e89c003ad4be9c6141b1d66723,Pleural effusion,No pleural effusion detected.
+bb3cb6e89c003ad4be9c6141b1d66723,Aortic enlargement,No Aortic enlargement detected.
+a59c21bc96c0d0c599ba2447ce946bde,ILD,No ILD detected.
+TERMINATED BECAUSE OF RESULTS

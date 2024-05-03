@@ -1,0 +1,381 @@
+prompt = f"{question} Option 1:{option_1} Option 2: {option_2}."
+CXR29_IM-1302-2001.png,Elevated left diaphragm
+CXR33_IM-1576-12012.png,Option 2: surgical instruments in the left lung.
+CXR53_IM-2138-1001.png,Right base pulmonary atelectasis
+CXR59_IM-2184-1001.png,Option 2: elevated left diaphragm.
+CXR73_IM-2289-1001.png,left base pulmonary atelectasis
+CXR82_IM-2350-4001.png,Option 2: surgical instruments in the right lung.
+CXR101_IM-0011-4004.png,Elevated left diaphragm
+CXR111_IM-0076-1001.png,right pleural effusion
+CXR113_IM-0086-2001.png,Right lung opacity
+CXR131_IM-0202-2001.png,Option 2: surgical instruments in the left lung.
+CXR137_IM-0238-2002.png,Right lung opacity
+CXR145_IM-0290-2001.png,Large left pleural effusion
+CXR153_IM-0343-2001.png,Small left pleural effusion
+CXR172_IM-0474-1002.png,Elevated left diaphragm
+CXR175_IM-0492-1001.png,Elevated right diaphragm
+CXR194_IM-0609-1001.png,Right base pulmonary atelectasis
+CXR205_IM-0689-3003.png,Elevated right diaphragm
+CXR228_IM-0866-5001.png,Option 2: surgical instruments in the left lung.
+CXR253_IM-1045-2001.png,Right indwelling catheter
+CXR321_IM-1516-0001-0002.png,Left lung opacity
+CXR335_IM-1606-2001.png,Right indwelling catheter
+CXR353_IM-1726-2001.png,Small left pleural effusion
+CXR379_IM-1903-4004.png,Right indwelling catheter
+CXR411_IM-2056-4001.png,Left base pulmonary atelectasis
+CXR423_IM-2066-0001-0001.png,Right indwelling catheter
+CXR481_IM-2105-1001.png,Right indwelling catheter
+CXR504_IM-2122-2001.png,Right base pulmonary atelectasis
+CXR509_IM-2125-1001.png,Right pleural effusion
+CXR524_IM-2135-0001-0001.png,Right indwelling catheter
+CXR525_IM-2136-2001.png,Right rib deformity
+CXR531_IM-2140-1001.png,Hyperdistention of the right lung
+CXR534_IM-2141-1001.png,Option 1:mild left lung pulmonary atelectasis
+CXR535_IM-2142-2001.png,Left base pulmonary atelectasis
+CXR569_IM-2169-0001-0002.png,1: elevated right diaphragm
+CXR586_IM-2182-1001.png,Right base pulmonary atelectasis
+CXR590_IM-2185-2001.png,Elevated right diaphragm
+CXR596_IM-2188-26001.png,Right indwelling catheter
+CXR601_IM-2192-1002.png,Option 2: left indwelling catheter.
+CXR604_IM-2193-1001.png,Right indwelling catheter
+CXR631_IM-2212-1001.png,Right indwelling catheter
+CXR635_IM-2215-1001.png,Left lower lobe pulmonary atelectasis
+CXR636_IM-2215-2001.png,Right lower lobe pulmonary atelectasis
+CXR647_IM-2225-2001.png,Right base pulmonary atelectasis
+CXR649_IM-2227-1001.png,Small left pleural effusion
+CXR651_IM-2229-2001.png,1:small left pleural effusion
+CXR666_IM-2241-1001.png,right base pulmonary atelectasis
+CXR681_IM-2252-0001-0001.png,2: right indwelling catheter.
+CXR684_IM-2254-1001.png,Right indwelling catheter
+CXR701_IM-2266-1001.png,hyperdistention of the left lung
+CXR705_IM-2268-1001.png,Elevated right diaphragm
+CXR713_IM-2275-2001.png,Right indwelling catheter
+CXR715_IM-2277-3001.png,Right base pulmonary atelectasis
+CXR733_IM-2293-0001-0002.png,Right indwelling catheter
+CXR808_IM-2341-1001.png,Left base pulmonary atelectasis
+CXR813_IM-2344-1001.png,Right base pulmonary atelectasis
+CXR817_IM-2348-0001-0002.png,Right upper lobe pulmonary atelectasis
+CXR840_IM-2364-0001-0002.png,Option 1:left upper lobe pulmonary atelectasis
+CXR851_IM-2374-13013.png,Right indwelling catheter
+CXR859_IM-2380-2001.png,Right lower lobe pulmonary atelectasis
+CXR900_IM-2408-2001.png,Right indwelling catheter
+CXR904_IM-2409-3003.png,Right indwelling catheter
+CXR955_IM-2449-2001.png,Right indwelling catheter
+CXR972_IM-2461-1001-0002.png,Right base pulmonary atelectasis
+CXR1000_IM-0003-1001.png,Right upper lobe pulmonary atelectasis
+CXR1016_IM-0013-2001.png,right base pulmonary atelectasis
+CXR1021_IM-0017-1001-0002.png,Pulmonary atelectasis in the left lung
+CXR1031_IM-0025-4004.png,Right indwelling catheter
+CXR1043_IM-0035-0001-0001.png,Left base pulmonary atelectasis
+CXR1063_IM-0044-84654002.png,Right base pulmonary atelectasis
+CXR1070_IM-0050-1001.png,Right clavicle deformity
+CXR1085_IM-0059-1001.png,Option 2: right upper lobe pulmonary atelectasis.
+CXR1088_IM-0061-1001.png,Pulmonary atelectasis in the right lung
+CXR1089_IM-0061-1001.png,Option 2: elevated left diaphragm.
+CXR1094_IM-0065-2001.png,Right lower lobe pulmonary atelectasis
+CXR1095_IM-0066-1001.png,Right indwelling catheter
+CXR1134_IM-0091-1001.png,Left indwelling catheter
+CXR1160_IM-0107-1001.png,right upper lobe pulmonary atelectasis
+CXR1169_IM-0113-0001-0002.png,Right indwelling catheter
+CXR1179_IM-0122-2002.png,Option 2: surgical instruments in the right abdomen.
+CXR1196_IM-0131-2001.png,Option 2: surgical instruments in the right breast.
+CXR1230_IM-0154-0001.png,Left pleural effusion
+CXR1231_IM-0155-1001.png,Right indwelling catheter
+CXR1233_IM-0157-1001.png,Elevated left diaphragm
+CXR1240_IM-0162-4001.png,Left indwelling catheter
+CXR1275_IM-0184-2001.png,Right rib deformity
+CXR1285_IM-0188-4001.png,Right clavicle deformity
+CXR1324_IM-0209-2001.png,Right thoracic vertebrae scoliosis
+CXR1341_IM-0220-2001.png,Right indwelling catheter
+CXR1346_IM-0224-4001.png,Right indwelling catheter
+CXR1348_IM-0226-4004-0001.png,Left rib deformity
+CXR1353_IM-0230-2001.png,Right indwelling catheter
+CXR1358_IM-0232-1001.png,Option 2: surgical instruments in the right lung.
+CXR1370_IM-0239-2001.png,Right lung opacity
+CXR1393_IM-0251-1001.png,Left base pulmonary atelectasis
+CXR1398_IM-0254-1001.png,Elevated right diaphragm
+CXR1416_IM-0265-2001.png,Right lung opacity
+CXR1446_IM-0288-1002.png,right upper lobe pulmonary atelectasis
+CXR1451_IM-0291-1001.png,Option 1:mild left lung pulmonary atelectasis
+CXR1493_IM-0318-1001.png,Elevated left diaphragm
+CXR1506_IM-0330-2001.png,Right indwelling catheter
+CXR1513_IM-0333-1001.png,Right lower lobe pulmonary atelectasis
+CXR1519_IM-0335-1001.png,Elevated right diaphragm
+CXR1529_IM-0342-0001-0002.png,Option 2: surgical instruments in the right breast.
+CXR1555_IM-0362-3001.png,Option 2: elevated left diaphragm.
+CXR1564_IM-0368-1001.png,Right lung opacity
+CXR1578_IM-0376-5001.png,Option 2: surgical instruments in the right abdomen.
+CXR1649_IM-0426-1001.png,Right indwelling catheter
+CXR1652_IM-0428-2001.png,Right thoracic vertebrae scoliosis
+CXR1683_IM-0449-1001.png,Right clavicle deformity
+CXR1699_IM-0459-2001.png,small left pleural effusion
+CXR1720_IM-0475-0001-0002.png,elevated left diaphragm
+CXR1739_IM-0487-1001.png,Right base pulmonary atelectasis
+CXR1769_IM-0503-1001.png,Left lower lobe pulmonary atelectasis
+CXR1782_IM-0510-14001.png,Option 2: elevated right diaphragm.
+CXR1789_IM-0513-1001.png,Elevated right diaphragm
+CXR1804_IM-0522-82050002.png,Option 2: right indwelling catheter.
+CXR1817_IM-0529-4004.png,Right rib deformity
+CXR1833_IM-0539-1001.png,Right base pulmonary atelectasis
+CXR1838_IM-0542-2001.png,Elevated left diaphragm
+CXR1855_IM-0555-1001.png,Right humerus deformity
+CXR1867_IM-0560-4004.png,small right pleural effusion
+CXR1870_IM-0563-1001.png,Elevated right diaphragm
+CXR1874_IM-0565-1001.png,right base pulmonary atelectasis
+CXR1883_IM-0572-1001.png,Option 2: surgical instruments in the left abdomen.
+CXR1897_IM-0581-1001.png,Right indwelling catheter
+CXR1935_IM-0605-0001-0001.png,Right indwelling catheter
+CXR1936_IM-0606-1001.png,Right indwelling catheter
+CXR1945_IM-0614-9001.png,Right indwelling catheter
+CXR1991_IM-0648-1001.png,Left base pulmonary atelectasis
+CXR2034_IM-0679-2001.png,Right lower lobe pulmonary atelectasis
+CXR2036_IM-0680-4001.png,Elevated right diaphragm
+CXR2048_IM-0688-1001.png,Option 2: surgical instruments in the left abdomen.
+CXR2049_IM-0688-2001.png,Right clavicle deformity
+CXR2050_IM-0690-1001.png,right base pulmonary atelectasis
+CXR2055_IM-0693-2001.png,Right indwelling catheter
+CXR2066_IM-0701-1001.png,Right lower lobe pulmonary atelectasis
+CXR2077_IM-0710-1001.png,Right indwelling catheter
+CXR2084_IM-0715-1001-0002.png,Option 2: right indwelling catheter.
+CXR2093_IM-0723-1001.png,Right indwelling catheter
+CXR2117_IM-0745-1001.png,Elevated left diaphragm
+CXR2118_IM-0745-2001.png,Right upper lobe pulmonary atelectasis
+CXR2153_IM-0773-1001.png,Elevated right diaphragm
+CXR2165_IM-0781-0001-0002.png,Left base pulmonary atelectasis
+CXR2168_IM-0784-1001.png,right thoracic vertebrae scoliosis
+CXR2184_IM-0795-1001.png,Right base pulmonary atelectasis
+CXR2187_IM-0797-1001.png,Option 2: surgical instruments in the right abdomen.
+CXR2193_IM-0803-1001.png,Right pleural effusion
+CXR2199_IM-0809-0001-0002.png,Right indwelling catheter
+CXR2200_IM-0811-2001.png,Option 2: surgical instruments in the left abdomen.
+CXR2220_IM-0824-4004.png,Right pleural effusion
+CXR2229_IM-0831-1001.png,Option 2: surgical instruments in the left abdomen.
+CXR2246_IM-0843-2001.png,Right base pulmonary atelectasis
+CXR2261_IM-0852-2001.png,Option 2: surgical instruments in the right abdomen.
+CXR2263_IM-0853-1001.png,Right base pulmonary atelectasis
+CXR2270_IM-0859-2001.png,Right thoracic vertebrae scoliosis
+CXR2271_IM-0860-1001.png,small left pleural effusion
+CXR2283_IM-0870-1001.png,Elevated left diaphragm
+CXR2289_IM-0873-2001.png,Small right pleural effusion
+CXR2327_IM-0898-2001.png,Large right pleural effusion
+CXR2359_IM-0923-2001.png,Small right pleural effusion
+CXR2369_IM-0929-2001.png,Left base pulmonary atelectasis
+CXR2371_IM-0932-1001.png,Right base pulmonary atelectasis
+CXR2372_IM-0933-0001-0001.png,right lung opacity
+CXR2380_IM-0940-1001.png,elevated left diaphragm
+CXR2390_IM-0944-1001.png,Elevated left diaphragm
+CXR2402_IM-0951-1001.png,Right base pulmonary atelectasis
+CXR2403_IM-0951-2001.png,Right base pulmonary atelectasis
+CXR2412_IM-0958-1001.png,Right abdominal calcinosis
+CXR2420_IM-0964-0001-0001.png,Right indwelling catheter
+CXR2448_IM-0983-2001.png,Right pleural effusion
+CXR2481_IM-1010-12012.png,Elevated left diaphragm
+CXR2512_IM-1034-1001.png,Moderate left pleural effusion
+CXR2513_IM-1035-1001.png,Left base pulmonary atelectasis
+CXR2525_IM-1043-2001.png,Right clavicle deformity
+CXR2554_IM-1059-2001.png,Pulmonary atelectasis in the left lung
+CXR2568_IM-1070-2001.png,Option 2: surgical instruments in the left abdomen.
+CXR2587_IM-1083-2001.png,Right indwelling catheter
+CXR2594_IM-1085-3001.png,Right lower lobe pulmonary atelectasis
+CXR2610_IM-1101-1002.png,Right upper lobe pulmonary atelectasis
+CXR2616_IM-1106-1001.png,small right pleural effusion
+CXR2642_IM-1128-3001.png,Right rib deformity
+CXR2645_IM-1131-2001.png,Option 2: surgical instruments in the right abdomen.
+CXR2650_IM-1135-2001.png,Elevated right diaphragm
+CXR2664_IM-1145-2001.png,Right base pulmonary atelectasis
+CXR2676_IM-1151-1001.png,Elevated right diaphragm
+CXR2687_IM-1158-1001.png,Option 2: surgical instruments in the left breast.
+CXR2696_IM-1166-1001.png,Elevated right diaphragm
+CXR2702_IM-1170-2001.png,Right pleural effusion
+CXR2704_IM-1171-2001.png,Right base pulmonary atelectasis
+CXR2711_IM-1178-0001-0002.png,Right indwelling catheter
+CXR2713_IM-1180-1001.png,Elevated right diaphragm
+CXR2716_IM-1181-2001.png,Left lower lobe pulmonary atelectasis
+CXR2723_IM-1185-1001.png,Right base pulmonary atelectasis
+CXR2729_IM-1187-2001.png,Option 2: elevated left diaphragm.
+CXR2737_IM-1191-4004.png,Left base pulmonary atelectasis
+CXR2746_IM-1198-1001.png,Right indwelling catheter
+CXR2755_IM-1204-2001.png,Elevated right diaphragm
+CXR2778_IM-1218-1001.png,Right indwelling catheter
+CXR2809_IM-1238-2001.png,Right indwelling catheter
+CXR2822_IM-1244-0001.png,Right indwelling catheter
+CXR2860_IM-1268-1002.png,Option 2: surgical instruments in the right abdomen.
+CXR2886_IM-1288-0001-0002.png,Small left pleural effusion
+CXR2905_IM-1309-1001.png,large left pleural effusion
+CXR2906_IM-1310-1001.png,right thoracic vertebrae scoliosis
+CXR2909_IM-1313-2001.png,Right indwelling catheter
+CXR2939_IM-1339-1002.png,Option 2: surgical instruments in the right abdomen.
+CXR2943_IM-1343-4004.png,left base pleural effusion
+CXR2957_IM-1354-1003.png,right base pulmonary atelectasis
+CXR2999_IM-1383-0001-0001.png,Small left pleural effusion
+CXR3006_IM-1388-1001.png,Option 2: surgical instruments in the left lung.
+CXR3056_IM-1423-2001.png,Moderate right pleural effusion
+CXR3061_IM-1427-2001.png,Right base pulmonary atelectasis
+CXR3072_IM-1433-1001.png,Option 2: right indwelling catheter.
+CXR3086_IM-1444-1001.png,Elevated right diaphragm
+CXR3088_IM-1444-2001.png,Right thoracic vertebrae scoliosis
+CXR3090_IM-1445-2001.png,right pleural effusion
+CXR3110_IM-1460-1002.png,Option 2: elevated right diaphragm.
+CXR3123_IM-1468-1001.png,Right pleural effusion
+CXR3140_IM-1477-1001.png,Right lower lobe pulmonary atelectasis
+CXR3148_IM-1480-2001.png,Small left pleural effusion
+CXR3172_IM-1494-1001.png,Right thoracic vertebrae scoliosis
+CXR3195_IM-1506-0001-0001.png,Left indwelling catheter
+CXR3214_IM-1519-2001.png,No pleural effusion
+CXR3230_IM-1527-1001.png,Right base pulmonary atelectasis
+CXR3241_IM-1534-1001.png,Right base pulmonary atelectasis
+CXR3248_IM-1538-2001.png,Option 2: left indwelling catheter.
+CXR3256_IM-1543-2001.png,Right base pulmonary atelectasis
+CXR3304_IM-1581-1001.png,Right thoracic vertebrae scoliosis
+CXR3305_IM-1581-1001.png,Left indwelling catheter
+CXR3334_IM-1598-1001.png,Left indwelling catheter
+CXR3342_IM-1603-2001.png,Right indwelling catheter
+CXR3360_IM-1613-1001.png,Right base pulmonary atelectasis
+CXR3364_IM-1617-3001.png,Option 2: elevated right diaphragm.
+CXR3396_IM-1640-3001.png,Right pleural effusion
+CXR3435_IM-1662-2001.png,Right abdominal calcinosis
+CXR3451_IM-1674-3001.png,No pleural effusion
+CXR3455_IM-1677-1001.png,Right base pulmonary atelectasis
+CXR3462_IM-1683-2001.png,Right indwelling catheter
+CXR3474_IM-1688-1001.png,elevated right diaphragm.
+CXR3502_IM-1707-1003.png,2: elevated right diaphragm.
+CXR3508_IM-1710-2001.png,Left pleural effusion
+CXR3509_IM-1711-0001-0002.png,small left pleural effusion
+CXR3517_IM-1716-2001.png,Right indwelling catheter
+CXR3519_IM-1717-1001.png,Large left pleural effusion
+CXR3523_IM-1721-1002.png,Option 2: surgical instruments in the right lung.
+CXR3544_IM-1736-2001.png,Right base pulmonary atelectasis
+CXR3557_IM-1742-0001-0002.png,Left indwelling catheter
+CXR3567_IM-1752-1001.png,Small right pleural effusion
+CXR3570_IM-1754-1001.png,Right lower lobe pulmonary atelectasis
+CXR3571_IM-1754-3001.png,Elevated right diaphragm
+CXR3584_IM-1763-1001-0002.png,Left base pulmonary atelectasis
+CXR3596_IM-1774-2001.png,Right-sided thoracic indwelling catheter
+CXR3597_IM-1775-2001.png,Option 2: right indwelling catheter.
+CXR3607_IM-1781-1001.png,Right base pulmonary atelectasis
+CXR3614_IM-1787-4001.png,small right pleural effusion
+CXR3627_IM-1795-2001.png,Elevated left diaphragm
+CXR3686_IM-1837-0001-0001.png,Right indwelling catheter
+CXR3688_IM-1839-0001-0002.png,Right indwelling catheter
+CXR3702_IM-1849-22001.png,Right clavicle deformity
+CXR3715_IM-1856-1001.png,Option 2: surgical instruments in the right abdomen.
+CXR3718_IM-1856-2001.png,Option 2: surgical instruments in the left abdomen.
+CXR3721_IM-1859-2001.png,Right lower lobe pulmonary atelectasis
+CXR3727_IM-1863-2001.png,Option 2: right indwelling catheter.
+CXR3741_IM-1869-1002001.png,Option 2: surgical instruments in the right lung.
+CXR3750_IM-1874-1001.png,small right pleural effusion
+CXR3769_IM-1888-4001.png,right thoracic vertebrae scoliosis
+CXR3777_IM-1894-2001.png,Option 2: surgical instruments in the right abdomen.
+CXR3789_IM-1902-1001.png,Option 2: surgical instruments in the right abdomen.
+CXR3790_IM-1904-0001-0001.png,Elevated left diaphragm
+CXR3797_IM-1910-0001-0001.png,Left lower lobe pulmonary atelectasis
+CXR3804_IM-1914-2001.png,Right humerus deformity
+CXR3807_IM-1917-1001.png,elevated left diaphragm
+CXR3810_IM-1920-1001.png,Option 2: surgical instruments in the left abdomen.
+CXR3820_IM-1928-1001.png,Right lumbar vertebrae scoliosis
+CXR3829_IM-1932-2001.png,Right base pulmonary atelectasis
+CXR3839_IM-1940-1001.png,Elevated right diaphragm
+CXR3843_IM-1944-3001.png,Right indwelling catheter
+CXR3870_IM-1963-1001.png,2: left indwelling catheter.
+CXR3891_IM-1973-1001.png,left base pulmonary atelectasis
+CXR3892_IM-1974-0001-0002.png,Right indwelling catheter
+CXR3909_IM-1986-2001.png,Left indwelling catheter
+CXR3915_IM-1990-2001.png,Right-sided thoracic indwelling catheter
+CXR3921_IM-1995-2001.png,Option 2: right indwelling catheter.
+CXR3924_IM-1998-2001.png,Right thoracic vertebrae scoliosis
+CXR3935_IM-2006-2001.png,Right indwelling catheter
+CXR3941_IM-2012-0001-0001.png,Right thoracic vertebrae scoliosis
+CXR3944_IM-2014-1001.png,Right indwelling catheter
+CXR3947_IM-2016-1001.png,Left indwelling catheter
+CXR3952_IM-2020-2001.png,Elevated right diaphragm
+CXR3980_IM-2039-1001.png,small left pleural effusion
+CXR3983_IM-2039-2001.png,Right base pulmonary atelectasis
+CXR3988_IM-2041-2001.png,Elevated right diaphragm
+CXR3993_IM-2044-1002.png,Elevated right diaphragm
+CXR285_IM-1258-4004.png,Right lower lobe pulmonary atelectasis
+CXR465_IM-2093-0001-0001.png,Right lower lobe pulmonary atelectasis
+CXR635_IM-2215-1001.png,Left lower lobe pulmonary atelectasis
+CXR636_IM-2215-2001.png,Left lower lobe pulmonary atelectasis
+CXR702_IM-2267-1001.png,right lower lobe pulmonary atelectasis
+CXR817_IM-2348-0001-0003.png,Left lower lobe pulmonary atelectasis
+CXR840_IM-2364-0001-0002.png,Left lower lobe pulmonary atelectasis
+CXR859_IM-2380-2001.png,Right lower lobe pulmonary atelectasis
+CXR966_IM-2456-2001.png,Right lower lobe pulmonary atelectasis
+CXR1000_IM-0003-3001.png,Right upper lobe pulmonary atelectasis
+CXR1085_IM-0059-1001.png,Option 2: left lower lobe pulmonary atelectasis.
+CXR1094_IM-0065-1001.png,Option 2: left lower lobe pulmonary atelectasis.
+CXR1160_IM-0107-1002.png,Option 1:left lower lobe pulmonary atelectasis
+CXR1446_IM-0288-1002.png,Left lower lobe pulmonary atelectasis
+CXR1513_IM-0333-2001.png,Right lower lobe pulmonary atelectasis
+CXR1593_IM-0385-2001.png,Right lower lobe pulmonary atelectasis
+CXR1769_IM-0503-1001.png,Left lower lobe pulmonary atelectasis
+CXR2034_IM-0679-2001.png,2: right lower lobe pulmonary atelectasis.
+CXR2062_IM-0699-0001-0001.png,Option 1:left lower lobe pulmonary atelectasis
+CXR2066_IM-0701-1001.png,Right lower lobe pulmonary atelectasis
+CXR2118_IM-0745-2001.png,Left lower lobe pulmonary atelectasis
+CXR2370_IM-0931-2001.png,Right lower lobe pulmonary atelectasis
+CXR2594_IM-1085-3001.png,Right lower lobe pulmonary atelectasis
+CXR2610_IM-1101-1001.png,Right upper lobe pulmonary atelectasis
+CXR2716_IM-1181-1001.png,Right lower lobe pulmonary atelectasis
+CXR3140_IM-1477-1001.png,Right lower lobe pulmonary atelectasis
+CXR3570_IM-1754-2001.png,Left lower lobe pulmonary atelectasis
+CXR3721_IM-1859-2001.png,Option 2: left lower lobe pulmonary atelectasis.
+CXR3797_IM-1910-0001-0001.png,Left lower lobe pulmonary atelectasis
+CXR5_IM-2117-1004003.png,Severe hyperdistention of the lung
+CXR14_IM-0256-1001.png,Option 2: mild hyperdistention of the lung.
+CXR40_IM-2050-1002.png,Option 2: mild hyperdistention of the lung.
+CXR53_IM-2138-2001.png,Option 2: mildly hypoinflated lung.
+CXR58_IM-2177-1001.png,Option 2: severe scoliosis in thoracic vertebrae.
+CXR88_IM-2394-2001.png,Severe cardiomegaly
+CXR93_IM-2428-2001.png,Option 2: severe degeneration of thoracic vertebrae.
+CXR101_IM-0011-2001.png,Severe cardiomegaly
+CXR103_IM-0023-2001.png,Option 2: severe degeneration of thoracic vertebrae.
+CXR123_IM-0153-1001.png,mild cardiomegaly
+CXR152_IM-0335-2001.png,mild cardiomegaly
+CXR175_IM-0492-1001.png,mild cardiomegaly
+CXR185_IM-0551-1001.png,Option 2: mildly hypoinflated lung.
+CXR192_IM-0598-1002.png,mild degeneration of thoracic vertebrae
+CXR201_IM-0660-1001.png,mildly tortuous thoracic aorta.
+CXR209_IM-0721-2001.png,Severe aortic calcinosis
+CXR251_IM-1032-4001.png,Severe hyperdistention of the lung
+CXR266_IM-1141-2001.png,mild cardiomegaly
+CXR297_IM-1361-4004.png,Severe bronchovascular markings
+CXR300_IM-1385-1001.png,1:mild hyperdistention of the lung
+CXR302_IM-1394-1001.png,Severe scoliosis
+CXR303_IM-1404-1001.png,Option 2: mildly hypoinflated lung.
+CXR305_IM-1420-2001.png,Severe cardiomegaly
+CXR323_IM-1526-1001.png,1:mild degeneration of thoracic vertebrae
+CXR327_IM-1552-2001.png,mild cardiomegaly
+CXR333_IM-1594-1001.png,Option 2: mild hyperdistention of the lung.
+CXR347_IM-1686-1001.png,Option 2: severe degeneration of thoracic vertebrae.
+CXR351_IM-1712-2001.png,Option 2: mildly tortuous thoracic aorta.
+CXR352_IM-1718-1001.png,Option 2: severe degeneration of thoracic vertebrae.
+CXR384_IM-1941-2001.png,mild bronchovascular markings
+CXR454_IM-2085-1001.png,mild cardiomegaly
+CXR460_IM-2090-1001.png,mildly tortuous thoracic aorta.
+CXR586_IM-2182-1001.png,mild atherosclerosis
+CXR610_IM-2197-1001.png,mild cardiomegaly
+CXR800_IM-2334-4004-0002.png,mildly tortuous thoracic aorta
+CXR1111_IM-0077-4004.png,mild cardiomegaly
+CXR1275_IM-0184-2001.png,Option 2: mildly hypoinflated lung.
+CXR1525_IM-0340-4001.png,Severe left lung pulmonary atelectasis
+CXR1720_IM-0475-4004.png,Severely hypoinflated lung
+CXR1818_IM-0530-1001.png,Option 2: severely hypoinflated lung.
+CXR1870_IM-0563-2001.png,Severe cardiomegaly
+CXR1898_IM-0581-2001.png,mild cardiomegaly
+CXR1945_IM-0614-2001.png,Severe scoliosis
+CXR1961_IM-0628-2001.png,Severely hypoinflated lung
+CXR2180_IM-0793-1001.png,mild cardiomegaly
+CXR2318_IM-0891-2001.png,mild left lung pulmonary atelectasis
+CXR2410_IM-0956-1001.png,mild hyperdistention of the lung
+CXR2421_IM-0965-2001.png,Severe cardiomegaly
+CXR2496_IM-1022-2001.png,Severe cardiomegaly
+CXR2919_IM-1321-3001.png,mild cardiomegaly
+CXR2969_IM-1360-1001.png,Option 2: mild hyperdistention of the lung.
+CXR3129_IM-1471-2001.png,mild degeneration of thoracic vertebrae
+CXR3274_IM-1555-0001-0001.png,Option 2: mildly hypoinflated lung.
+CXR3327_IM-1593-1001.png,Severe thoracic aorta calcinosis
+CXR3353_IM-1609-2001.png,mild cardiomegaly
+CXR3685_IM-1836-1001.png,mild degeneration of thoracic vertebrae
+CXR3819_IM-1926-1001.png,mild cardiomegaly
+CXR3848_IM-1946-1001-0001.png,mild cardiomegaly
