@@ -1,0 +1,669 @@
+What abnormalities are in the image? Temperature 1
+patient64741/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64742/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64743/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64744/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64744/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64744/study1/view3_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64745/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64745/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64746/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64747/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64747/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64748/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64748/study1/view2_lateral.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64749/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64750/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64750/study1/view2_lateral.jpg,No Finding
+patient64751/study1/view1_frontal.jpg,Picc
+patient64751/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64752/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64753/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64754/study1/view1_frontal.jpg,Hyperaeration
+patient64754/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64755/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64755/study1/view2_lateral.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64756/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64756/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64756/study1/view3_lateral.jpg,No Finding
+patient64757/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64758/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64759/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64759/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64760/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64761/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient64762/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64762/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64763/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64763/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64764/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64764/study1/view2_lateral.jpg,No Finding
+patient64765/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64766/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring, pulmonary edema/hazy opacity
+patient64766/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64767/study1/view1_frontal.jpg,Endotracheal tube, enteric tube, ij line
+patient64768/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient64768/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64769/study1/view1_frontal.jpg,Hyperaeration
+patient64770/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64771/study1/view1_frontal.jpg,Subcutaneous air
+patient64772/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64773/study1/view1_frontal.jpg,No Finding
+patient64774/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64775/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64775/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64776/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64777/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient64778/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64779/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64780/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64781/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64781/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64782/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64783/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64784/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64785/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64785/study1/view2_lateral.jpg,No Finding
+patient64786/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64786/study1/view2_lateral.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64787/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64787/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64788/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64788/study1/view2_lateral.jpg,No Finding
+patient64789/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64790/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64791/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient64791/study1/view2_frontal.jpg,Hyperinflation, lung opacity, pleural/parenchymal scarring
+patient64791/study1/view3_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64792/study1/view1_frontal.jpg,Atelectasis, Enlarged Cardiomediastinum, Lung Opacity
+patient64792/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64793/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64794/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64794/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64795/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64795/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64796/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64797/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64798/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64798/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64799/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64799/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64800/study1/view1_frontal.jpg,Picc
+patient64801/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64801/study1/view2_lateral.jpg,No Finding
+patient64802/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient64803/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64804/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64805/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64806/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64806/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64807/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64808/study1/view1_frontal.jpg,No Finding
+patient64808/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64809/study1/view1_frontal.jpg,No Finding
+patient64809/study1/view2_frontal.jpg,Enlarged cardiac silhouette
+patient64809/study1/view3_lateral.jpg,No Finding
+patient64810/study1/view1_frontal.jpg,Endotracheal tube, enteric tube
+patient64811/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64811/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64812/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64812/study1/view2_frontal.jpg,Enlarged cardiac silhouette
+patient64812/study1/view3_lateral.jpg,No Finding
+patient64813/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64814/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64814/study1/view2_lateral.jpg,No Finding
+patient64815/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64816/study1/view1_frontal.jpg,Atelectasis, cardiomegaly, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64817/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64818/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64819/study1/view1_frontal.jpg,Chest port
+patient64819/study1/view2_lateral.jpg,No Finding
+patient64820/study1/view1_frontal.jpg,Picc
+patient64821/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64822/study1/view1_frontal.jpg,Hyperinflated lungs
+patient64823/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64824/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64825/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient64826/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64827/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64827/study1/view2_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64828/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity
+patient64828/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64829/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64830/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64831/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64832/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64832/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64833/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64834/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64834/study1/view2_lateral.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64835/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient64835/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64836/study1/view1_frontal.jpg,No Finding
+patient64836/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64837/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64838/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64838/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64839/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64840/study1/view1_frontal.jpg,No Finding
+patient64840/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64841/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient64842/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64843/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64844/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64844/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64844/study1/view3_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64845/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient64846/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy interstitial pattern, vascular congestion
+patient64846/study1/view2_lateral.jpg,No Finding
+patient64847/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64848/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient64849/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64849/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64850/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64850/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64851/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64852/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64853/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64853/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64854/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64855/study1/view1_frontal.jpg,No Finding
+patient64855/study1/view2_lateral.jpg,No Finding
+patient64856/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64856/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64857/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64857/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64858/study1/view1_frontal.jpg,Atelectasis, lung opacity, pneumothorax
+patient64859/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64859/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64860/study1/view1_frontal.jpg,Enlarged cardiac silhouette, emphysema
+patient64860/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64861/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64862/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64862/study1/view2_lateral.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64863/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient64864/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64864/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64865/study1/view1_frontal.jpg,Endotracheal tube, subclavian line
+patient64866/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64867/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64868/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64869/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64869/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64870/study1/view1_frontal.jpg,Chest port
+patient64870/study1/view2_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64870/study1/view3_lateral.jpg,Enlarged cardiac silhouette
+patient64871/study1/view1_frontal.jpg,No Finding
+patient64872/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64872/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64873/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64874/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64874/study1/view2_lateral.jpg,No Finding
+patient64875/study1/view1_frontal.jpg,Cabg grafts, cardiac pacer and wires, enlarged cardiac silhouette
+patient64875/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64876/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64876/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64877/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64877/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64878/study1/view1_frontal.jpg,Lung nodules, lung opacity, pleural/parenchymal scarring
+patient64878/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64879/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64879/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64880/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64881/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient64882/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64883/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64884/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient64884/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64885/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64886/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64886/study1/view2_frontal.jpg,Enlarged cardiac silhouette
+patient64886/study1/view3_lateral.jpg,No Finding
+patient64887/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64887/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64888/study1/view1_frontal.jpg,Consolidation, Lung Opacity, Pneumonia
+patient64889/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64889/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64890/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64891/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pleural/parenchymal scarring
+patient64891/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64892/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64892/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64893/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64894/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64894/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64895/study1/view1_frontal.jpg,Picc
+patient64895/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64896/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64897/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64898/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient64899/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64900/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64901/study1/view1_frontal.jpg,Endotracheal tube, enteric tube
+patient64902/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64902/study1/view2_lateral.jpg,No Finding
+patient64903/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient64904/study1/view1_frontal.jpg,Pneumothorax
+patient64905/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64905/study1/view2_frontal.jpg,No Finding
+patient64905/study1/view3_lateral.jpg,Enlarged cardiac silhouette
+patient64906/study1/view1_frontal.jpg,Endotracheal tube, subclavian line
+patient64907/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64907/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64908/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64909/study1/view1_frontal.jpg,Pneumothorax
+patient64910/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64910/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64911/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64912/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64913/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64913/study1/view2_lateral.jpg,No Finding
+patient64914/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient64915/study1/view1_frontal.jpg,No Finding
+patient64915/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64916/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64916/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64917/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64918/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64918/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64919/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64920/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient64921/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64921/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64922/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64923/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64923/study1/view2_lateral.jpg,No Finding
+patient64924/study1/view1_frontal.jpg,Subcutaneous air
+patient64925/study1/view1_frontal.jpg,Endotracheal tube, enteric tube
+patient64926/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64926/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64927/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient64928/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64928/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64929/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64930/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64931/study1/view1_frontal.jpg,Lung Opacity, Pleural Effusion, Support Devices
+patient64932/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64933/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy interstitial pattern
+patient64933/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64934/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64935/study1/view1_frontal.jpg,Lung Opacity, Pneumonia
+patient64936/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64937/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64938/study1/view1_frontal.jpg,Pneumothorax
+patient64939/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64940/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64940/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64941/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64942/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64943/study1/view1_frontal.jpg,Pneumothorax
+patient64943/study1/view2_frontal.jpg,Pneumothorax
+patient64944/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64945/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64945/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64946/study1/view1_frontal.jpg,Atelectasis, cardiomegaly, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64947/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64948/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64948/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64949/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64949/study1/view2_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64950/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64951/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64951/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64952/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient64952/study1/view2_lateral.jpg,Lung opacity, pleural effusion
+patient64953/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64954/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64955/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64955/study1/view2_lateral.jpg,No Finding
+patient64956/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64956/study1/view2_lateral.jpg,No Finding
+patient64957/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient64957/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64958/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient64959/study1/view1_frontal.jpg,Lung lesion, lung opacity, mass/nodule (not otherwise specified)
+patient64959/study1/view2_lateral.jpg,No Finding
+patient64960/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64961/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64962/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient64963/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64964/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64964/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64965/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64966/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient64967/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64967/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64968/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64969/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64969/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64969/study1/view3_lateral.jpg,Enlarged cardiac silhouette
+patient64970/study1/view1_frontal.jpg,Endotracheal tube, enteric tube
+patient64970/study1/view2_frontal.jpg,Endotracheal tube, ij line
+patient64971/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64972/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64972/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient64973/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient64974/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64975/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient64976/study1/view1_frontal.jpg,Hyperaeration
+patient64976/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64977/study1/view1_frontal.jpg,Enlarged cardiac silhouette, pneumomediastinum
+patient64978/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64978/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64979/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64980/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64980/study1/view2_lateral.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion, pleural/parenchymal scarring
+patient64981/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64981/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64982/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pneumothorax
+patient64982/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient64983/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient64984/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient64985/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64985/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64986/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient64986/study1/view2_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient64986/study1/view3_lateral.jpg,Enlarged cardiac silhouette
+patient64987/study1/view1_frontal.jpg,Pneumothorax
+patient64988/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64989/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64989/study1/view2_lateral.jpg,Lung Opacity, Pneumothorax
+patient64990/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64990/study1/view2_lateral.jpg,No Finding
+patient64991/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient64992/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64993/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient64994/study1/view1_frontal.jpg,Calcified pleural plaques
+patient64994/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64995/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient64996/study1/view1_frontal.jpg,No Finding
+patient64996/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64997/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64997/study1/view2_lateral.jpg,No Finding
+patient64998/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient64998/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient64999/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient64999/study1/view2_lateral.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65000/study1/view1_frontal.jpg,Lung opacity, pneumothorax
+patient65001/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65002/study1/view1_frontal.jpg,Hyperaeration
+patient65002/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65003/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65003/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65004/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65005/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65006/study1/view1_frontal.jpg,Pneumothorax
+patient65006/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65007/study1/view1_frontal.jpg,Atelectasis, lung opacity, pneumothorax
+patient65008/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65008/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65009/study1/view1_frontal.jpg,No Finding
+patient65009/study1/view2_lateral.jpg,No Finding
+patient65010/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65010/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient65010/study1/view3_lateral.jpg,Lung Opacity, Pneumonia
+patient65011/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65011/study1/view2_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65012/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65013/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65013/study1/view2_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65013/study1/view3_lateral.jpg,Enlarged cardiac silhouette
+patient65014/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65015/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65016/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65016/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65017/study1/view1_frontal.jpg,No Finding
+patient65018/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65018/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65019/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65020/study1/view1_frontal.jpg,Consolidation, lung opacity, mass/nodule (not otherwise specified), pleural/parenchymal scarring
+patient65020/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient65021/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65022/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65023/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity
+patient65024/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient65024/study1/view2_lateral.jpg,Atelectasis, lung opacity, pleural effusion, pleural/parenchymal scarring
+patient65025/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65026/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65026/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient65027/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65027/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65028/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65029/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65029/study1/view2_lateral.jpg,Lung opacity, pleural/parenchymal scarring
+patient65030/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65030/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65031/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis
+patient65031/study1/view2_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65031/study1/view3_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65032/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65033/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65033/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65034/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65034/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65035/study1/view1_frontal.jpg,Cabg grafts, cardiac pacer and wires, enlarged cardiac silhouette
+patient65035/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65036/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity
+patient65037/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65038/study1/view1_frontal.jpg,Consolidation, lung opacity, mass/nodule (not otherwise specified)
+patient65039/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65040/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65041/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65042/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient65043/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient65044/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65045/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65046/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65047/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65048/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65049/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65050/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65050/study1/view2_frontal.jpg,Enteric tube
+patient65051/study1/view1_frontal.jpg,Lung opacity, pulmonary edema/hazy opacity
+patient65051/study1/view2_frontal.jpg,Lung opacity, pulmonary edema/hazy opacity
+patient65052/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65053/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65054/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65055/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65056/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient65057/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65058/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65058/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65059/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65060/study1/view1_frontal.jpg,No Finding
+patient65060/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65061/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65062/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65063/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65064/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65065/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65066/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65067/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65068/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65069/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65069/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65070/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65071/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65072/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient65073/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65074/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient65075/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65076/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65077/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65078/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65079/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65080/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65081/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65082/study1/view1_frontal.jpg,Endotracheal tube, enteric tube
+patient65083/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65084/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65084/study1/view2_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65085/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65086/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65087/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65087/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65088/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65089/study1/view1_frontal.jpg,Endotracheal tube, enteric tube, ij line
+patient65090/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65090/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65091/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65092/study1/view1_frontal.jpg,Endotracheal tube, enteric tube, ij line
+patient65093/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65094/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65095/study1/view1_frontal.jpg,Endotracheal tube, enteric tube, ij line
+patient65096/study1/view1_frontal.jpg,Enteric tube
+patient65097/study1/view1_frontal.jpg,Lung Opacity, Pneumothorax
+patient65097/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65097/study1/view3_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65098/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65099/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65100/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient65101/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65102/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65103/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65104/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65105/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65106/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65106/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65107/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65108/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65109/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient65110/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65111/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65112/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65113/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65114/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65115/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65116/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65117/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65118/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65119/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65120/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient65121/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65122/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65123/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient65124/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65125/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65126/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65127/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65128/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65129/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65130/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65131/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65132/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65133/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65134/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient65135/study1/view1_frontal.jpg,Subcutaneous air
+patient65136/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65137/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient65138/study1/view1_frontal.jpg,Atelectasis, cardiomegaly, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65139/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65140/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65141/study1/view1_frontal.jpg,Endotracheal tube, enteric tube
+patient65142/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65143/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient65144/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65145/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65146/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65147/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65147/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65148/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65149/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65150/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65150/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65151/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65152/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65152/study1/view2_lateral.jpg,Enlarged cardiac silhouette
+patient65153/study1/view1_frontal.jpg,Ij line
+patient65154/study1/view1_frontal.jpg,Lung lesion, lung opacity, mass/nodule (not otherwise specified)
+patient65155/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65156/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65157/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65158/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65159/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65160/study1/view1_frontal.jpg,Atelectasis, Enlarged Cardiomediastinum, Lung Opacity
+patient65161/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65162/study1/view1_frontal.jpg,Lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65163/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65164/study1/view1_frontal.jpg,Endotracheal tube, subclavian line
+patient65165/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient65166/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient65167/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65168/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65169/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65170/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65171/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65172/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient65173/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65174/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65175/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient65176/study1/view1_frontal.jpg,Atelectasis, Edema, Lung Opacity, Pleural Effusion
+patient65177/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity
+patient65178/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65179/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65180/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65181/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65182/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient65183/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65184/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65185/study1/view1_frontal.jpg,Atelectasis, linear/patchy atelectasis, lung opacity, pleural/parenchymal scarring
+patient65186/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient65187/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65188/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65189/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65189/study1/view2_frontal.jpg,Enlarged cardiac silhouette, lung opacity, vascular congestion
+patient65190/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65191/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring, pulmonary edema/hazy opacity
+patient65192/study1/view1_frontal.jpg,No Finding
+patient65193/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65194/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65195/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65196/study1/view1_frontal.jpg,Pneumothorax
+patient65197/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural/parenchymal scarring
+patient65198/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65199/study1/view1_frontal.jpg,Lung opacity, pleural/parenchymal scarring
+patient65200/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65201/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65202/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65203/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65204/study1/view1_frontal.jpg,Consolidation, Lung Opacity, Pleural Effusion
+patient65204/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65205/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65206/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65207/study1/view1_frontal.jpg,Endotracheal tube, ij line
+patient65208/study1/view1_frontal.jpg,Lung opacity, pulmonary edema/hazy opacity
+patient65209/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65210/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65211/study1/view1_frontal.jpg,Endotracheal tube, enteric tube, picc
+patient65212/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65213/study1/view1_frontal.jpg,Lung opacity, pneumothorax
+patient65214/study1/view1_frontal.jpg,Cardiac pacer and wires, enlarged cardiac silhouette
+patient65214/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65215/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion, pneumothorax
+patient65216/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65217/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65218/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65219/study1/view1_frontal.jpg,Enteric tube, picc
+patient65220/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65221/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65222/study1/view1_frontal.jpg,Atelectasis, consolidation, lung opacity, pleural effusion
+patient65223/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65224/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient65225/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65226/study1/view1_frontal.jpg,Consolidation, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65227/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65228/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural/parenchymal scarring
+patient65229/study1/view1_frontal.jpg,Atelectasis, Lung Opacity, Pleural Effusion
+patient65230/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65231/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65232/study1/view1_frontal.jpg,Atelectasis, enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65233/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
+patient65234/study1/view1_frontal.jpg,Enteric tube, ij line
+patient65235/study1/view1_frontal.jpg,Enlarged cardiac silhouette, hiatal hernia
+patient65235/study1/view2_lateral.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion
+patient65235/study1/view3_lateral.jpg,Enlarged cardiac silhouette
+patient65236/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pulmonary edema/hazy opacity
+patient65237/study1/view1_frontal.jpg,Enlarged cardiac silhouette
+patient65238/study1/view1_frontal.jpg,Subcutaneous air
+patient65239/study1/view1_frontal.jpg,Enlarged cardiac silhouette, lung opacity, pleural effusion, pulmonary edema/hazy opacity
+patient65240/study1/view1_frontal.jpg,Atelectasis, lung opacity, pleural effusion
