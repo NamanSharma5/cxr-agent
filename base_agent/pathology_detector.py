@@ -9,7 +9,7 @@ import os
 import torch
 import torch.nn as nn
 import numpy as np
-os.environ['HF_HOME'] = '/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/.cheXagent_cache' ## THIS HAS TO BE BEFORE YOU IMPORT TRANSFORMERS
+os.environ['HF_HOME'] = '/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/.hf_cache' ## THIS HAS TO BE BEFORE YOU IMPORT TRANSFORMERS
 from transformers import AutoProcessor, AutoModelForCausalLM, GenerationConfig
 from pathology_sets import Pathologies
 
@@ -74,7 +74,7 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
         
         elif pathologies == Pathologies.CHEXPERT:
             self.pathologies = cheXpert_pathologies
-            self.linear_classifier = LinearClassifier(98304, len(cheXpert_pathologies))
+            self.linear_classifier = LinearClassifier(VISION_TRANSFORMERT_OUTPUT_EMBEDDING_SIZE, len(cheXpert_pathologies))
             self.linear_classifier.load_state_dict(torch.load(cheXpert_layer_norm_weights))
             self.linear_classifier.to(self.device)
         

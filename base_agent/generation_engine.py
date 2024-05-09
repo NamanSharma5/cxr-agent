@@ -1,5 +1,5 @@
 import os
-os.environ["HF_HOME"] = "/vol/biomedic3/bglocker/ugproj2324/nns20/llama3/.8b-instruct-cached"
+os.environ['HF_HOME'] = '/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/.hf_cache' ## THIS HAS TO BE BEFORE YOU IMPORT TRANSFORMERS
 
 import transformers
 import torch
@@ -11,6 +11,7 @@ from my_secrets import LLAMA3_INSTRUCT_ACCESS_TOKEN
 from agent_utils import select_best_gpu
 
 from pathology_detector import PathologyDetector, CheXagentVisionTransformerPathologyDetector
+from pathology_sets import Pathologies
 
 class GenerationEngine(ABC):
     @abstractmethod
@@ -76,25 +77,25 @@ class Llama3Generation(GenerationEngine):
 
         print(outputs[0]["generated_text"][len(prompt):])
         return outputs[0]["generated_text"][len(prompt):]
+    
 
+if __name__ == "__main__":
+    l3 = Llama3Generation()
+    pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT)
+    chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
+    chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
 
-# if __name__ == "__main__":
-#     l3 = Llama3Generation()
-#     pathology_detector = CheXagentVisionTransformerPathologyDetector()
+    with open(chexpert_test_csv_path, 'r') as f:
+        lines = f.readlines()
+        header = lines[0].split(",")[1:]
+        # print(header)
+        for i, line in enumerate(lines[1:]):
+            if i % 1000 == 0:
+                print(f"Collecting image {i}")
 
-#     chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
-#     chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
+            image_path = line.split(",")[0]
+            print(f"{image_path=}")
+            image_path = chexpert_test_path / image_path
 
-#     with open(chexpert_test_csv_path, 'r') as f:
-#         lines = f.readlines()
-#         header = lines[0].split(",")[1:]
-#         # print(header)
-#         for i, line in enumerate(lines[1:]):
-#             if i % 1000 == 0:
-#                 print(f"Collecting image {i}")
-
-#             image_path = line.split(",")[0]
-#             image_path = chexpert_test_path / image_path
-
-#             l3.generate_report(image_path, prompt = None, pathology_detector=pathology_detector)
-#             break
+            l3.generate_report(image_path, prompt = None, pathology_detector=pathology_detector)
+            break
