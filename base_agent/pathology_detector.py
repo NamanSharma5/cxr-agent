@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import Optional
+from agent_utils import select_best_gpu
 
 from PIL import Image
 from pathlib import Path
@@ -33,6 +34,7 @@ q_former_weights = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/CheXagent/mode
 
 VISION_TRANSFORMERT_OUTPUT_EMBEDDING_SIZE = 1408
 Q_FORMER_OUTPUT_EMBEDDING_SIZE = 98304
+DECIMALS = 2
 
 
 class PathologyDetector(ABC):
@@ -54,7 +56,7 @@ class LinearClassifier(nn.Module):
 class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
 
     def __init__(self, pathologies: Pathologies = Pathologies.VINDR):
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = select_best_gpu()
         self.dtype = torch.float16
 
         self.processor = AutoProcessor.from_pretrained("StanfordAIMI/CheXagent-8b", trust_remote_code=True)
@@ -77,7 +79,7 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
             self.linear_classifier.to(self.device)
         
 
-    def detect_pathologies(self, image_path: Path,threshold: Optional[float] = None) -> PathologyConfidences:
+    def detect_pathologies(self, image_path: Path,threshold: Optional[float] = None, decimals = DECIMALS) -> PathologyConfidences:
 
         image = Image.open(image_path).convert("RGB")
         prompt = "NO PROMPT BEING USED"
@@ -92,6 +94,9 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
         self.linear_classifier.eval()
         probe_logits = self.linear_classifier(torch.flatten(embedding_output))
         predictions = torch.sigmoid(probe_logits)
+        
+        # round confidences to 2 decimal places
+        predictions = torch.round(predictions, decimals=decimals)
 
         pathology_confidences = dict(zip(self.pathologies, predictions.cpu().detach().numpy().flatten())) 
 
@@ -105,41 +110,21 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
 # if __name__ == "__main__":
 #     detector = CheXagentVisionTransformerPathologyDetector()
 
-#     ### MIMIC-CXR ###
+#     chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
+#     chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
 
-#     patient_id = '10012261'
-#     study_id = "50349409"
-#     mimic_cxr_dicom = Path('/vol/biodata/data/chest_xray/mimic-cxr-jpg/files')
-#     # construct the path to the mimic-cxr folder ~/../../vol/biodata/data/chest_xray/mimic-cxr/{folder}/{patient_folder}
-#     mimic_path = mimic_cxr_dicom / f"p{patient_id[:2]}" / f"p{patient_id}" / f"s{study_id}"
+#     with open(chexpert_test_csv_path, 'r') as f:
+#         lines = f.readlines()
+#         header = lines[0].split(",")[1:]
+#         # print(header)
+#         for i, line in enumerate(lines[1:]):
+#             if i % 1000 == 0:
+#                 print(f"Collecting image {i}")
 
-#     for image_path in mimic_path.iterdir():
-#         print(detector.detect_pathologies(image_path))
-
-
-
-
-
-    # cheXpert_small_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/")
-    # chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
-    # chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
-
-    # with open(chexpert_test_csv_path, 'r') as f:
-    #     lines = f.readlines()
-    #     header = lines[0].split(",")[1:]
-    #     # print(header)
-    #     for i, line in enumerate(lines[1:]):
-    #         if i % 1000 == 0:
-    #             print(f"Collecting image {i}")
-
-    #         image_path = line.split(",")[0]
-    #         image_path = chexpert_test_path / image_path
-
-    #         # print(line.split(",")[1:])
-    #         print(dict(zip(header,line.split(",")[1:])))
-
+#             image_path = line.split(",")[0]
+#             image_path = chexpert_test_path / image_path
             
-    #         detector.detect_pathologies(image_path)
-    #         break
+#             detector.detect_pathologies(image_path)
+#             break
 
         
