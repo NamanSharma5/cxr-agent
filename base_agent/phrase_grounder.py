@@ -10,7 +10,9 @@ from health_multimodal.vlp import ImageTextInferenceEngine
 
 from agent_utils import select_best_gpu
 from abc import ABC, abstractmethod
+from typing import Union
 
+PathologyLocationConfidences = dict[str, float]
 
 class PhraseGrounder(ABC):
 
@@ -25,19 +27,59 @@ class PhraseGrounder(ABC):
 
 class BioVilTPhraseGrounder(PhraseGrounder):
 
-    def __init__(self):
+    def __init__(self, detection_threshold = 0.25, top_n_pixels = 25):
+        self.detection_threshold = detection_threshold
+        self.top_n_pixels = top_n_pixels
+
         self.text_inference = get_bert_inference(BertEncoderType.BIOVIL_T_BERT)
         self.image_inference = get_image_inference(ImageModelType.BIOVIL_T)  
         self.image_text_inference_engine = ImageTextInferenceEngine(image_inference_engine=self.image_inference, text_inference_engine=self.text_inference)
+        
         self.device = select_best_gpu()
         self.image_text_inference_engine.to(self.device)
 
-    def get_similiarity_map(self, image_path: str, phrase: str, ):
+    def get_similiarity_map(self, image_path: str, phrase: str):
         return self.image_text_inference_engine.get_similarity_map_from_raw_data(
             image_path=image_path,
             query_text=phrase,
             interpolation="bilinear"
         )
+    
+    def get_top_values(self, similarity_map, return_mean = False):
+        top_values = []
+        for i in range(similarity_map.shape[0]):
+            for j in range(similarity_map.shape[1]):
+                if similarity_map[i, j] > self.detection_threshold:
+                    top_values.append((i, j, similarity_map[i, j]))
 
-    def get_pathology_lateral_position(self, pathology: str, image_path: str) -> str:
-        return "TODO"
+        top_values = sorted(top_values, key = lambda x: x[2], reverse = True)
+
+        if return_mean:
+            if len(top_values) == 0:
+                return [], 0
+            return top_values[:self.top_n_pixels], sum([x[2] for x in top_values]) / len(top_values)
+        
+        return top_values[:self.top_n_pixels]
+
+    def get_pathology_lateral_position(self, image_path: str, pathologies: Union[str,list[str]]) -> PathologyLocationConfidences:
+        if isinstance(pathologies, str):
+            pathologies = [pathologies]
+
+        locations = ["left", "right"]
+
+        pathologyLocationConfidences = {}
+
+        for pathology in pathologies:
+            for location in locations:
+                phrase = f"{location} {pathology}"
+                similarity_map = self.get_similiarity_map(image_path, phrase)
+                _ , mean_activation = self.get_top_values(similarity_map, return_mean = True)
+
+                if mean_activation > 0:
+                    pathologyLocationConfidences[phrase] = mean_activation
+
+        return pathologyLocationConfidences
+            
+            
+        
+
