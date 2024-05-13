@@ -13,10 +13,89 @@ from agent_utils import select_best_gpu
 from pathology_detector import PathologyDetector, CheXagentVisionTransformerPathologyDetector
 from pathology_sets import Pathologies
 
+from phrase_grounder import PhraseGrounder, BioVilTPhraseGrounder
+
 class GenerationEngine(ABC):
+
+
     @abstractmethod
-    def generate_report(self, image_path: Path, prompt: Optional[str], output_dir: Optional[str]) -> str:
+    def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str] = None):
         pass
+
+    
+    def contextualise_model(image_path: Path, pathology_detector: PathologyDetector, phrase_grounder: Optional[PhraseGrounder] = None, examples = True) -> str:
+        
+        pathology_detection_threshold = 0.5
+
+        if pathology_detector is not None:
+            pathology_confidences = pathology_detector.detect_pathologies(image_path, threshold = pathology_detection_threshold)
+            # print(pathology_confidences)
+        else:
+            return RuntimeError("Pathology detector not provided")
+        
+        #### PROMPT PIPELINE ###
+        if len(pathology_confidences) == 0:
+            system_prompt = """ You are a helpful assistant, specialising in radiology and interpreting Chest X-rays. However there is insufficient data make any comments. Just mention it is possible there are no findings and this should be double checked by a radiologist."""
+            image_context_prompt = f"""No pathologies were detected in the chest X-ray image. The user will now interact with you."""
+            return system_prompt, image_context_prompt
+        
+
+        system_prompt = """You are a helpful assistant, specialising in radiology and interpreting Chest X-rays. Please answer CONCISELY and professionally as a radiologist would. You should not be confident unless the data is confident. Use language that reflects the confidence of the data."""
+        image_context_prompt_final_part = """
+            This understanding is crucial for accurately processing and responding to queries on the chest X-ray analysis. Structure your answers based on confidence and pathologies.
+            Double check before you submit your response to ensure you have factored in all the data and followed my instructions carefully.
+            You will now interact with the user.
+            """
+
+        if phrase_grounder is None:
+            image_context_prompt = f"""
+                You are being provided with data derived from analyzing a chest X-ray, which includes findings on potential pathologies alongside their confidence levels.
+                This information comes from a specialized diagnostic tools.
+                It's important to recognize how to interpret this when responding to queries:
+
+                Pathology Detection with Confidence Scores:
+                {pathology_confidences}
+                Please note the closer the value to 1, the more likely the pathology is present in the image. 
+
+                It is important to factor medical knowledge and the specifics of each case, if supplied, into your responses.
+                {image_context_prompt_final_part}
+                """
+
+        else:
+            pathologies = [pathology for pathology, confidence in pathology_confidences.items() if confidence > pathology_detection_threshold]
+            grounded_pathologies_confidences = phrase_grounder.get_pathology_lateral_position(image_path, pathologies)
+            # print(grounded_pathologies_confidences)
+            if len(grounded_pathologies_confidences) == 0:
+                grounded_pathologies_confidences = "No lateral positions could be confidently determined for any pathologies detected."
+
+            image_context_prompt = f"""
+            You are being provided with data derived from analyzing a chest X-ray, which includes findings on potential pathologies alongside their confidence levels and, separately, possible lateral locations of these pathologies with their own confidence scores.
+            This information comes from two specialized diagnostic tools.
+            It's important to recognize how to interpret these datasets together when responding to queries:
+
+            Pathology Detection with Confidence Scores:
+            {pathology_confidences}
+
+            Phrase Grounding Locations with Confidence Scores:
+            {grounded_pathologies_confidences}
+
+            This separate dataset provides potential lateral locations for some of the detected pathologies, each with its own confidence score, indicating the model's certainty about each pathology's location.
+            For instance, left Pleural Effusion is listed with a confidence score of 0.53, suggesting the location of Pleural Effusion to be on the left side with moderate confidence.
+
+            When you interact with end users, remember:
+
+            - A pathology and its lateral location (e.g., Pleural Effusion and left Pleural Effusion) are part of the same finding. The location attribute is an additional detail about where the pathology is likely found, not an indicator of a separate pathology. 
+            - Synthesize the pathology detection and localization data. DO NOT TALK ABOUT THEM SEPERATELY. {"Here is a model example, 'Highly likely there is Pleural Effusion (detection confidence: 0.80), and it is possibly on the left side (localisation confidence: 0.53).'" if examples else ""}
+            - Confidence scores from the pathology detection and phrase grounding tools are not directly comparable. They serve as indicators of confidence within their respective contexts of pathology detection and localisation.
+            - A missing lateral location does not imply the absence of a pathology; it indicates the localisation could not be confidently determined.
+            - If there is any discrepancy between the pathology detection and phrase grounding tools, detection data takes precedence as it more reliably identifies pathologies.
+
+            It is important to factor medical knowledge and the specifics of each case, if supplied, into your responses. For example, pathologies located on both sides are called bilateral. Heart related observations are usually on the left/ middle.
+            {image_context_prompt_final_part}
+            """
+            
+        return system_prompt, image_context_prompt
+
 
 
 class Llama3Generation(GenerationEngine):
@@ -32,70 +111,97 @@ class Llama3Generation(GenerationEngine):
             token=LLAMA3_INSTRUCT_ACCESS_TOKEN,
         )
 
-
-    def generate_report(self, image_path: Path, prompt: Optional[str], pathology_detector = None) -> str:
-        
-        if pathology_detector is not None:
-            pathology_confidences = pathology_detector.detect_pathologies(image_path, threshold = 0.5)
-        else:
-            pathology_confidences = { 'Consolidation': 0.21995275,'Pulmonary fibrosis': 0.49335942, 'No finding': 0.1746179}
-
-        system_prompt = """You are a helpful assistant, specialising in radiology and interpreting Chest X-rays. Please answer concisely and in a professional manner."""
-
-        user_prompt = f"""Using specialised pathology detection tools,
-        you are given the following pathology detection results for a chest X-ray:
-        {pathology_confidences}
-
-        Please note the closer the value to 1, the more likely the pathology is present in the image. 
-        Write up a findings section based on these observations"""
-
-
-        messages = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt },
-        ]
-
-        prompt = self.pipeline.tokenizer.apply_chat_template(
-                messages, 
-                tokenize=False, 
-                add_generation_prompt=True
-        )
+    def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str] = None):
+        def format_output(output_text: str) -> str:
+            return "\n".join(output_text.split(". "))  # print output text with each sentence on a new line
 
         terminators = [
             self.pipeline.tokenizer.eos_token_id,
             self.pipeline.tokenizer.convert_tokens_to_ids("<|eot_id|>")
         ]
 
-        outputs = self.pipeline(
-            prompt,
-            max_new_tokens=256,
-            eos_token_id=terminators,
-            do_sample=True,
-            temperature=0.6,
-            top_p=0.9,
-        )
+        if user_prompt is not None:
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": image_context_prompt +"\n" + user_prompt},
+            ]
 
-        print(outputs[0]["generated_text"][len(prompt):])
-        return outputs[0]["generated_text"][len(prompt):]
-    
+            prompt = self.pipeline.tokenizer.apply_chat_template(
+                    messages, 
+                    tokenize=False, 
+                    add_generation_prompt=True
+            )
+
+            outputs = self.pipeline(
+                prompt,
+                max_new_tokens=512,
+                eos_token_id=terminators,
+                do_sample=True,
+                temperature=0.6,
+                top_p=0.9,
+            )
+            output_text = outputs[0]["generated_text"][len(prompt):]
+            print(format_output(output_text))
+            return outputs[0]["generated_text"][len(prompt):]
+        
+        else:
+            # setup chat loop
+            chat_history = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": image_context_prompt},
+            ]
+
+            user_prompt = ""
+            while user_prompt != "exit":
+                prompt = self.pipeline.tokenizer.apply_chat_template(
+                    chat_history, 
+                    tokenize=False, 
+                    add_generation_prompt=True
+                )
+
+                outputs = self.pipeline(
+                    prompt,
+                    max_new_tokens=512,
+                    eos_token_id=terminators,
+                    do_sample=True,
+                    temperature=0.6,
+                    top_p=0.9,
+                )
+
+                output_text = outputs[0]["generated_text"][len(prompt):]
+                chat_history.append({"role": "assistant", "content": output_text})
+                print(format_output(output_text))
+
+                user_prompt = input("User: ")
+                print(f"\n{user_prompt}")
+                chat_history.append({"role": "user", "content": user_prompt})
+            return chat_history
+
+class CheXagentLanguageModelGeneration(GenerationEngine):
+
+    def __init__(self, processor, model, generation_config, device, dtype):
+        self.processor = processor
+        self.model = model
+        self.generation_config = generation_config
+        self.device = device
+        self.dtype = dtype
+
+    def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str] = None):
+        if user_prompt is None:
+            return RuntimeError("User prompt not provided - Chat mode CURRENTLY not supported with CheXagent Language Model")
+        inputs = self.processor(
+        images=None, text=f"[INST]{image_context_prompt}[/INST] USER: <s>{user_prompt} ASSISTANT: <s>", return_tensors="pt"
+        ).to(device=self.device)
+        output = self.model.generate(**inputs, generation_config=self.generation_config)[0]
+        response = self.processor.tokenizer.decode(output, skip_special_tokens=True)
+        print(response)
+        return response
+
 
 if __name__ == "__main__":
-    l3 = Llama3Generation()
     pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT)
-    chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
-    chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
+    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5)
+    l3 = Llama3Generation()
+    cheXagent_lm = CheXagentLanguageModelGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
 
-    with open(chexpert_test_csv_path, 'r') as f:
-        lines = f.readlines()
-        header = lines[0].split(",")[1:]
-        # print(header)
-        for i, line in enumerate(lines[1:]):
-            if i % 1000 == 0:
-                print(f"Collecting image {i}")
-
-            image_path = line.split(",")[0]
-            print(f"{image_path=}")
-            image_path = chexpert_test_path / image_path
-
-            l3.generate_report(image_path, prompt = None, pathology_detector=pathology_detector)
-            break
+    

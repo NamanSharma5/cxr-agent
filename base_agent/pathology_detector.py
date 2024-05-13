@@ -59,12 +59,12 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
         self.device = select_best_gpu()
         self.dtype = torch.float16
 
-        self.processor = AutoProcessor.from_pretrained("StanfordAIMI/CheXagent-8b", trust_remote_code=True)
+        self.processor = AutoProcessor.from_pretrained("StanfordAIMI/CheXagent-8b", trust_remote_code=True, revision="4934e91451945c8218c267aae9c34929a7677829")#, revision="4934e91451945c8218c267aae9c34929a7677829")
         self.model = AutoModelForCausalLM.from_pretrained(
-            "StanfordAIMI/CheXagent-8b", torch_dtype=self.dtype, trust_remote_code=True
+            "StanfordAIMI/CheXagent-8b", torch_dtype=self.dtype, trust_remote_code=True, revision="4934e91451945c8218c267aae9c34929a7677829"
         ).to(self.device)
         print("CheXagent Model loaded")
-        self.generation_config = GenerationConfig.from_pretrained("StanfordAIMI/CheXagent-8b")
+        self.generation_config = GenerationConfig.from_pretrained("StanfordAIMI/CheXagent-8b",revision="4934e91451945c8218c267aae9c34929a7677829")
         
         if pathologies == Pathologies.VINDR:
             self.pathologies = vindr_pathologies
