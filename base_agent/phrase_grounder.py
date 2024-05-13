@@ -11,8 +11,11 @@ from health_multimodal.vlp import ImageTextInferenceEngine
 from agent_utils import select_best_gpu
 from abc import ABC, abstractmethod
 from typing import Union
+from collections import defaultdict
 
 PathologyLocationConfidences = dict[str, float]
+
+DECIMALS = 2
 
 class PhraseGrounder(ABC):
 
@@ -67,7 +70,7 @@ class BioVilTPhraseGrounder(PhraseGrounder):
 
         locations = ["left", "right"]
 
-        pathologyLocationConfidences = {}
+        pathologyLocationConfidences = defaultdict(list)
 
         for pathology in pathologies:
             for location in locations:
@@ -76,9 +79,9 @@ class BioVilTPhraseGrounder(PhraseGrounder):
                 _ , mean_activation = self.get_top_values(similarity_map, return_mean = True)
 
                 if mean_activation > 0:
-                    pathologyLocationConfidences[phrase] = mean_activation
+                    pathologyLocationConfidences[pathology].append((location,round(mean_activation,DECIMALS)))
 
-        return pathologyLocationConfidences
+        return dict(pathologyLocationConfidences)
             
             
         
