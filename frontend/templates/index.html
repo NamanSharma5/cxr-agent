@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CXR Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>CXR Report</h1>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='placeholder.jpg') }}" alt="Placeholder Image">
+    </div>
+    <div>
+        <label for="reference-report">Indication/ Reference report</label>
+        <textarea id="reference-report"></textarea>
+    </div>
+    <div id="model-cards">
+        <div class="model-card">Output for Model 1</div>
+        <div class="model-card">Output for Model 2</div>
+        <div class="model-card">Output for Model 3</div>
+    </div>
+    <div>
+        <label>Rank Models (best first):</label>
+        <ul id="model-ranking" class="ranking-list"></ul>
+    </div>
+    <div>
+        <button id="restart-btn">Restart</button>
+        <button id="next-image-btn">Next Image</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
