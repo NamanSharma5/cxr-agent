@@ -37,27 +37,12 @@ textarea {
     text-align: left;
 }
 
-.ranking-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 25%;
-}
+.ranking-list { }
 
 .ranking-list li {
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-bottom: 5px;
     cursor: move;
 }
 
-.ranking-list li.dragging {
-    background-color: #333;
-    color: #fff;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+.ranking-list .sortable-ghost {
+    opacity: 0.4;
 }

@@ -2,30 +2,46 @@
 <html>
 <head>
     <title>CXR Report</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>CXR Report</h1>
-    <div class="image-container">
-        <img src="{{ url_for('static', filename='placeholder.jpg') }}" alt="Placeholder Image">
+    <div class="container mt-5">
+        <h1 class="text-center">CXR Report</h1>
+        <div class="image-container my-4">
+            <img src="" class="img-fluid" alt="CXR Image">
+        </div>
+        <div class="form-group">
+            <label for="reference-report">Indication/ Reference report</label>
+            <textarea id="reference-report" class="form-control"></textarea>
+        </div>
+        <div id="model-cards" class="card-deck">
+            <div class="model-card card">
+                <div class="card-body">
+                    Output for Model 1
+                </div>
+            </div>
+            <div class="model-card card">
+                <div class="card-body">
+                    Output for Model 2
+                </div>
+            </div>
+            <div class="model-card card">
+                <div class="card-body">
+                    Output for Model 3
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            <label>Rank Models (best first):</label>
+            <ul id="model-ranking" class="ranking-list list-group"></ul>
+        </div>
+        <div>
+            <button id="restart-btn" class="btn btn-danger mr-2">Restart</button>
+            <button id="next-image-btn" class="btn btn-primary">Next Image</button>
+        </div>
     </div>
-    <div>
-        <label for="reference-report">Indication/ Reference report</label>
-        <textarea id="reference-report"></textarea>
-    </div>
-    <div id="model-cards">
-        <div class="model-card">Output for Model 1</div>
-        <div class="model-card">Output for Model 2</div>
-        <div class="model-card">Output for Model 3</div>
-    </div>
-    <div>
-        <label>Rank Models (best first):</label>
-        <ul id="model-ranking" class="ranking-list"></ul>
-    </div>
-    <div>
-        <button id="restart-btn">Restart</button>
-        <button id="next-image-btn">Next Image</button>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
