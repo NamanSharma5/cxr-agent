@@ -30,7 +30,7 @@ class PhraseGrounder(ABC):
 
 class BioVilTPhraseGrounder(PhraseGrounder):
 
-    def __init__(self, detection_threshold = 0.25, top_n_pixels = 25):
+    def __init__(self, detection_threshold = 0.25, top_n_pixels = 25, device = None):
         self.detection_threshold = detection_threshold
         self.top_n_pixels = top_n_pixels
 
@@ -38,7 +38,11 @@ class BioVilTPhraseGrounder(PhraseGrounder):
         self.image_inference = get_image_inference(ImageModelType.BIOVIL_T)  
         self.image_text_inference_engine = ImageTextInferenceEngine(image_inference_engine=self.image_inference, text_inference_engine=self.text_inference)
         
-        self.device = select_best_gpu()
+        if device is None:
+            self.device = select_best_gpu()
+        else:
+            self.device = device
+            
         self.image_text_inference_engine.to(self.device)
 
     def get_similiarity_map(self, image_path: str, phrase: str):

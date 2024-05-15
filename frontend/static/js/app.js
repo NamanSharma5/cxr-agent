@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function fetchNextImage() {
-        // first clear the model outputs
-        modelHeaders.forEach(header => header.textContent = '');
+        // first clear the model outputs (i.e. the content of model cards)
+        modelCards.forEach(card => card.textContent = '');
         fetch('/next_image')
             .then(response => response.json())
             .then(data => updateImageAndReport(data))

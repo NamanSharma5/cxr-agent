@@ -7,8 +7,7 @@ import json
 import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
-
+import time
 
 # Get the current script's directory
 current_dir = Path(__file__).resolve().parent
@@ -38,9 +37,11 @@ random.seed(42)
 
 def initialise_models():
     global pathology_detector, phrase_grounder, l3, cheXagent_lm, cheXagent_e2e
-    pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT)
-    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5)
-    l3 = Llama3Generation()
+    device = "cuda:1"
+
+    pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=device)
+    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5, device = device)
+    l3 = Llama3Generation(device = device)
     cheXagent_lm = CheXagentLanguageModelGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
     cheXagent_e2e = CheXagentEndToEndGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
 
@@ -75,9 +76,16 @@ def read_data_file(sample_random = True, no_of_scans = 50):
     return subjects
 
 
-def get_model_outputs(image_path: Path):
+def get_model_outputs(image_path: Path, without_models= False):
     global model_outputs
     user_prompt = "Write a radiologist's report for the scan"
+    start_time = time.time()
+    
+    if without_models:
+        model_outputs['chexagent'] = "This is the output of CheXagent"
+        model_outputs['llama3_agent'] = "This is the output of Llama3"
+        model_outputs['chexagent_agent'] = "This is the output of CheXagent Agent"
+        return model_outputs
 
     # Define tasks to run in parallel
     def run_contextualise_model():
@@ -85,40 +93,43 @@ def get_model_outputs(image_path: Path):
             image_path=image_path,
             pathology_detector=pathology_detector,
             phrase_grounder=phrase_grounder,
-            examples=False
+            examples=False,
+            prompt_for_chexagent_lm_output=user_prompt
         )
 
+        # Wait for GenerationEngine.contextualise_model to finish
+    system_prompt, image_context_prompt, chexagent_e2e = GenerationEngine.contextualise_model(
+        image_path=image_path,
+        pathology_detector=pathology_detector,
+        phrase_grounder=phrase_grounder,
+        examples=False,
+        prompt_for_chexagent_lm_output=user_prompt
+    )
+
+    model_outputs['chexagent'] = chexagent_e2e
+
+    # def run_chexagent_e2e(system_prompt, image_context_prompt):
+    #     return cheXagent_e2e.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt, image_path=image_path)
+    
     def run_chexagent_lm(system_prompt, image_context_prompt):
         return cheXagent_lm.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt)
-
-    def run_chexagent_e2e(system_prompt, image_context_prompt):
-        return cheXagent_e2e.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt, image_path=image_path)
 
     def run_llama3_agent(system_prompt, image_context_prompt):
         return l3.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt)
 
-    # Use ThreadPoolExecutor to run tasks in parallel
-    with ThreadPoolExecutor() as executor:
-        # Step 1: Run GenerationEngine.contextualise_model and cheXagent_lm in parallel
-        future_contextualise_model = executor.submit(run_contextualise_model)
-        future_chexagent_lm = executor.submit(run_chexagent_lm, future_contextualise_model.result()[0], future_contextualise_model.result()[1])
+    with ThreadPoolExecutor() as executor:       
 
-        # Wait for GenerationEngine.contextualise_model to finish
-        system_prompt, image_context_prompt = future_contextualise_model.result()
-
-        # Get the result of cheXagent_lm
-        model_outputs['chexagent_agent'] = future_chexagent_lm.result()
-
-        # Step 2: Run cheXagent_e2e and l3 in parallel
-        future_chexagent_e2e = executor.submit(run_chexagent_e2e, system_prompt, image_context_prompt)
+        # Run cheXagent_lm and l3 in parallel
+        future_chexagent_lm = executor.submit(run_chexagent_lm, system_prompt, image_context_prompt)
         future_llama3_agent = executor.submit(run_llama3_agent, system_prompt, image_context_prompt)
 
-        for future in as_completed([future_chexagent_e2e, future_llama3_agent]):
-            if future == future_chexagent_e2e:
-                model_outputs['chexagent'] = future.result()
+        for future in as_completed([future_chexagent_lm, future_llama3_agent]):
+            if future == future_chexagent_lm:
+                model_outputs['chexagent_agent'] = future.result()
             else:
                 model_outputs['llama3_agent'] = future.result()
-
+    
+    print(f"Time taken: {time.time() - start_time}")
     return model_outputs
 
 
@@ -174,7 +185,7 @@ def get_model_outputs_route():
     image_path = subject_to_image_path[subject]
 
     # Fetch model outputs
-    model_outputs = get_model_outputs(image_path)
+    model_outputs = get_model_outputs(image_path, without_models=False)
     
     # Randomly assign model outputs to display spaces
     model_names = list(model_outputs.keys())

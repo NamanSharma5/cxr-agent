@@ -7,6 +7,7 @@ import torch
 from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import Optional
+from PIL import Image
 from my_secrets import LLAMA3_INSTRUCT_ACCESS_TOKEN
 from agent_utils import select_best_gpu
 
@@ -19,16 +20,19 @@ class GenerationEngine(ABC):
 
 
     @abstractmethod
-    def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str] = None):
+    def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str] = None, image_path = None):
         pass
 
     
-    def contextualise_model(image_path: Path, pathology_detector: PathologyDetector, phrase_grounder: Optional[PhraseGrounder] = None, examples = True) -> str:
+    def contextualise_model(image_path: Path, pathology_detector: PathologyDetector, phrase_grounder: Optional[PhraseGrounder] = None, examples = True,  prompt_for_chexagent_lm_output = None) -> str:
         
         pathology_detection_threshold = 0.5
 
         if pathology_detector is not None:
-            pathology_confidences = pathology_detector.detect_pathologies(image_path, threshold = pathology_detection_threshold)
+            if prompt_for_chexagent_lm_output is not None:
+                pathology_confidences, lm_output = pathology_detector.detect_pathologies(image_path, threshold = pathology_detection_threshold, prompt_for_chexagent_lm_output = prompt_for_chexagent_lm_output)
+            else:
+                pathology_confidences = pathology_detector.detect_pathologies(image_path, threshold = pathology_detection_threshold)
             # print(pathology_confidences)
         else:
             return RuntimeError("Pathology detector not provided")
@@ -40,7 +44,7 @@ class GenerationEngine(ABC):
             return system_prompt, image_context_prompt
         
 
-        system_prompt = """You are a helpful assistant, specialising in radiology and interpreting Chest X-rays. Please answer CONCISELY and professionally as a radiologist would. You should not be confident unless the data is confident. Use language that reflects the confidence of the data."""
+        system_prompt = """You are a helpful assistant, specialising in radiology and interpreting Chest X-rays. You MUST answer CONCISELY and professionally as a radiologist would. You should not be confident unless the data is confident. Use language that reflects the confidence of the data."""
         image_context_prompt_final_part = """
             This understanding is crucial for accurately processing and responding to queries on the chest X-ray analysis. Structure your answers based on confidence and pathologies.
             Double check before you submit your response to ensure you have factored in all the data and followed my instructions carefully.
@@ -93,6 +97,9 @@ class GenerationEngine(ABC):
             It is important to factor medical knowledge and the specifics of each case, if supplied, into your responses. For example, pathologies located on both sides are called bilateral. Heart related observations are usually on the left/ middle.
             {image_context_prompt_final_part}
             """
+        
+        if prompt_for_chexagent_lm_output is not None:
+            return system_prompt, image_context_prompt, lm_output
             
         return system_prompt, image_context_prompt
 
@@ -100,16 +107,19 @@ class GenerationEngine(ABC):
 
 class Llama3Generation(GenerationEngine):
 
-    def __init__(self):
+    def __init__(self, device = None):
         self.model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
-
+        if device is None:
+            device = select_best_gpu()
+            
         self.pipeline = transformers.pipeline(
             "text-generation",
             model=self.model_id,
             model_kwargs={"torch_dtype": torch.bfloat16},
-            device_map= select_best_gpu() ,
+            device_map= device ,
             token=LLAMA3_INSTRUCT_ACCESS_TOKEN,
         )
+  
 
     def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str] = None):
         def format_output(output_text: str) -> str:
@@ -141,7 +151,7 @@ class Llama3Generation(GenerationEngine):
                 top_p=0.9,
             )
             output_text = outputs[0]["generated_text"][len(prompt):]
-            print(format_output(output_text))
+            # print(format_output(output_text))
             return outputs[0]["generated_text"][len(prompt):]
         
         else:
@@ -170,10 +180,10 @@ class Llama3Generation(GenerationEngine):
 
                 output_text = outputs[0]["generated_text"][len(prompt):]
                 chat_history.append({"role": "assistant", "content": output_text})
-                print(format_output(output_text))
+                # print(format_output(output_text))
 
                 user_prompt = input("User: ")
-                print(f"\n{user_prompt}")
+                # print(f"\n{user_prompt}")
                 chat_history.append({"role": "user", "content": user_prompt})
             return chat_history
 
@@ -192,16 +202,27 @@ class CheXagentLanguageModelGeneration(GenerationEngine):
         inputs = self.processor(
         images=None, text=f"[INST]{image_context_prompt}[/INST] USER: <s>{user_prompt} ASSISTANT: <s>", return_tensors="pt"
         ).to(device=self.device)
+        output = self.model.generate(**inputs, generation_config=self.generation_config,generate_written_output = True)[0]
+        response = self.processor.tokenizer.decode(output, skip_special_tokens=True)
+        # print(response)
+        return response
+    
+
+class CheXagentEndToEndGeneration(GenerationEngine):
+
+    def __init__(self, processor, model, generation_config, device, dtype):
+        self.processor = processor
+        self.model = model
+        self.generation_config = generation_config
+        self.device = device
+        self.dtype = dtype
+
+    def generate_model_output(self, system_prompt: str , image_context_prompt: str, user_prompt:Optional[str],image_path: Path):
+        images = [Image.open(image_path).convert("RGB")]
+        inputs = self.processor(
+            images=images, text=f" USER: <s>{user_prompt} ASSISTANT: <s>", return_tensors="pt"
+        ).to(device=self.device, dtype=self.dtype)
         output = self.model.generate(**inputs, generation_config=self.generation_config)[0]
         response = self.processor.tokenizer.decode(output, skip_special_tokens=True)
-        print(response)
+        # print(response)
         return response
-
-
-if __name__ == "__main__":
-    pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT)
-    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5)
-    l3 = Llama3Generation()
-    cheXagent_lm = CheXagentLanguageModelGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
-
-    
