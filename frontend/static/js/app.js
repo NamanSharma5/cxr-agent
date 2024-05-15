@@ -1,3 +1,7 @@
+let currentSubject = null;
+let model_name_to_id = null;
+let model_id_to_name = null;
+
 document.addEventListener('DOMContentLoaded', function() {
     const modelRanking = document.getElementById('model-ranking');
     const restartBtn = document.getElementById('restart-btn');
@@ -6,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const referenceReport = document.getElementById('reference-report');
     const modelCards = document.querySelectorAll('.model-card .card-body');
     const modelHeaders = document.querySelectorAll('.model-card .card-header');
+    const abnormalBtn = document.getElementById('abnormal-btn');
+
 
     // Initialize the ranking list with model names
     const modelNames = ['Model 1', 'Model 2', 'Model 3'];
@@ -22,12 +28,55 @@ document.addEventListener('DOMContentLoaded', function() {
         ghostClass: 'sortable-ghost'
     });
 
+    function uploadMetrics() {
+        const ranking = Array.from(modelRanking.children).map(item => item.textContent);
+        const abnormal = abnormalBtn.classList.contains('btn-danger');
+        
+        let model_metrics = {};
+
+        // Populate model metrics
+        ranking.forEach((model_id, index) => {
+            model_name = model_id_to_name[model_id];
+            model_metrics[model_name] = {
+                rank: index + 1
+            };
+        });
+
+        // Add metadata information
+        const metadata = {
+            subject: currentSubject,
+            abnormal: abnormal
+        };
+
+        model_metrics['metadata'] = metadata;
+
+        // Logging for debugging, replace with API call or other logic as needed
+        console.log('Model Metrics:', model_metrics);
+
+        fetch('/upload_metrics', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(model_metrics)
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log('Metrics uploaded successfully.');
+            } else {
+                console.error('Error uploading metrics.');
+            }
+        })
+        .catch(error => console.error('Error uploading metrics:', error));
+    }
+
     function updateImageAndReport(data) {
         if (data.image_data) {
             imageContainer.src = `data:image/jpeg;base64,${data.image_data}`;
         }
         referenceReport.textContent = data.report; // Set the text content of the div
-        
+        currentSubject = data.subject;
+
         // Fetch model outputs asynchronously
         fetch('/get_model_outputs', {
             method: 'POST',
@@ -42,11 +91,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateModelOutputs(data) {
+        model_name_to_id = data.model_name_to_id; // store the model name to id mapping
+        model_id_to_name = data.model_id_to_name; // store the model id to name mapping
+        
         // Update model outputs
         if (data.model_outputs) {
-            const modelMapping = data.model_mapping;
+            const model_name_to_id = data.model_name_to_id;
             Object.keys(data.model_outputs).forEach(modelKey => {
-                const modelPosition = modelMapping[modelKey];
+                const modelPosition = model_name_to_id[modelKey];
                 const modelIndex = modelNames.indexOf(modelPosition);
                 if (modelIndex !== -1) {
                     modelHeaders[modelIndex].textContent = modelPosition; // Set the model name
@@ -56,7 +108,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function fetchNextImage() {
+    function fetchNextImage(send_metrics_to_server = true) {
+        if (send_metrics_to_server) {
+            uploadMetrics();
+        }
         // first clear the model outputs (i.e. the content of model cards)
         modelCards.forEach(card => card.textContent = '');
         fetch('/next_image')
@@ -64,6 +119,21 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => updateImageAndReport(data))
             .catch(error => console.error('Error fetching the next image:', error));
     }
+    
+
+    abnormalBtn.addEventListener('click', function() {
+      if (abnormalBtn.classList.contains('btn-danger')) {
+        abnormalBtn.classList.remove('btn-danger');
+        abnormalBtn.classList.add('btn-light');
+        abnormalBtn.classList.add('text-danger');
+        abnormalBtn.textContent = 'Normal';
+      } else {
+        abnormalBtn.classList.remove('btn-light');
+        abnormalBtn.classList.remove('text-danger');
+        abnormalBtn.classList.add('btn-danger');
+        abnormalBtn.textContent = 'Abnormal';
+      }
+    });
 
     nextImageBtn.addEventListener('click', fetchNextImage);
 
@@ -80,5 +150,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Fetch the first image and report initially
-    fetchNextImage();
+    fetchNextImage(send_metrics_to_server = false);
 });
