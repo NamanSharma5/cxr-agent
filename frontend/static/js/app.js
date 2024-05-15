@@ -27,18 +27,23 @@ document.addEventListener('DOMContentLoaded', function() {
             imageContainer.src = `data:image/jpeg;base64,${data.image_data}`;
         }
         referenceReport.textContent = data.report; // Set the text content of the div
-        
-        // Fetch model outputs asynchronously
-        fetch('/get_model_outputs', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ subject: data.subject })
-        })
-        .then(response => response.json())
-        .then(outputData => updateModelOutputs(outputData))
-        .catch(error => console.error('Error fetching model outputs:', error));
+
+        // Fetch model outputs asynchronously if not included
+        if (!data.model_outputs) {
+            fetch('/get_model_outputs', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ subject: data.subject })
+            })
+            .then(response => response.json())
+            .then(outputData => updateModelOutputs(outputData))
+            .catch(error => console.error('Error fetching model outputs:', error));
+        } else {
+            updateModelOutputs({
+                model_outputs: data.model_outputs,
+                model_mapping: data.model_mapping
+            });
+        }
     }
 
     function updateModelOutputs(data) {
