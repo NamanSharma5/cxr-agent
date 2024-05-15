@@ -14,28 +14,28 @@
         <div class="reference-report-container">
             <div id="reference-report" class="reference-report"></div>
         </div>
-        <div id="model-cards" class="card-deck my-4">
-            <div class="model-card card">
-                <div class="card-header">Model 1</div>
-                <div class="card-body">Output for Model 1</div>
-            </div>
-            <div class="model-card card">
-                <div class="card-header">Model 2</div>
-                <div class="card-body">Output for Model 2</div>
-            </div>
-            <div class="model-card card">
-                <div class="card-header">Model 3</div>
-                <div class="card-body">Output for Model 3</div>
-            </div>
+    </div>
+    <div id="model-cards" class="card-deck my-4">
+        <div class="model-card card">
+            <div class="card-header">Model 1</div>
+            <div class="card-body">Output for Model 1</div>
         </div>
-        <div class="my-4">
-            <label>Rank Models (best first):</label>
-            <ul id="model-ranking" class="ranking-list list-group"></ul>
+        <div class="model-card card">
+            <div class="card-header">Model 2</div>
+            <div class="card-body">Output for Model 2</div>
         </div>
-        <div>
-            <button id="restart-btn" class="btn btn-danger mr-2">Restart</button>
-            <button id="next-image-btn" class="btn btn-primary">Next Image</button>
+        <div class="model-card card">
+            <div class="card-header">Model 3</div>
+            <div class="card-body">Output for Model 3</div>
         </div>
+    </div>
+    <div class="my-4">
+        <label>Rank Models (best first):</label>
+        <ul id="model-ranking" class="ranking-list list-group"></ul>
+    </div>
+    <div>
+        <button id="restart-btn" class="btn btn-danger mr-2">Restart</button>
+        <button id="next-image-btn" class="btn btn-primary">Next Image</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>

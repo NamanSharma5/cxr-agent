@@ -22,15 +22,20 @@ h1 {
 
 .reference-report-container {
     margin-top: 20px;
-    text-align: left;
+    text-align: left; /* Center the container */
+    display: flex;
+    justify-content: center; /* Center the report within the container */
 }
 
 .reference-report {
     background-color: #f8f9fa;
-    padding: 15px;
+    padding: 15px 20px; /* Add padding to the left and right */
     border-radius: 5px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     white-space: pre-wrap; /* Preserve line breaks and whitespace */
+    display: inline-block; /* Ensure the width is proportional to its content */
+    max-width: 100%; /* Prevent overflow on smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 #model-cards {
@@ -41,8 +46,8 @@ h1 {
 }
 
 .model-card {
-    flex: 1 1 45%; /* Adjust this value to control the width of the cards */
-    max-width: 45%; /* Ensure cards don't exceed this width */
+    flex: 1 1 90%; /* Adjust this value to control the width of the cards */
+    max-width: 85%; /* Ensure cards don't exceed this width */
     padding: 20px;
     margin: 10px;
     border: 1px solid #ccc;

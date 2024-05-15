@@ -31,14 +31,16 @@ current_line_index = 0
 subject_to_report = {}
 subject_to_image_path = {}
 
+WITHOUT_MODELS = False
 model_outputs = {}
 
 random.seed(42)
 
-def initialise_models():
+def initialise_models(without_models=WITHOUT_MODELS):
     global pathology_detector, phrase_grounder, l3, cheXagent_lm, cheXagent_e2e
+    if without_models:
+        return
     device = "cuda:1"
-
     pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=device)
     phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5, device = device)
     l3 = Llama3Generation(device = device)
@@ -76,15 +78,15 @@ def read_data_file(sample_random = True, no_of_scans = 50):
     return subjects
 
 
-def get_model_outputs(image_path: Path, without_models= False):
+def get_model_outputs(image_path: Path, without_models= WITHOUT_MODELS):
     global model_outputs
     user_prompt = "Write a radiologist's report for the scan"
     start_time = time.time()
     
     if without_models:
-        model_outputs['chexagent'] = "This is the output of CheXagent"
-        model_outputs['llama3_agent'] = "This is the output of Llama3"
-        model_outputs['chexagent_agent'] = "This is the output of CheXagent Agent"
+        model_outputs['chexagent'] = "This is the output of CheXagent: \n Chest X-ray: Lungs clear, no masses or infiltrates. Mediastinum normal. Abdomen: Liver, spleen, kidneys unremarkable. No bowel obstruction or free fluid. Pelvis: Bones and soft tissues normal. Extremities: No fractures, dislocations, or joint effusions. "
+        model_outputs['llama3_agent'] = "This is the output of Llama3: \n Chest X-ray: Lungs clear with normal air bronchograms. No airspace disease, infiltrates, consolidation, or masses identified. Mediastinum unremarkable, aortic knob and esophagus normal caliber. Abdomen: Liver, spleen, and kidneys appear normal in size, shape, and density. No free fluid or bowel obstruction visualized. Pelvis: Bony structures demonstrate no fractures or dislocations. Urinary bladder distended normally, no calculi. Extremities: Visualized bones (e.g., femurs) demonstrate normal alignment and integrity. No joint effusions or significant osteoarthritis appreciated. "
+        model_outputs['chexagent_agent'] = "This is the output of CheXagent Agent: \n"
         return model_outputs
 
     # Define tasks to run in parallel
@@ -185,7 +187,7 @@ def get_model_outputs_route():
     image_path = subject_to_image_path[subject]
 
     # Fetch model outputs
-    model_outputs = get_model_outputs(image_path, without_models=False)
+    model_outputs = get_model_outputs(image_path, without_models=True)
     
     # Randomly assign model outputs to display spaces
     model_names = list(model_outputs.keys())
