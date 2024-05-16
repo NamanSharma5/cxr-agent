@@ -25,20 +25,19 @@ app = Flask(__name__)
 
 # Directory prefix for the images
 IMAGE_DIR_PREFIX = Path("/vol/biodata/data/chest_xray/mimic-cxr-jpg/files/")
-# To keep track of the current line
-current_line_index = 0
+current_subject_index = 0
 
 subject_to_report = {}
 subject_to_image_path = {}
 
-WITHOUT_MODELS = False
+WITHOUT_MODELS = True
 model_outputs = {}
 
 random.seed(42)
 
-def initialise_models(without_models=WITHOUT_MODELS):
+def initialise_models():
     global pathology_detector, phrase_grounder, l3, cheXagent_lm, cheXagent_e2e
-    if without_models:
+    if WITHOUT_MODELS:
         return
     device = "cuda:1"
     pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=device)
@@ -78,28 +77,17 @@ def read_data_file(sample_random = True, no_of_scans = 50):
     return subjects
 
 
-def get_model_outputs(image_path: Path, without_models= WITHOUT_MODELS):
+def get_model_outputs(image_path: Path):
     global model_outputs
     user_prompt = "Write a radiologist's report for the scan"
     start_time = time.time()
     
-    if without_models:
+    if WITHOUT_MODELS:
         model_outputs['chexagent'] = "This is the output of CheXagent: \n Chest X-ray: Lungs clear, no masses or infiltrates. Mediastinum normal. Abdomen: Liver, spleen, kidneys unremarkable. No bowel obstruction or free fluid. Pelvis: Bones and soft tissues normal. Extremities: No fractures, dislocations, or joint effusions. "
         model_outputs['llama3_agent'] = "This is the output of Llama3: \n Chest X-ray: Lungs clear with normal air bronchograms. No airspace disease, infiltrates, consolidation, or masses identified. Mediastinum unremarkable, aortic knob and esophagus normal caliber. Abdomen: Liver, spleen, and kidneys appear normal in size, shape, and density. No free fluid or bowel obstruction visualized. Pelvis: Bony structures demonstrate no fractures or dislocations. Urinary bladder distended normally, no calculi. Extremities: Visualized bones (e.g., femurs) demonstrate normal alignment and integrity. No joint effusions or significant osteoarthritis appreciated. "
         model_outputs['chexagent_agent'] = "This is the output of CheXagent Agent: \n"
         return model_outputs
 
-    # Define tasks to run in parallel
-    def run_contextualise_model():
-        return GenerationEngine.contextualise_model(
-            image_path=image_path,
-            pathology_detector=pathology_detector,
-            phrase_grounder=phrase_grounder,
-            examples=False,
-            prompt_for_chexagent_lm_output=user_prompt
-        )
-
-        # Wait for GenerationEngine.contextualise_model to finish
     system_prompt, image_context_prompt, chexagent_e2e = GenerationEngine.contextualise_model(
         image_path=image_path,
         pathology_detector=pathology_detector,
@@ -110,9 +98,6 @@ def get_model_outputs(image_path: Path, without_models= WITHOUT_MODELS):
 
     model_outputs['chexagent'] = chexagent_e2e
 
-    # def run_chexagent_e2e(system_prompt, image_context_prompt):
-    #     return cheXagent_e2e.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt, image_path=image_path)
-    
     def run_chexagent_lm(system_prompt, image_context_prompt):
         return cheXagent_lm.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt)
 
@@ -138,7 +123,12 @@ def get_model_outputs(image_path: Path, without_models= WITHOUT_MODELS):
 def get_random_model_mapping(models):
     shuffled_models = models[:]
     random.shuffle(shuffled_models)
-    return {model: f"Model {i+1}" for i, model in enumerate(shuffled_models)}
+    # return map in both directions
+    model_name_to_id = {model: f"Model {i+1}" for i, model in enumerate(shuffled_models)}
+    model_id_to_name = {f"Model {i+1}": model for i, model in enumerate(shuffled_models)}
+    return model_name_to_id, model_id_to_name
+
+
 
 ### SERVER INITIALIZATION ###
 
@@ -151,16 +141,17 @@ def index():
 
 @app.route('/restart', methods=['POST'])
 def restart():
-    global current_line_index
-    current_line_index = 0
+    global current_subject_index
+    current_subject_index = 0
     return jsonify(success=True)
 
 @app.route('/next_image', methods=['GET'])
 def next_image():
-    global current_line_index
-    if current_line_index < len(subjects):
-        subject = subjects[current_line_index]
-        current_line_index += 1
+    global current_subject_index
+    if current_subject_index < len(subjects):
+        subject = subjects[current_subject_index]
+        print(f"Current subject: {subject}")
+        current_subject_index += 1
 
         result = {}
         global subject_to_report, subject_to_image_path
@@ -169,6 +160,7 @@ def next_image():
         
         # Convert image to base64
         full_image_path = subject_to_image_path[subject]
+        print(full_image_path)
         with open(full_image_path, "rb") as image_file:
             encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
         result['image_data'] = encoded_string
@@ -187,17 +179,24 @@ def get_model_outputs_route():
     image_path = subject_to_image_path[subject]
 
     # Fetch model outputs
-    model_outputs = get_model_outputs(image_path, without_models=True)
+    model_outputs = get_model_outputs(image_path)
     
     # Randomly assign model outputs to display spaces
     model_names = list(model_outputs.keys())
-    model_mapping = get_random_model_mapping(model_names)
+    model_name_to_id, model_id_to_name = get_random_model_mapping(model_names)
     
     result = {
         'model_outputs': model_outputs,
-        'model_mapping': model_mapping
+        'model_name_to_id': model_name_to_id,
+        'model_id_to_name': model_id_to_name
     }
     return jsonify(result)
+
+@app.route('/upload_metrics', methods=['POST'])
+def upload_metrics():
+    data = request.get_json()
+    print(data)
+    return jsonify(success=True)
 
 
 if __name__ == '__main__':
