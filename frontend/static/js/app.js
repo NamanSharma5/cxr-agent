@@ -28,6 +28,25 @@ document.addEventListener('DOMContentLoaded', function() {
         ghostClass: 'sortable-ghost'
     });
 
+    // Add metric options dynamically under each model card
+    // modelCards.forEach((card, index) => {
+    //     const metricsDiv = card.querySelector('.metrics');
+    //     const modelNumber = index + 1;
+    //     const metricHtml = `
+    //         <div class="rubric-score">
+    //             <label>Rubric score:</label>
+    //             <div class="rubric-options">
+    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="A2"> A2</label>
+    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="A1"> A1</label>
+    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="C"> C</label>
+    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="B1"> B1</label>
+    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="B2"> B2</label>
+    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="X"> X</label>
+    //             </div>
+    //         </div>`;
+    //     metricsDiv.innerHTML = metricHtml;
+    // });
+
     function uploadMetrics() {
         const ranking = Array.from(modelRanking.children).map(item => item.textContent);
         const abnormal = abnormalBtn.classList.contains('btn-danger');
@@ -135,7 +154,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    nextImageBtn.addEventListener('click', fetchNextImage);
+    nextImageBtn.addEventListener('click', function() {
+        nextImageBtn.disabled = true; // Disable the button
+        fetchNextImage();
+        nextImageBtn.disabled = false; // Enable the button after fetchNextImage has finished
+    });
 
     restartBtn.addEventListener('click', function() {
         fetch('/restart', { method: 'POST' })

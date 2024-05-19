@@ -29,32 +29,49 @@ current_subject_index = 0
 
 subject_to_report = {}
 subject_to_image_path = {}
+subject_to_pathologies = {} # Only for CheXpert
 
-WITHOUT_MODELS = True
+
+CHEXPERT = False
+USE_STORED_REPORTS = False
+DEVICE = None #"cuda:1"   
 model_outputs = {}
 
-random.seed(42)
+# random.seed(42)
+random.seed(50)
 
 def initialise_models():
     global pathology_detector, phrase_grounder, l3, cheXagent_lm, cheXagent_e2e
-    if WITHOUT_MODELS:
+    if USE_STORED_REPORTS:
         return
-    device = "cuda:1"
     pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=device)
-    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5, device = device)
-    l3 = Llama3Generation(device = device)
+    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5, device = DEVICE)
+    l3 = Llama3Generation(device = DEVICE)
     cheXagent_lm = CheXagentLanguageModelGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
     cheXagent_e2e = CheXagentEndToEndGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
 
 
 # Read the data file into a list of dictionaries
-def read_data_file(sample_random = True, no_of_scans = 50):
+def read_data_file(sample_random = True, no_of_scans = 50, cheXpert = CHEXPERT):
 
-    mimic_cxr_path = Path('/vol/biodata/data/chest_xray/mimic-cxr')
-    mimic_cxr_jpg_path = Path('/vol/biodata/data/chest_xray/mimic-cxr-jpg')
-    subject_with_single_scan_no_prior_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/subjects_with_single_scan_no_prior.txt")
-    
-    subjects = subject_with_single_scan_no_prior_path.read_text().splitlines()
+    if cheXpert:
+        cheXpert_small_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/test")
+        cheXpert_test_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test")
+
+        cheXpert_subjects = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/cheXpert_test_written_pathologies.csv")
+        subjects = []
+
+        for line in cheXpert_subjects.read_text().splitlines():
+            subject = line.split(",")[0]
+            subjects.append(subject)
+            subject_to_pathologies[subject] = line.split(",")[1:]         
+        
+    else:
+        mimic_cxr_path = Path('/vol/biodata/data/chest_xray/mimic-cxr')
+        mimic_cxr_jpg_path = Path('/vol/biodata/data/chest_xray/mimic-cxr-jpg')
+        subject_with_single_scan_no_prior_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/subjects_with_single_scan_no_prior.txt")
+        
+        subjects = subject_with_single_scan_no_prior_path.read_text().splitlines()
 
     if sample_random:
         subjects = random.sample(subjects, no_of_scans)
@@ -62,17 +79,22 @@ def read_data_file(sample_random = True, no_of_scans = 50):
         subjects = subjects[:no_of_scans]
 
     for subject in subjects:
-            subject_path = mimic_cxr_path/"files"/ f"p{subject[:2]}/p{subject}"
-            report_path = list(subject_path.glob('*.txt'))[0]
-            report = report_path.read_text()
+            if cheXpert:
+                subject_path_jpg = cheXpert_test_path / subject
+                subject_to_report[subject] = subject_to_pathologies[subject]
+                subject_to_image_path[subject] = subject_path_jpg
+            else:
+                subject_path = mimic_cxr_path/"files"/ f"p{subject[:2]}/p{subject}"
+                report_path = list(subject_path.glob('*.txt'))[0]
+                report = report_path.read_text()
 
-            subject_path_jpg = mimic_cxr_jpg_path/"files"/ f"p{subject[:2]}/p{subject}"
-            
-            study_folder = list(subject_path_jpg.glob('*'))[0]
-            jpg_file = list(study_folder.glob('*.jpg'))[0]
-            
-            subject_to_report[subject] = report
-            subject_to_image_path[subject] = jpg_file
+                subject_path_jpg = mimic_cxr_jpg_path/"files"/ f"p{subject[:2]}/p{subject}"
+                
+                study_folder = list(subject_path_jpg.glob('*'))[0]
+                jpg_file = list(study_folder.glob('*.jpg'))[0]
+                
+                subject_to_report[subject] = report
+                subject_to_image_path[subject] = jpg_file
 
     return subjects
 
@@ -82,7 +104,7 @@ def get_model_outputs(image_path: Path):
     user_prompt = "Write a radiologist's report for the scan"
     start_time = time.time()
     
-    if WITHOUT_MODELS:
+    if USE_STORED_REPORTS:
         model_outputs['chexagent'] = "This is the output of CheXagent: \n Chest X-ray: Lungs clear, no masses or infiltrates. Mediastinum normal. Abdomen: Liver, spleen, kidneys unremarkable. No bowel obstruction or free fluid. Pelvis: Bones and soft tissues normal. Extremities: No fractures, dislocations, or joint effusions. "
         model_outputs['llama3_agent'] = "This is the output of Llama3: \n Chest X-ray: Lungs clear with normal air bronchograms. No airspace disease, infiltrates, consolidation, or masses identified. Mediastinum unremarkable, aortic knob and esophagus normal caliber. Abdomen: Liver, spleen, and kidneys appear normal in size, shape, and density. No free fluid or bowel obstruction visualized. Pelvis: Bony structures demonstrate no fractures or dislocations. Urinary bladder distended normally, no calculi. Extremities: Visualized bones (e.g., femurs) demonstrate normal alignment and integrity. No joint effusions or significant osteoarthritis appreciated. "
         model_outputs['chexagent_agent'] = "This is the output of CheXagent Agent: \n"
