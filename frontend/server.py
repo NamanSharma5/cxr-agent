@@ -29,11 +29,9 @@ current_subject_index = 0
 
 subject_to_report = {}
 subject_to_image_path = {}
-subject_to_pathologies = {} # Only for CheXpert
-
 
 CHEXPERT = False
-USE_STORED_REPORTS = False
+USE_STORED_REPORTS = True
 DEVICE = None #"cuda:1"   
 model_outputs = {}
 
@@ -52,38 +50,48 @@ def initialise_models():
 
 
 # Read the data file into a list of dictionaries
-def read_data_file(sample_random = True, no_of_scans = 50, cheXpert = CHEXPERT):
+def read_data_file(sample_random = False, no_of_scans = 50, cheXpert = CHEXPERT):
 
+    subjects = []
     if cheXpert:
         cheXpert_small_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/test")
         cheXpert_test_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test")
 
-        cheXpert_subjects = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/cheXpert_test_written_pathologies.csv")
-        subjects = []
+        cheXpert_subjects = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/evaluation_datasets/CheXpert/chexpert_test_random_written_pathologies")
 
         for line in cheXpert_subjects.read_text().splitlines():
             subject = line.split(",")[0]
             subjects.append(subject)
-            subject_to_pathologies[subject] = line.split(",")[1:]         
-        
+            subject_path_jpg = cheXpert_test_path / subject
+            subject_to_report[subject] = line.split(",")[1:]   
+            subject_to_image_path[subject] = subject_path_jpg      
+
+        return subjects
+    
     else:
         mimic_cxr_path = Path('/vol/biodata/data/chest_xray/mimic-cxr')
         mimic_cxr_jpg_path = Path('/vol/biodata/data/chest_xray/mimic-cxr-jpg')
-        subject_with_single_scan_no_prior_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/subjects_with_single_scan_no_prior.txt")
-        
-        subjects = subject_with_single_scan_no_prior_path.read_text().splitlines()
+        # subject_with_single_scan_no_prior_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/subjects_with_single_scan_no_prior.txt")
+        subjects_for_eval = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/evaluation_datasets/MIMIC-CXR/mimic_ii_subjects_for_eval.txt")
+        for line in subjects_for_eval.read_text().splitlines():
+            # two cases: 1) subject with single study 2) subject with multiple studies
+            if line[0] == "p":
+                parts = line.split("/")
+                subject = parts[0][1:] # remove the 'p' from the subject
+                subjects.append(subject) 
+                study = parts[1][1:]
 
-    if sample_random:
-        subjects = random.sample(subjects, no_of_scans)
-    else:
-        subjects = subjects[:no_of_scans]
+                subject_path = mimic_cxr_path/"files"/f"p{subject[:2]}"/f"p{subject}"
+                report_path = list(subject_path.glob(f"s{study}.txt"))[0]
+                report = report_path.read_text()
 
-    for subject in subjects:
-            if cheXpert:
-                subject_path_jpg = cheXpert_test_path / subject
-                subject_to_report[subject] = subject_to_pathologies[subject]
-                subject_to_image_path[subject] = subject_path_jpg
+                subject_path_jpg = mimic_cxr_jpg_path/"files"/f"p{subject[:2]}"/f"p{subject}"/f"s{study}"
+                jpg_file = list(subject_path_jpg.glob('*.jpg'))[0]
+
             else:
+                subject = line
+                subjects.append(subject)
+
                 subject_path = mimic_cxr_path/"files"/ f"p{subject[:2]}/p{subject}"
                 report_path = list(subject_path.glob('*.txt'))[0]
                 report = report_path.read_text()
@@ -93,10 +101,10 @@ def read_data_file(sample_random = True, no_of_scans = 50, cheXpert = CHEXPERT):
                 study_folder = list(subject_path_jpg.glob('*'))[0]
                 jpg_file = list(study_folder.glob('*.jpg'))[0]
                 
-                subject_to_report[subject] = report
-                subject_to_image_path[subject] = jpg_file
+            subject_to_report[subject] = report
+            subject_to_image_path[subject] = jpg_file
 
-    return subjects
+        return subjects
 
 
 def get_model_outputs(image_path: Path):
