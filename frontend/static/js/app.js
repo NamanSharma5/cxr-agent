@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Initialize the ranking list with model names
-    const modelNames = ['Model 1', 'Model 2', 'Model 3'];
+    const modelNames = ['Model 1', 'Model 2', 'Model 3','Model 4'];
     modelNames.forEach(name => {
         const item = document.createElement('li');
         item.textContent = name;
@@ -28,24 +28,63 @@ document.addEventListener('DOMContentLoaded', function() {
         ghostClass: 'sortable-ghost'
     });
 
-    // Add metric options dynamically under each model card
-    // modelCards.forEach((card, index) => {
-    //     const metricsDiv = card.querySelector('.metrics');
-    //     const modelNumber = index + 1;
-    //     const metricHtml = `
-    //         <div class="rubric-score">
-    //             <label>Rubric score:</label>
-    //             <div class="rubric-options">
-    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="A2"> A2</label>
-    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="A1"> A1</label>
-    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="C"> C</label>
-    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="B1"> B1</label>
-    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="B2"> B2</label>
-    //                 <label><input type="radio" name="rubric-model-${modelNumber}" value="X"> X</label>
-    //             </div>
-    //         </div>`;
-    //     metricsDiv.innerHTML = metricHtml;
-    // });
+
+    function addMetricsToCollect() {
+        const modelCards = document.querySelectorAll('.model-card .metrics');
+        modelCards.forEach((card, index) => {
+            const modelNumber = index + 1;
+            const metricHtml = `
+                <div class="divider"></div>
+                <div class="metrics-container">
+                
+                    <div class="metric-title">Rubric Score</div>
+                    <div class="rubric-score">
+                        <div class="rubric-options">
+                        <label><input type="radio" name="rubric-model-${modelNumber}" value="X"> X</label>
+                        <label><input type="radio" name="rubric-model-${modelNumber}" value="B2"> B2</label>
+                        <label><input type="radio" name="rubric-model-${modelNumber}" value="B1"> B1</label>
+                        <label><input type="radio" name="rubric-model-${modelNumber}" value="C"> C</label>
+                        <label><input type="radio" name="rubric-model-${modelNumber}" value="A1"> A1</label>
+                        <label><input type="radio" name="rubric-model-${modelNumber}" value="A2"> A2</label>
+                        </div>
+                    </div>
+
+                    <div class="metric-title">Brevity</div>
+                    <div class = "rubric-score">
+                        <div class="rubric-options">
+                            <label><input type="radio" name="brevity-model-${modelNumber}" value="-1"> Too Concise</label>
+                            <label><input type="radio" name="brevity-model-${modelNumber}" value="0"> Good</label>
+                            <label><input type="radio" name="brevity-model-${modelNumber}" value="1"> Too Verbose</label>
+                        </div>
+                    </div>
+
+                    <div class="metric-title">Accuracy</div>
+                    <div class = "rubric-score">
+                        <div class="rubric-options">
+                        <label><input type="radio" name="accuracy-model-${modelNumber}" value="1"> 1</label>
+                        <label><input type="radio" name="accuracy-model-${modelNumber}" value="2"> 2</label>
+                        <label><input type="radio" name="accuracy-model-${modelNumber}" value="3"> 3</label>
+                        <label><input type="radio" name="accuracy-model-${modelNumber}" value="4"> 4</label>
+                        <label><input type="radio" name="accuracy-model-${modelNumber}" value="5"> 5</label>
+                        </div>
+                    </div>
+
+                    <div class="metric-title">Missed Pathology Impact</div>
+                    <div class = "rubric-score">
+                        <div class="rubric-options">
+                        <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="1"> 1</label>
+                        <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="2"> 2</label>
+                        <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="3"> 3</label>
+                        </div>
+                    </div>
+
+                </div>`;
+            card.innerHTML = metricHtml;
+        });
+    }
+
+    addMetricsToCollect();
+
 
     function uploadMetrics() {
         const ranking = Array.from(modelRanking.children).map(item => item.textContent);
@@ -53,11 +92,29 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let model_metrics = {};
 
-        // Populate model metrics
+      // Populate model metrics
         ranking.forEach((model_id, index) => {
-            model_name = model_id_to_name[model_id];
+            const modelElement = document.querySelector(`.model-card:nth-child(${index + 1})`);
+            const rubricInput = modelElement.querySelector(`input[name="rubric-model-${index + 1}"]:checked`);
+            const rubricValue = rubricInput ? rubricInput.value : null;
+            
+            const brevityInput = modelElement.querySelector(`input[name="brevity-model-${index + 1}"]:checked`);
+            const brevityValue = brevityInput ? brevityInput.value : null;
+            
+            const accuracyInput = modelElement.querySelector(`input[name="accuracy-model-${index + 1}"]:checked`);
+            const accuracyValue = accuracyInput ? accuracyInput.value : null;
+
+            const missedPathologyInput = modelElement.querySelector(`input[name="missed-pathology-model-${index + 1}"]:checked`);
+            const missedPathologyValue = missedPathologyInput ? missedPathologyInput.value : null;   
+
+            const model_name = model_id_to_name[model_id];
+
             model_metrics[model_name] = {
-                rank: index + 1
+                rank: index + 1,
+                rubric: rubricValue,
+                brevity: brevityValue,
+                accuracy: accuracyValue,
+                missed_pathology: missedPathologyValue
             };
         });
 
@@ -109,10 +166,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching model outputs:', error));
     }
 
-    function updateModelOutputs(data) {
+    function updateModelOutputs(data, show_model_name = true) {
         model_name_to_id = data.model_name_to_id; // store the model name to id mapping
-        model_id_to_name = data.model_id_to_name; // store the model id to name mapping
-        
+        model_id_to_name = data.model_id_to_name; // store the model id to name mapping   
         // Update model outputs
         if (data.model_outputs) {
             const model_name_to_id = data.model_name_to_id;
@@ -121,6 +177,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const modelIndex = modelNames.indexOf(modelPosition);
                 if (modelIndex !== -1) {
                     modelHeaders[modelIndex].textContent = modelPosition; // Set the model name
+                    if (show_model_name) {
+                        modelHeaders[modelIndex].textContent = model_id_to_name[modelPosition]; // Set the model name
+                    }
                     modelCards[modelIndex].textContent = data.model_outputs[modelKey]; // Set the model output
                 }
             });
@@ -171,6 +230,9 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => console.error('Error restarting the process:', error));
     });
+
+
+    // CODE TO EXECUTE ON PAGE LOAD!
 
     // Fetch the first image and report initially
     fetchNextImage(send_metrics_to_server = false);

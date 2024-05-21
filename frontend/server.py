@@ -1,4 +1,5 @@
 from flask import Flask, render_template, jsonify, request
+from livereload import Server, shell
 from pathlib import Path
 import os
 import base64
@@ -8,6 +9,7 @@ import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+import pickle
 
 # Get the current script's directory
 current_dir = Path(__file__).resolve().parent
@@ -19,9 +21,25 @@ sys.path.insert(0, str(base_agent_dir))
 from pathology_sets import Pathologies
 from pathology_detector import CheXagentVisionTransformerPathologyDetector
 from phrase_grounder import BioVilTPhraseGrounder
-from generation_engine import GenerationEngine, Llama3Generation, CheXagentLanguageModelGeneration, CheXagentEndToEndGeneration
+from generation_engine import GenerationEngine, Llama3Generation, CheXagentLanguageModelGeneration, GeminiFlashGeneration
 
 app = Flask(__name__)
+
+# CONFIGURATION
+#     user_prompt = "Write a radiologist's report for the scan"
+USER_PROMPT = "Generate the findings section of the radiology report for the scan"
+USER_PROMPT = "What are the findings?"
+
+PATHOLOGY_DETECTION_THRESHOLD = 0.4
+PHRASE_GROUNDING_THRESHOLD = 0.2
+IGNORE_PATHOLOGIES = {"Support Devices"}
+DO_NOT_LOCALISE = {"Cardiomegaly"}
+CHEXPERT = False
+SHUFFLE = True
+DEVICE = None #"cuda:1"   
+USE_STORED_REPORTS = True
+FILE_NAME = "findings_section_of_report.pkl"
+stored_responses_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/stored_responses")
 
 # Directory prefix for the images
 IMAGE_DIR_PREFIX = Path("/vol/biodata/data/chest_xray/mimic-cxr-jpg/files/")
@@ -29,28 +47,28 @@ current_subject_index = 0
 
 subject_to_report = {}
 subject_to_image_path = {}
-
-CHEXPERT = False
-USE_STORED_REPORTS = True
-DEVICE = None #"cuda:1"   
 model_outputs = {}
 
-# random.seed(42)
-random.seed(50)
+random.seed(1)
 
 def initialise_models():
-    global pathology_detector, phrase_grounder, l3, cheXagent_lm, cheXagent_e2e
-    if USE_STORED_REPORTS:
+    global pathology_detector, phrase_grounder, l3, cheXagent_lm, gemini, image_path_to_model_outputs
+    if USE_STORED_REPORTS:        
+        if CHEXPERT:
+            chexpert_findings_path = stored_responses_path / "CheXpert" / FILE_NAME
+            image_path_to_model_outputs = pickle.load(open(chexpert_findings_path, "rb"))
+        else:
+            mimic_findings_path = stored_responses_path / "MIMIC-CXR" / FILE_NAME
+            image_path_to_model_outputs = pickle.load(open(mimic_findings_path, "rb"))
         return
-    pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=device)
-    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=0.5, device = DEVICE)
+    pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=DEVICE)
+    phrase_grounder = BioVilTPhraseGrounder(detection_threshold=PHRASE_GROUNDING_THRESHOLD, device = DEVICE)
     l3 = Llama3Generation(device = DEVICE)
     cheXagent_lm = CheXagentLanguageModelGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
-    cheXagent_e2e = CheXagentEndToEndGeneration(pathology_detector.processor, pathology_detector.model, pathology_detector.generation_config, pathology_detector.device, pathology_detector.dtype)
-
+    gemini = GeminiFlashGeneration()
 
 # Read the data file into a list of dictionaries
-def read_data_file(sample_random = False, no_of_scans = 50, cheXpert = CHEXPERT):
+def read_data_file(shuffle = SHUFFLE, no_of_scans = 50, cheXpert = CHEXPERT):
 
     subjects = []
     if cheXpert:
@@ -65,8 +83,6 @@ def read_data_file(sample_random = False, no_of_scans = 50, cheXpert = CHEXPERT)
             subject_path_jpg = cheXpert_test_path / subject
             subject_to_report[subject] = line.split(",")[1:]   
             subject_to_image_path[subject] = subject_path_jpg      
-
-        return subjects
     
     else:
         mimic_cxr_path = Path('/vol/biodata/data/chest_xray/mimic-cxr')
@@ -104,41 +120,53 @@ def read_data_file(sample_random = False, no_of_scans = 50, cheXpert = CHEXPERT)
             subject_to_report[subject] = report
             subject_to_image_path[subject] = jpg_file
 
-        return subjects
+    if shuffle:
+        random.shuffle(subjects)
+
+    return subjects
 
 
 def get_model_outputs(image_path: Path):
-    global model_outputs
-    user_prompt = "Write a radiologist's report for the scan"
+    global model_outputs, image_path_to_model_outputs
     start_time = time.time()
     
     if USE_STORED_REPORTS:
-        model_outputs['chexagent'] = "This is the output of CheXagent: \n Chest X-ray: Lungs clear, no masses or infiltrates. Mediastinum normal. Abdomen: Liver, spleen, kidneys unremarkable. No bowel obstruction or free fluid. Pelvis: Bones and soft tissues normal. Extremities: No fractures, dislocations, or joint effusions. "
-        model_outputs['llama3_agent'] = "This is the output of Llama3: \n Chest X-ray: Lungs clear with normal air bronchograms. No airspace disease, infiltrates, consolidation, or masses identified. Mediastinum unremarkable, aortic knob and esophagus normal caliber. Abdomen: Liver, spleen, and kidneys appear normal in size, shape, and density. No free fluid or bowel obstruction visualized. Pelvis: Bony structures demonstrate no fractures or dislocations. Urinary bladder distended normally, no calculi. Extremities: Visualized bones (e.g., femurs) demonstrate normal alignment and integrity. No joint effusions or significant osteoarthritis appreciated. "
-        model_outputs['chexagent_agent'] = "This is the output of CheXagent Agent: \n"
+        model_outputs = image_path_to_model_outputs[image_path]
         return model_outputs
 
-    system_prompt, image_context_prompt, chexagent_e2e = GenerationEngine.contextualise_model(
+    pathology_confidences, localised_pathologies, chexagent_e2e = GenerationEngine.detect_and_localise_pathologies(
         image_path=image_path,
         pathology_detector=pathology_detector,
         phrase_grounder=phrase_grounder,
-        examples=False,
-        prompt_for_chexagent_lm_output=user_prompt
+        pathology_detection_threshold = PATHOLOGY_DETECTION_THRESHOLD,
+        ignore_pathologies=IGNORE_PATHOLOGIES,
+        do_not_localise=DO_NOT_LOCALISE,
+        prompt_for_chexagent_lm_output= USER_PROMPT,
     )
-
+    
+    print(f"Pathology confidences: {pathology_confidences}")
+    print(f"Localised pathologies: {localised_pathologies}")
     model_outputs['chexagent'] = chexagent_e2e
 
-    def run_chexagent_lm(system_prompt, image_context_prompt):
-        return cheXagent_lm.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt)
+    gemini_system_prompt, gemini_image_context_prompt = gemini.generate_prompts(pathology_confidences, localised_pathologies)
+    model_outputs['gemini_agent'] = gemini.generate_model_output(gemini_system_prompt, gemini_image_context_prompt, user_prompt=USER_PROMPT)
 
-    def run_llama3_agent(system_prompt, image_context_prompt):
-        return l3.generate_model_output(system_prompt, image_context_prompt, user_prompt=user_prompt)
+    def run_chexagent_lm(pathology_confidences, localised_pathologies):
+        system_prompt, image_context_prompt = GenerationEngine.generate_prompts(pathology_confidences, localised_pathologies)
+        return cheXagent_lm.generate_model_output(system_prompt, image_context_prompt, user_prompt=USER_PROMPT)
+
+    def run_llama3_agent(pathology_confidences, localised_pathologies):
+        system_prompt, image_context_prompt = l3.generate_prompts(pathology_confidences, localised_pathologies)
+        return l3.generate_model_output(system_prompt, image_context_prompt, user_prompt=USER_PROMPT)
+    
+    def run_gemini_agent(pathology_confidences, localised_pathologies):
+        system_prompt, image_context_prompt = gemini.generate_prompts(pathology_confidences, localised_pathologies)
+        return gemini.generate_model_output(system_prompt, image_context_prompt, user_prompt=USER_PROMPT)
 
     with ThreadPoolExecutor() as executor:       
-
         # Run cheXagent_lm and l3 in parallel
-        future_chexagent_lm = executor.submit(run_chexagent_lm, system_prompt, image_context_prompt)
-        future_llama3_agent = executor.submit(run_llama3_agent, system_prompt, image_context_prompt)
+        future_chexagent_lm = executor.submit(run_chexagent_lm, pathology_confidences, localised_pathologies)
+        future_llama3_agent = executor.submit(run_llama3_agent, pathology_confidences, localised_pathologies)
 
         for future in as_completed([future_chexagent_lm, future_llama3_agent]):
             if future == future_chexagent_lm:
@@ -230,4 +258,5 @@ def upload_metrics():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=True)
+

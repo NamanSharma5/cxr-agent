@@ -1,77 +1,114 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* styles.css */
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    padding: 10px; 
+    margin: 0; 
+} 
+
+h1 { 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-top: 0; 
+} 
+
+.image-container { 
+    margin-bottom: 20px; 
+} 
+
+.image-container img { 
+    max-width: 75%; 
+    height: auto; 
+} 
+
+.reference-report-container { 
+    margin-top: 20px; 
+    text-align: left; 
+    display: flex; 
+    justify-content: center; 
+} 
+
+.reference-report { 
+    background-color: #f8f9fa; 
+    padding: 15px 20px; 
+    border-radius: 5px; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+    white-space: pre-wrap; 
+    display: inline-block; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+} 
+
+#model-cards { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 20px; 
+} 
+
+.model-card { 
+    flex: 1 1 90%; 
+    max-width: 85%; 
+    padding: 20px; 
+    margin: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: left; 
+} 
+
+.model-card .card-header { 
+    font-weight: bold; 
+    font-size: 16px; 
+    margin-bottom: 5px; 
+} 
+
+.ranking-list { 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0 auto; 
+    max-width: 25%; 
+} 
+
+.ranking-list li { 
+    cursor: move; 
+} 
+
+.ranking-list .sortable-ghost { 
+    opacity: 0.4; 
+} 
+
+/* Styles for Metric Collection */ 
+.rubric-score { 
+    margin-top: 10px; 
+    text-align: left; 
+} 
+
+.rubric-options { 
+    display: flex; 
+    justify-content: space-around; 
+} 
+
+.rubric-options label { 
+    margin-right: 10px; 
+}
+
+/* New styles for divider */
+.divider {
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+.metrics-container {
+    background-color: #f1f1f1;
     padding: 10px;
-    margin: 0;
-}
-
-h1 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-.image-container {
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    max-width: 75%;
-    height: auto;
-}
-
-.reference-report-container {
-    margin-top: 20px;
-    text-align: left; /* Center the container */
-    display: flex;
-    justify-content: center; /* Center the report within the container */
-}
-
-.reference-report {
-    background-color: #f8f9fa;
-    padding: 15px 20px; /* Add padding to the left and right */
+    margin-top: 10px;
     border-radius: 5px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    white-space: pre-wrap; /* Preserve line breaks and whitespace */
-    display: inline-block; /* Ensure the width is proportional to its content */
-    max-width: 100%; /* Prevent overflow on smaller screens */
-    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
-#model-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.model-card {
-    flex: 1 1 90%; /* Adjust this value to control the width of the cards */
-    max-width: 85%; /* Ensure cards don't exceed this width */
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: left;
-}
-
-.model-card .card-header {
-    font-weight: bold;
+.metric-title {
     font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.ranking-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 25%;
-}
-
-.ranking-list li {
-    cursor: move;
-}
-
-.ranking-list .sortable-ghost {
-    opacity: 0.4;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
