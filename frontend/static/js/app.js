@@ -87,48 +87,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function uploadMetrics() {
-        const ranking = Array.from(modelRanking.children).map(item => item.textContent);
-        const abnormal = abnormalBtn.classList.contains('btn-danger');
-        
+        // Initialize model_metrics dictionary
         let model_metrics = {};
-
-      // Populate model metrics
-        ranking.forEach((model_id, index) => {
+        
+        const ranking = Array.from(modelRanking.children).map(item => item.textContent);
+        // First, collect metrics for each model without considering ranking
+        modelNames.forEach((modelNameID, index) => {
             const modelElement = document.querySelector(`.model-card:nth-child(${index + 1})`);
+    
             const rubricInput = modelElement.querySelector(`input[name="rubric-model-${index + 1}"]:checked`);
-            const rubricValue = rubricInput ? rubricInput.value : null;
-            
             const brevityInput = modelElement.querySelector(`input[name="brevity-model-${index + 1}"]:checked`);
-            const brevityValue = brevityInput ? brevityInput.value : null;
-            
             const accuracyInput = modelElement.querySelector(`input[name="accuracy-model-${index + 1}"]:checked`);
-            const accuracyValue = accuracyInput ? accuracyInput.value : null;
-
             const missedPathologyInput = modelElement.querySelector(`input[name="missed-pathology-model-${index + 1}"]:checked`);
-            const missedPathologyValue = missedPathologyInput ? missedPathologyInput.value : null;   
-
-            const model_name = model_id_to_name[model_id];
-
-            model_metrics[model_name] = {
-                rank: index + 1,
-                rubric: rubricValue,
-                brevity: brevityValue,
-                accuracy: accuracyValue,
-                missed_pathology: missedPathologyValue
+    
+            let modelName = model_id_to_name[modelNameID];
+            model_metrics[modelName] = {
+                rubric: rubricInput ? rubricInput.value : null,
+                brevity: brevityInput ? brevityInput.value : null,
+                accuracy: accuracyInput ? accuracyInput.value : null,
+                missed_pathology: missedPathologyInput ? missedPathologyInput.value : null,
+                rank: null // Placeholder for now, will be updated in the next step
             };
         });
+    
+        // Collect ranking info and update the model_metrics dictionary
+        ranking.forEach((modelNameID, rank) => {
+            let modelName = model_id_to_name[modelNameID];
 
+            if (model_metrics[modelName]) {
+                model_metrics[modelName].rank = rank + 1;
+            }
+        });
+    
+        const abnormal = abnormalBtn.classList.contains('btn-danger');
+    
         // Add metadata information
         const metadata = {
             subject: currentSubject,
             abnormal: abnormal
         };
-
+    
         model_metrics['metadata'] = metadata;
-
+    
         // Logging for debugging, replace with API call or other logic as needed
         console.log('Model Metrics:', model_metrics);
-
+    
         fetch('/upload_metrics', {
             method: 'POST',
             headers: {
@@ -192,6 +195,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         // first clear the model outputs (i.e. the content of model cards)
         modelCards.forEach(card => card.textContent = '');
+
+        // Reset any selected rubric scores by unchecking the radio buttons
+        const rubricInputs = document.querySelectorAll('.rubric-options input[type="radio"]');
+        rubricInputs.forEach(input => input.checked = false);
+
         fetch('/next_image')
             .then(response => response.json())
             .then(data => updateImageAndReport(data))

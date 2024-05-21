@@ -10,6 +10,8 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import pickle
+import csv
+from datetime import datetime
 
 # Get the current script's directory
 current_dir = Path(__file__).resolve().parent
@@ -34,31 +36,35 @@ PATHOLOGY_DETECTION_THRESHOLD = 0.4
 PHRASE_GROUNDING_THRESHOLD = 0.2
 IGNORE_PATHOLOGIES = {"Support Devices"}
 DO_NOT_LOCALISE = {"Cardiomegaly"}
+
 CHEXPERT = False
 SHUFFLE = True
-DEVICE = None #"cuda:1"   
+
+DEVICE = None #"cuda:1"  
 USE_STORED_REPORTS = True
-FILE_NAME = "findings_section_of_report.pkl"
+FILE_NAME = "findings_section_of_report"
+
+SAVE_RESULTS = True
 stored_responses_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/stored_responses")
 
 # Directory prefix for the images
-IMAGE_DIR_PREFIX = Path("/vol/biodata/data/chest_xray/mimic-cxr-jpg/files/")
 current_subject_index = 0
 
 subject_to_report = {}
 subject_to_image_path = {}
 model_outputs = {}
+file_path = None
 
-random.seed(1)
+random.seed(5)
 
 def initialise_models():
     global pathology_detector, phrase_grounder, l3, cheXagent_lm, gemini, image_path_to_model_outputs
     if USE_STORED_REPORTS:        
         if CHEXPERT:
-            chexpert_findings_path = stored_responses_path / "CheXpert" / FILE_NAME
+            chexpert_findings_path = stored_responses_path / "CheXpert" / f"{FILE_NAME}.pkl"
             image_path_to_model_outputs = pickle.load(open(chexpert_findings_path, "rb"))
         else:
-            mimic_findings_path = stored_responses_path / "MIMIC-CXR" / FILE_NAME
+            mimic_findings_path = stored_responses_path / "MIMIC-CXR" / f"{FILE_NAME}.pkl"
             image_path_to_model_outputs = pickle.load(open(mimic_findings_path, "rb"))
         return
     pathology_detector = CheXagentVisionTransformerPathologyDetector(pathologies=Pathologies.CHEXPERT, device=DEVICE)
@@ -186,12 +192,36 @@ def get_random_model_mapping(models):
     model_id_to_name = {f"Model {i+1}": model for i, model in enumerate(shuffled_models)}
     return model_name_to_id, model_id_to_name
 
+def create_file():
+    global file_path
+    directory = '/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/evaluation_metrics'
+    os.makedirs(directory, exist_ok=True)
+
+    if CHEXPERT:
+        file_path = os.path.join(directory, f"chexpert_{datetime.now().strftime('%m%d_%H%M')}_{FILE_NAME}.csv")
+    else:
+        file_path = os.path.join(directory, f"mimic_{datetime.now().strftime('%m%d_%H%M')}_{FILE_NAME}.csv")    
+    
+    # Define the columns
+    headers = ['subject', 'abnormal',
+               'chexagent_rank', 'chexagent_agent_rank', 'llama3_agent_rank', 'gemini_agent_rank',
+               'chexagent_rubric', 'chexagent_agent_rubric', 'llama3_agent_rubric', 'gemini_agent_rubric',
+               'chexagent_brevity', 'chexagent_agent_brevity', 'llama3_agent_brevity', 'gemini_agent_brevity',
+               'chexagent_accuracy', 'chexagent_agent_accuracy', 'llama3_agent_accuracy', 'gemini_agent_accuracy',
+               'chexagent_missed_pathology', 'chexagent_agent_missed_pathology', 'llama3_agent_missed_pathology', 'gemini_agent_missed_pathology']
+    
+    # Create the file with headers
+    with open(file_path, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        writer.writeheader()
 
 
 ### SERVER INITIALIZATION ###
 
 initialise_models()
 subjects = read_data_file()
+if SAVE_RESULTS:
+    create_file()
 
 @app.route('/')
 def index():
@@ -250,12 +280,43 @@ def get_model_outputs_route():
     }
     return jsonify(result)
 
+
 @app.route('/upload_metrics', methods=['POST'])
 def upload_metrics():
     data = request.get_json()
+
+    if SAVE_RESULTS:
+        global file_path
+        
+        # Extract metadata
+        subject = data.get('metadata', {}).get('subject', '')
+        abnormal = data.get('metadata', {}).get('abnormal', False)
+        
+        # Create a row with default None values
+        row = { 
+                'subject': subject,
+                'abnormal': abnormal,
+                'chexagent_rank': None, 'chexagent_agent_rank': None, 'llama3_agent_rank': None, 'gemini_agent_rank': None,
+                'chexagent_rubric': None, 'chexagent_agent_rubric': None, 'llama3_agent_rubric': None, 'gemini_agent_rubric': None,
+                'chexagent_brevity': None, 'chexagent_agent_brevity': None, 'llama3_agent_brevity': None, 'gemini_agent_brevity': None,
+                'chexagent_accuracy': None, 'chexagent_agent_accuracy': None, 'llama3_agent_accuracy': None, 'gemini_agent_accuracy': None,
+                'chexagent_missed_pathology': None, 'chexagent_agent_missed_pathology': None, 'llama3_agent_missed_pathology': None, 'gemini_agent_missed_pathology': None
+            }
+
+        # Fill in the row with actual data
+        for model_name, metrics in data.items():
+            if model_name == 'metadata':
+                continue
+            for metric, value in metrics.items():
+                row[f'{model_name}_{metric}'] = value
+
+        # Write the row to the CSV file
+        with open(file_path, 'a', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=row.keys())
+            writer.writerow(row)
+
     print(data)
     return jsonify(success=True)
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=True)
