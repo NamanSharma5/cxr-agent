@@ -40,7 +40,7 @@ DECIMALS = 2
 class PathologyDetector(ABC):
 
     @abstractmethod
-    def detect_pathologies(self, image_path: Path, threshold:Optional[float]) -> PathologyConfidences:
+    def detect_pathologies(self, image_path: Path, threshold:Optional[float], prompt_for_chexagent_lm_output = None) -> PathologyConfidences:
         pass
 
 class LinearClassifier(nn.Module):
@@ -55,16 +55,20 @@ class LinearClassifier(nn.Module):
 
 class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
 
-    def __init__(self, pathologies: Pathologies = Pathologies.VINDR):
-        self.device = select_best_gpu()
+    def __init__(self, pathologies: Pathologies = Pathologies.VINDR, device = None):
+        if device is None:
+            self.device = select_best_gpu()
+        else:
+            self.device = device
         self.dtype = torch.float16
 
-        self.processor = AutoProcessor.from_pretrained("StanfordAIMI/CheXagent-8b", trust_remote_code=True, revision="4934e91451945c8218c267aae9c34929a7677829")#, revision="4934e91451945c8218c267aae9c34929a7677829")
+        local_model_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/.hf_cache/hub/models--StanfordAIMI--CheXagent-8b/snapshots/4934e91451945c8218c267aae9c34929a7677829")
+        self.processor = AutoProcessor.from_pretrained(local_model_path, trust_remote_code=True, revision="4934e91451945c8218c267aae9c34929a7677829")#, revision="4934e91451945c8218c267aae9c34929a7677829")
         self.model = AutoModelForCausalLM.from_pretrained(
-            "StanfordAIMI/CheXagent-8b", torch_dtype=self.dtype, trust_remote_code=True, revision="4934e91451945c8218c267aae9c34929a7677829"
+            local_model_path, torch_dtype=self.dtype, trust_remote_code=True, revision="4934e91451945c8218c267aae9c34929a7677829"
         ).to(self.device)
         print("CheXagent Model loaded")
-        self.generation_config = GenerationConfig.from_pretrained("StanfordAIMI/CheXagent-8b",revision="4934e91451945c8218c267aae9c34929a7677829")
+        self.generation_config = GenerationConfig.from_pretrained(local_model_path,revision="4934e91451945c8218c267aae9c34929a7677829")
         
         if pathologies == Pathologies.VINDR:
             self.pathologies = vindr_pathologies
@@ -79,16 +83,25 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
             self.linear_classifier.to(self.device)
         
 
-    def detect_pathologies(self, image_path: Path,threshold: Optional[float] = None, decimals = DECIMALS) -> PathologyConfidences:
+    def detect_pathologies(self, image_path: Path,threshold: Optional[float] = None, decimals = DECIMALS, prompt_for_chexagent_lm_output = None) -> PathologyConfidences:
 
         image = Image.open(image_path).convert("RGB")
-        prompt = "NO PROMPT BEING USED"
-        inputs = self.processor(
-            images=image, text=f" USER: <s>{prompt} ASSISTANT: <s>", return_tensors="pt"
-        ).to(device=self.device, dtype=self.dtype)
+        if prompt_for_chexagent_lm_output is None:
+            prompt = "NO PROMPT BEING USED"
+        
+            inputs = self.processor(
+                images=image, text=f" USER: <s>{prompt} ASSISTANT: <s>", return_tensors="pt"
+            ).to(device=self.device, dtype=self.dtype)
 
-        embedding_output = self.model.generate(**inputs, return_vit_outputs = True,return_qformer_outputs = False, generation_config = self.generation_config)
-        # map emebdding output to torch.float32
+            embedding_output = self.model.generate(**inputs, return_vit_outputs = True,return_qformer_outputs = False, generation_config = self.generation_config)
+        else:
+            prompt = prompt_for_chexagent_lm_output
+            inputs = self.processor(
+                images=image, text=f" USER: <s>{prompt} ASSISTANT: <s>", return_tensors="pt"
+            ).to(device=self.device, dtype=self.dtype)
+            embedding_output, lm_output = self.model.generate(**inputs, return_vit_outputs = True,return_qformer_outputs = False, generate_written_output = True, generation_config = self.generation_config)
+            lm_output = self.processor.tokenizer.decode(lm_output[0], skip_special_tokens=True)
+        #  map emebdding output to torch.float32
         embedding_output = embedding_output.to(torch.float)
         
         self.linear_classifier.eval()
@@ -100,31 +113,33 @@ class CheXagentVisionTransformerPathologyDetector(PathologyDetector):
 
         pathology_confidences = dict(zip(self.pathologies, predictions.cpu().detach().numpy().flatten())) 
 
-        if threshold is None:
-            return pathology_confidences
-        else:
-            # filter out pathologies with confidence less than threshold
-            return {pathology: confidence for pathology, confidence in pathology_confidences.items() if confidence > threshold}
-    
+        if threshold is not None:
+           pathology_confidences = {pathology: confidence for pathology, confidence in pathology_confidences.items() if confidence > threshold}
 
-# if __name__ == "__main__":
-#     detector = CheXagentVisionTransformerPathologyDetector()
+        if prompt_for_chexagent_lm_output is not None:
+            return pathology_confidences, lm_output
+        
+        return pathology_confidences
 
-#     chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
-#     chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
 
-#     with open(chexpert_test_csv_path, 'r') as f:
-#         lines = f.readlines()
-#         header = lines[0].split(",")[1:]
-#         # print(header)
-#         for i, line in enumerate(lines[1:]):
-#             if i % 1000 == 0:
-#                 print(f"Collecting image {i}")
+if __name__ == "__main__":
+    detector = CheXagentVisionTransformerPathologyDetector()
 
-#             image_path = line.split(",")[0]
-#             image_path = chexpert_test_path / image_path
+    chexpert_test_csv_path = Path("/vol/biodata/data/chest_xray/CheXpert-v1.0-small/CheXpert-v1.0-small/test.csv")
+    chexpert_test_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/CheXpert/small/")
+
+    with open(chexpert_test_csv_path, 'r') as f:
+        lines = f.readlines()
+        header = lines[0].split(",")[1:]
+        # print(header)
+        for i, line in enumerate(lines[1:]):
+            if i % 1000 == 0:
+                print(f"Collecting image {i}")
+
+            image_path = line.split(",")[0]
+            image_path = chexpert_test_path / image_path
             
-#             detector.detect_pathologies(image_path)
-#             break
+            print(detector.detect_pathologies(image_path, prompt_for_chexagent_lm_output="What are the findings?"))
+            break
 
         
