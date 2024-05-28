@@ -21,7 +21,7 @@ vindr_pathologies = ["Aortic enlargement", "Atelectasis", "Calcification", "Card
               "ILD", "Infiltration", "Lung Opacity", "Lung cavity", "Lung cyst",
               "Mediastinal shift","Nodule/Mass", "Pleural effusion", "Pleural thickening",
               "Pneumothorax", "Pulmonary fibrosis","Rib fracture", "Other lesion",
-              "No finding"] 
+              "No Finding"] 
 
 cheXpert_pathologies = ['No Finding','Enlarged Cardiomediastinum','Cardiomegaly','Lung Opacity',
         'Lung Lesion','Edema','Consolidation','Pneumonia','Atelectasis','Pneumothorax',
