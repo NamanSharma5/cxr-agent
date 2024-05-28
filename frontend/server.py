@@ -28,7 +28,6 @@ from generation_engine import GenerationEngine, Llama3Generation, CheXagentLangu
 app = Flask(__name__)
 
 # CONFIGURATION
-#     user_prompt = "Write a radiologist's report for the scan"
 USER_PROMPT = "Generate the findings section of the radiology report for the scan"
 USER_PROMPT = "What are the findings?"
 
@@ -37,12 +36,12 @@ PHRASE_GROUNDING_THRESHOLD = 0.2
 IGNORE_PATHOLOGIES = {"Support Devices"}
 DO_NOT_LOCALISE = {"Cardiomegaly"}
 
-CHEXPERT = False
+CHEXPERT = True
 SHUFFLE = True
 
 DEVICE = None #"cuda:1"  
 USE_STORED_REPORTS = True
-FILE_NAME = "findings_section_of_report"
+FILE_NAME = "findings_section_of_report" #"findings" #"radiology_report" = too verbose for L3
 
 SAVE_RESULTS = True
 stored_responses_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/frontend/stored_responses")
@@ -208,7 +207,8 @@ def create_file():
                'chexagent_rubric', 'chexagent_agent_rubric', 'llama3_agent_rubric', 'gemini_agent_rubric',
                'chexagent_brevity', 'chexagent_agent_brevity', 'llama3_agent_brevity', 'gemini_agent_brevity',
                'chexagent_accuracy', 'chexagent_agent_accuracy', 'llama3_agent_accuracy', 'gemini_agent_accuracy',
-               'chexagent_missed_pathology', 'chexagent_agent_missed_pathology', 'llama3_agent_missed_pathology', 'gemini_agent_missed_pathology']
+            #    'chexagent_missed_pathology', 'chexagent_agent_missed_pathology', 'llama3_agent_missed_pathology', 'gemini_agent_missed_pathology']
+               'chexagent_dangerous', 'chexagent_agent_dangerous', 'llama3_agent_dangerous', 'gemini_agent_dangerous']
     
     # Create the file with headers
     with open(file_path, 'w', newline='') as f:
@@ -300,7 +300,8 @@ def upload_metrics():
                 'chexagent_rubric': None, 'chexagent_agent_rubric': None, 'llama3_agent_rubric': None, 'gemini_agent_rubric': None,
                 'chexagent_brevity': None, 'chexagent_agent_brevity': None, 'llama3_agent_brevity': None, 'gemini_agent_brevity': None,
                 'chexagent_accuracy': None, 'chexagent_agent_accuracy': None, 'llama3_agent_accuracy': None, 'gemini_agent_accuracy': None,
-                'chexagent_missed_pathology': None, 'chexagent_agent_missed_pathology': None, 'llama3_agent_missed_pathology': None, 'gemini_agent_missed_pathology': None
+                # 'chexagent_missed_pathology': None, 'chexagent_agent_missed_pathology': None, 'llama3_agent_missed_pathology': None, 'gemini_agent_missed_pathology': None
+                'chexagent_dangerous': None, 'chexagent_agent_dangerous': None, 'llama3_agent_dangerous': None, 'gemini_agent_dangerous': None
             }
 
         # Fill in the row with actual data
@@ -319,5 +320,5 @@ def upload_metrics():
     return jsonify(success=True)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=True)
+    app.run(host='0.0.0.0', port=4000, debug=True, use_reloader=True)
 

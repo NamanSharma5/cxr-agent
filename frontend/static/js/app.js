@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function addMetricsToCollect() {
+
         const modelCards = document.querySelectorAll('.model-card .metrics');
         modelCards.forEach((card, index) => {
             const modelNumber = index + 1;
@@ -69,16 +70,24 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
 
-                    <div class="metric-title">Missed Pathology Impact</div>
+                    <div class="metric-title">Is Report Dangerous)?</div>
                     <div class = "rubric-score">
                         <div class="rubric-options">
-                        <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="1"> 1</label>
-                        <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="2"> 2</label>
-                        <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="3"> 3</label>
+                        <label><input type="radio" name="dangerous-report-model-${modelNumber}" value="1"> Yes!</label>
                         </div>
                     </div>
 
                 </div>`;
+
+                    // <div class="metric-title">Missed Pathology Impact</div>
+                    // <div class = "rubric-score">
+                    //     <div class="rubric-options">
+                    //     <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="1"> 1</label>
+                    //     <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="2"> 2</label>
+                    //     <label><input type="radio" name="missed-pathology-model-${modelNumber}" value="3"> 3</label>
+                    //     </div>
+                    // </div>
+
             card.innerHTML = metricHtml;
         });
     }
@@ -98,14 +107,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const rubricInput = modelElement.querySelector(`input[name="rubric-model-${index + 1}"]:checked`);
             const brevityInput = modelElement.querySelector(`input[name="brevity-model-${index + 1}"]:checked`);
             const accuracyInput = modelElement.querySelector(`input[name="accuracy-model-${index + 1}"]:checked`);
-            const missedPathologyInput = modelElement.querySelector(`input[name="missed-pathology-model-${index + 1}"]:checked`);
-    
+            // const missedPathologyInput = modelElement.querySelector(`input[name="missed-pathology-model-${index + 1}"]:checked`);
+            const dangerousReportInput = modelElement.querySelector(`input[name="dangerous-report-model-${index + 1}"]:checked`);
+
             let modelName = model_id_to_name[modelNameID];
             model_metrics[modelName] = {
                 rubric: rubricInput ? rubricInput.value : null,
                 brevity: brevityInput ? brevityInput.value : null,
                 accuracy: accuracyInput ? accuracyInput.value : null,
-                missed_pathology: missedPathologyInput ? missedPathologyInput.value : null,
+                // missed_pathology: missedPathologyInput ? missedPathologyInput.value : null,
+                dangerous: dangerousReportInput ? dangerousReportInput.value : null,
                 rank: null // Placeholder for now, will be updated in the next step
             };
         });
@@ -169,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching model outputs:', error));
     }
 
-    function updateModelOutputs(data, show_model_name = true) {
+    function updateModelOutputs(data, show_model_name = false) {
         model_name_to_id = data.model_name_to_id; // store the model name to id mapping
         model_id_to_name = data.model_id_to_name; // store the model id to name mapping   
         // Update model outputs
