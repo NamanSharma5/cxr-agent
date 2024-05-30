@@ -1,0 +1,668 @@
+patient64741/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.probable Lung Opacity.probable Pleural Effusion.Support Devices
+patient64742/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax
+patient64743/study1/view1_frontal.jpg,Possible Lung Opacity, possible Edema, probable Pleural Effusion.
+patient64744/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64744/study1/view2_lateral.jpg,Probable Cardiomegaly.
+patient64744/study1/view3_lateral.jpg,Possible findings on the chest x-ray include:..* Probable Cardiomegaly.* Possible Enlarged Cardiomediastinum.* Cannot exclude Edema.* Possible Pleural Effusion.* Possible Fracture.* Probable Support Devices
+patient64745/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* Pleural Effusion.* Lung Opacity (cannot exclude).* Lung Lesion (cannot exclude).* Consolidation (cannot exclude).* Support Devices
+patient64745/study1/view2_lateral.jpg,Cannot exclude Cardiomegaly. Possible Lung Opacity. Probable Pleural Effusion, likely bilateral.
+patient64746/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient64747/study1/view1_frontal.jpg,Probable Pleural Effusion. Possible Lung Lesion. Cannot exclude Pneumothorax. Possible Lung Opacity.
+patient64747/study1/view2_lateral.jpg,The chest x-ray shows:..* possible Lung Opacity.* probable Pleural Effusion, located on the left.* cannot exclude Atelectasis, located on the left and right
+patient64748/study1/view1_frontal.jpg,Normal lung volumes and shape. No obvious fractures or lytic lesions. No mediastinal widening or effusions. No pleural thickening or effusions. No pneumothorax.
+patient64748/study1/view2_lateral.jpg,cannot exclude Support Devices
+patient64749/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, cannot exclude Support Devices.
+patient64750/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64750/study1/view2_lateral.jpg,The chest X-ray is normal, with no significant abnormalities detected.
+patient64751/study1/view1_frontal.jpg,Normal lung parenchyma and mediastinal structures. No abnormalities detected.
+patient64751/study1/view2_lateral.jpg,Cannot exclude Support Devices.
+patient64752/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64753/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.cannot exclude Lung Opacity.possible Edema.cannot exclude Pneumothorax.possible Support Devices.Lung Opacity: left and right.Edema: left
+patient64754/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema.
+patient64754/study1/view2_lateral.jpg,cannot exclude Cardiomegaly.possible Lung Opacity, located on the right
+patient64755/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Lung Opacity is bilateral.
+patient64755/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Atelectasis, cannot exclude Pleural Effusion.
+patient64756/study1/view1_frontal.jpg,Normal chest X-ray. No abnormalities detected.
+patient64756/study1/view2_lateral.jpg,The chest X-ray is normal.
+patient64756/study1/view3_lateral.jpg,Normal chest X-ray with no significant findings.
+patient64757/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Support Devices
+patient64758/study1/view1_frontal.jpg,cannot exclude Lung Opacity.possible Atelectasis.probable Pleural Effusion.cannot exclude Support Devices.Lung Opacity: left and right.Atelectasis: left and right.Pleural Effusion: left.Support Devices: left
+patient64759/study1/view1_frontal.jpg,cannot exclude Lung Opacity; possible Edema; cannot exclude Cardiomegaly.Lung Opacity: left and right; Edema: left and right
+patient64759/study1/view2_lateral.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.probable Atelectasis.probable Support Devices
+patient64760/study1/view1_frontal.jpg,The chest X-ray appears normal.
+patient64761/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Consolidation, probable Pleural Effusion, probable Support Devices.
+patient64762/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.cannot exclude Edema
+patient64762/study1/view2_lateral.jpg,Cannot exclude Enlarged Cardiomediastinum, possible Cardiomegaly, possible Edema, cannot exclude Support Devices.
+patient64763/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.Pleural Effusion
+patient64763/study1/view2_lateral.jpg,Cannot exclude Lung Opacity. Possible Atelectasis. Probable Pleural Effusion.
+patient64764/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64764/study1/view2_lateral.jpg,The chest X-ray is unremarkable, showing no abnormalities.
+patient64765/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No evidence of pleural effusion.* No rib fractures.* Normal cardiac silhouette.* No evidence of pneumothorax.* No mediastinal widening.* Normal diaphragmatic position.* No abnormal densities or masses
+patient64766/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64766/study1/view2_lateral.jpg,Normal lung fields. No opacities or effusions. Heart size and shape are normal. No rib or sternal abnormalities.
+patient64767/study1/view1_frontal.jpg,Probable Lung Opacity, Probable Pleural Effusion, possible Support Devices.
+patient64768/study1/view1_frontal.jpg,cannot exclude Lung Opacity.possible Pneumothorax.cannot exclude Pleural Effusion
+patient64768/study1/view2_lateral.jpg,cannot exclude Pneumothorax
+patient64769/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No visible fractures or bony abnormalities.* No pleural effusion or pneumothorax.* Normal cardiac silhouette.* No visible masses or nodules.* No mediastinal widening or lymphadenopathy.* Normal diaphragmatic position and shape
+patient64770/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Edema.cannot exclude Edema (left).cannot exclude Edema (right)
+patient64771/study1/view1_frontal.jpg,Probable Pneumothorax, possible Atelectasis, cannot exclude Lung Opacity, probable Support Devices.
+patient64772/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, possible Edema.Lung Opacity: left and right.Edema: left and right
+patient64773/study1/view1_frontal.jpg,Normal lung volumes and expansion. No evidence of pneumothorax or pleural effusion. No rib fractures or bony abnormalities. No mediastinal widening or masses. No abnormalities in the diaphragms or retrosternal clear space.
+patient64774/study1/view1_frontal.jpg,Normal lung parenchyma. No abnormalities or opacities noted.
+patient64775/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities.
+patient64775/study1/view2_lateral.jpg,Normal lung fields, normal cardiac silhouette, normal diaphragms, normal mediastinum.
+patient64776/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient64777/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* Pleural Effusion.* Possible Lung Opacity.* Possible Consolidation.* Possible Atelectasis.* Support Devices
+patient64778/study1/view1_frontal.jpg,cannot exclude Lung Opacity.possible Cardiomegaly.possible Pleural Effusion.cannot exclude Edema.possible Support Devices
+patient64779/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Lung Opacity, probable Pleural Effusion, and possible Support Devices.
+patient64780/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, probable Pleural Effusion, probable Support Devices.
+patient64781/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, cannot exclude Pleural Effusion.
+patient64781/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64782/study1/view1_frontal.jpg,The chest X-ray appears to be normal.
+patient64783/study1/view1_frontal.jpg,Probable Pleural Effusion. Possible Atelectasis. Cannot exclude Lung Opacity. Probable Support Devices.
+patient64784/study1/view1_frontal.jpg,Normal lung volumes and lucency. No visible abnormalities or opacities. No evidence of pneumothorax or pleural effusion. Heart size and shape are normal. No rib or sternum abnormalities.
+patient64785/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64785/study1/view2_lateral.jpg,The chest X-ray appears normal.
+patient64786/study1/view1_frontal.jpg,Probable Cardiomegaly. Possible Lung Opacity. Cannot exclude Edema. Support Devices are present. Lung Opacity is bilateral.
+patient64786/study1/view2_lateral.jpg,Possible Enlarged Cardiomediastinum, possible Cardiomegaly, cannot exclude Lung Opacity, probable Support Devices.
+patient64787/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, cannot exclude Atelectasis.Lung Opacity is possible in both left and right lungs, Atelectasis is probable in both left and right lungs
+patient64787/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Atelectasis.
+patient64788/study1/view1_frontal.jpg,Normal lung fields with no opacities or abnormalities.
+patient64788/study1/view2_lateral.jpg,The chest X-ray is normal.
+patient64789/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64790/study1/view1_frontal.jpg,cannot exclude Enlarged Cardiomediastinum, possible Cardiomegaly, possible Lung Opacity, possible Edema, cannot exclude Pleural Effusion
+patient64791/study1/view1_frontal.jpg,The findings on the chest x-ray are:..* Possible Lung Opacity.* Probable Pneumothorax.* Cannot exclude Lung Lesion.* Possible Pleural Other
+patient64791/study1/view2_frontal.jpg,cannot exclude Lung Opacity, cannot exclude Lung Lesion, probable Pneumothorax
+patient64791/study1/view3_lateral.jpg,The chest x-ray shows:..* Possible Lung Opacity.* Possible Atelectasis.* Probable Pleural Effusion
+patient64792/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No evidence of pneumothorax or pleural effusion.* Heart size is within normal limits.* No signs of cardiomegaly.* No mediastinal widening or masses.* No evidence of lung nodules or infiltrates.* No rib fractures or bony abnormalities.* No diaphragmatic elevation or paralysis..No other findings.
+patient64792/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64793/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly
+patient64794/study1/view1_frontal.jpg,Cannot exclude Enlarged Cardiomediastinum, possible Cardiomegaly, probable Fracture.
+patient64794/study1/view2_lateral.jpg,cannot exclude Enlarged Cardiomediastinum, possible Cardiomegaly, probable Lung Opacity
+patient64795/study1/view1_frontal.jpg,Probable Lung Opacity, possible Atelectasis, possible Pneumothorax, probable Pleural Effusion, cannot exclude Support Devices.
+patient64795/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Pleural Effusion
+patient64796/study1/view1_frontal.jpg,cannot exclude Fracture
+patient64797/study1/view1_frontal.jpg,Possible Lung Opacity, possible Atelectasis, possible Pneumothorax, possible Support Devices.
+patient64798/study1/view1_frontal.jpg,Normal lung parenchyma. No opacities or abnormalities noted.
+patient64798/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Atelectasis
+patient64799/study1/view1_frontal.jpg,cannot exclude Pneumothorax
+patient64799/study1/view2_lateral.jpg,Cannot exclude Support Devices.
+patient64800/study1/view1_frontal.jpg,Normal lung fields, normal cardiac silhouette, normal diaphragms, normal mediastinum.
+patient64801/study1/view1_frontal.jpg,Normal lung parenchyma, no visible abnormalities, no evidence of pleural effusion, no pneumothorax, no fractures, no mediastinal widening, no abnormalities of the diaphragm, no cardiac enlargement.
+patient64801/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64802/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Support Devices, probable located on the right.
+patient64803/study1/view1_frontal.jpg,Probable Lung Opacity, probable Atelectasis, probable Pleural Effusion, probable Support Devices.
+patient64804/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64805/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient64806/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64806/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64807/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Possible Pleural Effusion. Probable Cardiomegaly.
+patient64808/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No visible fractures or foreign bodies.* Normal cardiac silhouette.* No pleural effusion or pneumothorax.* No visible lymphadenopathy.* No mediastinal widening or shift.* No visible consolidation or opacity.* No rib or sternal abnormalities.* No diaphragmatic elevation or paralysis.* No visible calcifications or nodules
+patient64808/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung volumes.* Clear lung fields.* No visible fractures or effusions.* Normal cardiac silhouette.* No visible nodules or masses.* No evidence of pneumothorax or pleural effusion.* Normal diaphragmatic position.* No visible mediastinal widening or compression.* No other abnormalities.
+patient64809/study1/view1_frontal.jpg,The chest X-ray shows:..* No significant abnormalities or pathologies detected..* Lung fields are clear and even..* No evidence of consolidation, effusion, or pneumothorax..* Heart size is normal..* Mediastinum is normal..* Diaphragms are intact and at normal level..* No pleural effusion or thickening.
+patient64809/study1/view2_frontal.jpg,The chest X-ray shows:..* Normal lung parenchyma.* Normal mediastinum.* Normal diaphragm.* No visible fractures or lytic lesions.* No visible masses or nodules.* No pleural effusion or pneumothorax.* No abnormality of the heart or great vessels.
+patient64809/study1/view3_lateral.jpg,The chest X-ray shows:..* No significant abnormalities or pathologies detected..* Lung fields are clear and even..* Heart size and shape are normal..* Diaphragms are intact and symmetrical..* No evidence of pneumothorax or pleural effusion..* No rib fractures or other bony abnormalities.
+patient64810/study1/view1_frontal.jpg,Possible Atelectasis.
+patient64811/study1/view1_frontal.jpg,Normal lung fields with no abnormalities.
+patient64811/study1/view2_lateral.jpg,The chest X-ray is normal, with no abnormalities detected.
+patient64812/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64812/study1/view2_frontal.jpg,Normal chest X-ray.
+patient64812/study1/view3_lateral.jpg,The chest X-ray shows:..* Normal lung fields.* No abnormalities in the mediastinum.* No evidence of pleural effusion or pneumothorax.* No fractures or bone abnormalities.* No abnormalities in the diaphragm.* No lung volumes are significantly abnormal.* No other abnormalities are seen.
+patient64813/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, cannot exclude Pneumonia, possible Atelectasis.
+patient64814/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64814/study1/view2_lateral.jpg,The chest X-ray is normal, with no abnormalities or findings.
+patient64815/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, probable Pneumothorax, possible Support Devices, left Lung Opacity, left Pleural Effusion, left Pneumothorax
+patient64816/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices
+patient64817/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, possible Consolidation, possible Pleural Effusion, cannot exclude Support Devices.Lung Opacity: left and right, Edema: left and right, Consolidation: left and right, Pleural Effusion: left and right
+patient64818/study1/view1_frontal.jpg,Normal lung parenchyma with no abnormalities or opacities detected.
+patient64819/study1/view1_frontal.jpg,The chest X-ray is normal.
+patient64819/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung volumes.* No visible effusions.* No evidence of consolidation or infiltrates.* No fractures or bony abnormalities.* Normal heart size and shape.* No visible mediastinal or hilar masses.* No pleural thickening or calcification.* No pneumothorax
+patient64820/study1/view1_frontal.jpg,The chest X-ray shows:..* The lungs are clear and free of any opacities or consolidations..* The heart is within normal limits..* The mediastinum is unremarkable..* The diaphragms are intact and symmetrical..* The ribs and thoracic spine are normal..* No fractures or other bony abnormalities are visible.
+patient64821/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema.
+patient64822/study1/view1_frontal.jpg,The chest X-ray is unremarkable.
+patient64823/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, probable Support Devices.
+patient64824/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion
+patient64825/study1/view1_frontal.jpg,Cannot exclude Pneumothorax, possible Fracture, probable Support Devices.
+patient64826/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, probable Cardiomegaly.
+patient64827/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.probable Pleural Effusion.probable Lung Opacity (left).probable Edema (left).probable Pleural Effusion (left).probable Support Devices (left and right)
+patient64827/study1/view2_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema.
+patient64828/study1/view1_frontal.jpg,Cannot exclude Support Devices.
+patient64828/study1/view2_lateral.jpg,cannot exclude Cardiomegaly
+patient64829/study1/view1_frontal.jpg,cannot exclude Pneumothorax
+patient64830/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Consolidation, probable Pleural Effusion, probable Support Devices.
+patient64831/study1/view1_frontal.jpg,cannot exclude Cardiomegaly
+patient64832/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64832/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, Pleural Effusion
+patient64833/study1/view1_frontal.jpg,Probable Lung Opacity, possible Consolidation, probable Pleural Effusion.
+patient64834/study1/view1_frontal.jpg,Cannot exclude Pneumothorax.
+patient64834/study1/view2_lateral.jpg,The chest X-ray is normal.
+patient64835/study1/view1_frontal.jpg,Possible Lung Opacity, probable Pneumothorax
+patient64835/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Pneumonia, probable Atelectasis, possible Pleural Other
+patient64836/study1/view1_frontal.jpg,The chest X-ray shows:..* The lungs are clear.* The heart is normal in size and shape.* The mediastinum is normal.* The diaphragms are flat and even.* The bones are normal
+patient64836/study1/view2_lateral.jpg,Normal lung volumes and expansion. No opacities or masses. No pleural effusions or pneumothorax. No rib or sternum abnormalities. No mediastinal widening.
+patient64837/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, probable Pleural Effusion, probable Support Devices; Lung Opacity is likely bilateral, Pneumothorax is likely right-sided, Pleural Effusion is likely bilateral.
+patient64838/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.Support Devices
+patient64838/study1/view2_lateral.jpg,Possible Lung Opacity, probable Edema, possible Pleural Other, possible Support Devices.
+patient64839/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Consolidation. Probable Pleural Effusion.
+patient64840/study1/view1_frontal.jpg,The chest X-ray appears normal.
+patient64840/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung fields.* Normal cardiac silhouette.* No pleural effusion or pneumothorax.* No visible fractures or bone lesions.* No mediastinal widening or masses.* No hilar adenopathy.* No visible lung nodules or masses.* No evidence of consolidation or infiltrates.* No pneumonitis or fibrosis.* No abnormality in the diaphragm or ribs.
+patient64841/study1/view1_frontal.jpg,Probable Edema. Possible Lung Opacity.
+patient64842/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, possible Edema, cannot exclude Consolidation, probable Pleural Effusion. ..Lung Opacity is likely right, Edema is likely bilateral, Consolidation is likely right, Pleural Effusion is likely right.
+patient64843/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64844/study1/view1_frontal.jpg,cannot exclude Cardiomegaly
+patient64844/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64844/study1/view3_lateral.jpg,cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices, Support Devices
+patient64845/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64846/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64846/study1/view2_lateral.jpg,Normal chest X-ray. No abnormalities detected.
+patient64847/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Probable Edema.
+patient64848/study1/view1_frontal.jpg,Normal lung parenchyma. No visible abnormalities.
+patient64849/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64849/study1/view2_lateral.jpg,cannot exclude Support Devices
+patient64850/study1/view1_frontal.jpg,cannot exclude Edema.probable Support Devices
+patient64850/study1/view2_lateral.jpg,Cannot exclude Support Devices.
+patient64851/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pneumothorax.
+patient64852/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient64853/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pleural Effusion.
+patient64853/study1/view2_lateral.jpg,Cannot exclude Support Devices.
+patient64854/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, Lung Opacity (left)
+patient64855/study1/view1_frontal.jpg,cannot exclude Atelectasis
+patient64855/study1/view2_lateral.jpg,Normal lung volumes and density. No significant abnormalities or opacities detected.
+patient64856/study1/view1_frontal.jpg,cannot exclude Pneumothorax, possible Fracture
+patient64856/study1/view2_lateral.jpg,possible Lung Opacity
+patient64857/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64857/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung parenchyma.* Normal mediastinum.* Normal diaphragms.* No visible fractures or bone lesions.* No pleural effusion or pneumothorax.* No abnormal densities or opacities.* No evidence of cardiomegaly or pulmonary vasculature abnormalities.
+patient64858/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Support Devices. Lung Opacity is likely bilateral.
+patient64859/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No evidence of pneumothorax.* No pleural effusion.* No mediastinal widening.* No hilar adenopathy.* No rib fractures.* No lung nodules or masses.* No cardiomegaly.* No pulmonary vasculature abnormalities.* No diaphragmatic elevation.* No lung consolidation or atelectasis..No other abnormalities are seen.
+patient64859/study1/view2_lateral.jpg,The chest X-ray appears normal, with no abnormalities or findings.
+patient64860/study1/view1_frontal.jpg,cannot exclude Pneumothorax.possible Pleural Effusion.possible Pleural Other.Support Devices
+patient64860/study1/view2_lateral.jpg,cannot exclude Pleural Effusion
+patient64861/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pleural Effusion.
+patient64862/study1/view1_frontal.jpg,Cardiomegaly.
+patient64862/study1/view2_lateral.jpg,Probable Cardiomegaly, Possible Support Devices
+patient64863/study1/view1_frontal.jpg,Probable Edema, Possible Atelectasis, Support Devices.
+patient64864/study1/view1_frontal.jpg,Possible Cardiomegaly, possible Lung Opacity, probable Support Devices, cannot exclude Pleural Effusion.
+patient64864/study1/view2_lateral.jpg,cannot exclude Cardiomegaly.possible Pleural Effusion.probable Support Devices
+patient64865/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient64866/study1/view1_frontal.jpg,cannot exclude Lung Opacity; possible Edema; probable Pleural Effusion; Support Devices.
+patient64867/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No evidence of consolidation or effusion.* No fractures or rib abnormalities.* Normal cardiac silhouette.* No pleural thickening or calcifications.* No mediastinal widening or masses.* No pneumothorax or lung collapse
+patient64868/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient64869/study1/view1_frontal.jpg,The chest X-ray shows:..* The lungs are clear and well-aerated..* The heart size and shape are normal..* The mediastinum is unremarkable..* The diaphragm is intact and symmetrical..* No visible fractures or bone lesions..* The pleural spaces are clear..* No visible lymphadenopathy..* No abnormal densities or masses.
+patient64869/study1/view2_lateral.jpg,cannot exclude Pneumothorax, probable Support Devices
+patient64870/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64870/study1/view2_frontal.jpg,Normal chest X-ray.
+patient64870/study1/view3_lateral.jpg,The chest X-ray is normal.
+patient64871/study1/view1_frontal.jpg,The chest X-ray shows:..* No abnormalities or pathologies detected..* Lung fields are clear and even..* No pleural effusion or pneumothorax..* Heart size and shape are normal..* No mediastinal widening or masses..* Diaphragms are intact and at normal position..* No rib fractures or bony abnormalities.
+patient64872/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion
+patient64872/study1/view2_lateral.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, cannot exclude Atelectasis, possible Atelectasis on the left and right.
+patient64873/study1/view1_frontal.jpg,Probable Lung Opacity, Probable Consolidation, Pleural Effusion left, Pleural Effusion right, Support Devices left, Support Devices right.
+patient64874/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* Normal cardiac silhouette.* No visible fractures or bone abnormalities.* No pleural effusion or pneumothorax.* No mediastinal widening or masses.* No abnormalities in the diaphragms or lung bases
+patient64874/study1/view2_lateral.jpg,Normal lung fields.
+patient64875/study1/view1_frontal.jpg,cannot exclude Pneumothorax, probable Support Devices
+patient64875/study1/view2_lateral.jpg,Cannot exclude Support Devices.
+patient64876/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64876/study1/view2_lateral.jpg,The chest X-ray is normal.
+patient64877/study1/view1_frontal.jpg,cannot exclude Pneumothorax
+patient64877/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64878/study1/view1_frontal.jpg,Probable Lung Lesion. Probable Pneumothorax. Cannot exclude Lung Opacity. Possible Pneumonia.
+patient64878/study1/view2_lateral.jpg,Cannot exclude Lung Opacity. Possible Lung Opacity (left), possible Lung Opacity (right).
+patient64879/study1/view1_frontal.jpg,Probable Lung Opacity, Probable Pleural Effusion
+patient64879/study1/view2_lateral.jpg,The chest x-ray shows:..* Possible Lung Opacity.* Cannot exclude Pleural Effusion
+patient64880/study1/view1_frontal.jpg,Normal lung fields with no opacities, effusions, or masses.
+patient64881/study1/view1_frontal.jpg,Probable Pleural Effusion, possible Consolidation, cannot exclude Atelectasis, cannot exclude Pneumothorax, probable Support Devices.
+patient64882/study1/view1_frontal.jpg,The chest X-ray appears to be normal, with no abnormalities or findings noted.
+patient64883/study1/view1_frontal.jpg,The findings on the chest x-ray are:..cannot exclude Cardiomegaly.possible Lung Opacity.probable Atelectasis.probable Pleural Effusion.probable Support Devices..The findings are bilateral for Atelectasis and Pleural Effusion.
+patient64884/study1/view1_frontal.jpg,The findings on the chest x-ray are:..* Lung Opacity.* Possible Lung Lesion.* Cannot exclude Atelectasis.* Probable Pneumothorax.* Support Devices
+patient64884/study1/view2_lateral.jpg,cannot exclude Lung Opacity, cannot exclude Pneumothorax
+patient64885/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pleural Effusion.
+patient64886/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung parenchyma.* Normal mediastinum.* Normal diaphragm.* No visible fractures or bone abnormalities.* No pleural effusions or pneumothoraces.* No visible masses or nodules
+patient64886/study1/view2_frontal.jpg,Normal chest X-ray.
+patient64886/study1/view3_lateral.jpg,cannot exclude Lung Opacity
+patient64887/study1/view1_frontal.jpg,Probable Lung Opacity, possible Atelectasis, probable Pleural Effusion, possible Pneumothorax, probable Support Devices.
+patient64887/study1/view2_lateral.jpg,Probable Lung Opacity, cannot exclude Atelectasis, possible Pneumothorax, probable Pleural Effusion, Support Devices.
+patient64888/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung parenchyma.* Normal heart size and shape.* No visible fractures or bones abnormalities.* No visible mediastinal or pleural effusion.* No visible lung nodules or masses.* No visible pneumothorax.* No visible pleural thickening or calcifications.* No visible abnormal soft tissue densities.* No visible rib or sternum abnormalities.* No visible diaphragmatic elevation or depression.* No visible lung consolidation or atelectasis.* No visible airspace opacities.* No visible pleural thickening or calcifications.* No visible lung vasculature abnormalities..No other findings are noted.
+patient64889/study1/view1_frontal.jpg,The findings on the chest x-ray are:..Possible Edema.Cannot exclude Lung Opacity
+patient64889/study1/view2_lateral.jpg,Probable Lung Opacity.
+patient64890/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64891/study1/view1_frontal.jpg,Possible Pneumothorax, probable Pleural Effusion, Support Devices.
+patient64891/study1/view2_lateral.jpg,Possible findings on the chest x-ray:..* Cannot exclude Lung Opacity.* Possible Atelectasis (left and right).* Possible Pneumothorax (left and right).* Possible Pleural Effusion (left).* Probable Support Devices
+patient64892/study1/view1_frontal.jpg,Normal lung volumes and lung fields. No evidence of consolidation, effusion, or pneumothorax. No significant mediastinal or hilar adenopathy. No fractures or other bony abnormalities.
+patient64892/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64893/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Edema. Cannot exclude Cardiomegaly. Probable Pleural Effusion. Support Devices.
+patient64894/study1/view1_frontal.jpg,Normal lung fields. No significant opacity or consolidation. No pleural effusion or pneumothorax. No rib or sternal abnormalities. No mediastinal widening.
+patient64894/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64895/study1/view1_frontal.jpg,The chest X-ray is normal, with no significant abnormalities or findings.
+patient64895/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64896/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, possible Consolidation, cannot exclude Atelectasis, possible Pleural Effusion, probable Support Devices.Left Lung Opacity, left Edema, left Consolidation, left Atelectasis, left Pleural Effusion, left Support Devices.Right Lung Opacity, right Consolidation, right Atelectasis, right Pleural Effusion
+patient64897/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64898/study1/view1_frontal.jpg,Possible Lung Opacity, cannot exclude Edema, probable Support Devices.
+patient64899/study1/view1_frontal.jpg,Probable Pleural Effusion. Possible Edema. Lung Opacity cannot be excluded.
+patient64900/study1/view1_frontal.jpg,cannot exclude Lung Opacity, cannot exclude Edema, probable Pleural Effusion, possible Support Devices
+patient64901/study1/view1_frontal.jpg,Normal lung volumes and lucency. No opacities, masses, or nodules. No pleural effusion or thickening. No rib or sternal abnormalities. No mediastinal widening or abnormal soft tissue.
+patient64902/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient64902/study1/view2_lateral.jpg,Normal lung fields with no abnormalities.
+patient64903/study1/view1_frontal.jpg,Probable Lung Opacity, possible Consolidation, probable Atelectasis, probable Pleural Effusion.
+patient64904/study1/view1_frontal.jpg,Normal lung parenchyma. No opacities, masses, or effusions noted. Heart size is normal. Ribcage and diaphragm are intact. No pneumothorax or pleural effusion.
+patient64905/study1/view1_frontal.jpg,Normal chest X-ray. No abnormalities detected.
+patient64905/study1/view2_frontal.jpg,Normal lung parenchyma. No abnormalities or opacities noted.
+patient64905/study1/view3_lateral.jpg,Normal chest X-ray.
+patient64906/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64907/study1/view1_frontal.jpg,cannot exclude Pneumothorax, possible Support Devices
+patient64907/study1/view2_lateral.jpg,cannot exclude Support Devices
+patient64908/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, cannot exclude Atelectasis, possible Pleural Effusion
+patient64909/study1/view1_frontal.jpg,The chest X-ray is normal. No abnormalities are seen.
+patient64910/study1/view1_frontal.jpg,cannot exclude Fracture.possible Support Devices
+patient64910/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64911/study1/view1_frontal.jpg,Cannot exclude Lung Opacity.
+patient64912/study1/view1_frontal.jpg,cannot exclude Edema
+patient64913/study1/view1_frontal.jpg,Normal lung fields. No visible abnormalities.
+patient64913/study1/view2_lateral.jpg,Support Devices.
+patient64914/study1/view1_frontal.jpg,Based on the provided data, the findings on the chest x-ray are:..* Possible Lung Lesion.* Possible Pneumonia.* Possible Lung Opacity.* Cannot exclude Pneumothorax
+patient64915/study1/view1_frontal.jpg,Normal lung volumes and lung fields..No significant opacities or masses..No pleural effusion or pneumothorax..No rib or sternal abnormalities..No mediastinal widening or shift..No abnormal soft tissue density..No fractures or lytic lesions..No calcifications..No significant cardiac enlargement..No pulmonary vasculature abnormalities..No pleural thickening or plaques..No lung nodules or lesions..No pneumonitis or consolidation..No significant lung atelectasis..No diaphragmatic elevation or paralysis..No abdominal viscera or soft tissue densities in the thoracic cavity..No air in the mediastinum or pleural space..No bone spurs or degenerative changes..No lung vasculature calcifications..No significant cardiac silhouette abnormalities..No lung parenchymal scarring or fibrosis..No significant mediastinal lymphadenopathy..No pleural effusion or empyema..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant mediastinal or hilar lymphadenopathy..No lung vasculature dilation or stenosis..No significant pleural or mediastinal abnormalities..No lung parenchymal scarring or fibrosis..No significant lung vasculature abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities..No lung nodules or masses..No significant lung parenchymal abnormalities
+patient64915/study1/view2_lateral.jpg,Normal lung parenchyma, no abnormalities detected.
+patient64916/study1/view1_frontal.jpg,Probable Lung Opacity, possible Atelectasis, Support Devices.
+patient64916/study1/view2_lateral.jpg,cannot exclude Edema.possible Support Devices
+patient64917/study1/view1_frontal.jpg,cannot exclude Enlarged Cardiomediastinum, possible Fracture
+patient64918/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, possible Pneumothorax
+patient64918/study1/view2_lateral.jpg,Probable Lung Opacity.
+patient64919/study1/view1_frontal.jpg,cannot exclude Fracture
+patient64920/study1/view1_frontal.jpg,Possible Edema, Probable Support Devices.
+patient64921/study1/view1_frontal.jpg,Normal lung parenchyma and mediastinal soft tissues.
+patient64921/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64922/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, probable Support Devices.
+patient64923/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No evidence of consolidation, effusion, or pneumothorax.* No abnormalities of the mediastinum or diaphragm.* No fractures or bony abnormalities.* No evidence of pleural thickening or calcification.* No lung nodules or masses.* No evidence of pulmonary vasculature abnormalities.* No evidence of cardiac enlargement or abnormalities.* No pleural effusion or pleural thickening.* No evidence of pneumomediastinum
+patient64923/study1/view2_lateral.jpg,The chest X-ray is normal. No abnormalities are seen.
+patient64924/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices
+patient64925/study1/view1_frontal.jpg,Normal lung fields with no abnormalities.
+patient64926/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64926/study1/view2_lateral.jpg,cannot exclude Cardiomegaly, possible Edema
+patient64927/study1/view1_frontal.jpg,Probable Lung Opacity, possible Atelectasis, probable Pneumothorax, Pleural Effusion.
+patient64928/study1/view1_frontal.jpg,Normal lung fields with no opacities or masses..Normal heart size and shape..No pleural effusions or pneumothorax..No rib fractures or bony abnormalities..No mediastinal widening or masses..No abnormal soft tissue densities..No pneumonias or infiltrates..No calcifications or nodules..No abnormalities detected.
+patient64928/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung fields.* No visible fractures or lytic lesions.* No evidence of pneumothorax or pleural effusion.* Heart size and shape are normal.* No mediastinal widening or masses.* No rib or sternum abnormalities.* No visible lung nodules or masses
+patient64929/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, cannot exclude Cardiomegaly, probable Pleural Effusion, probable Support Devices, left Lung Opacity, left Pleural Effusion, left Edema.
+patient64930/study1/view1_frontal.jpg,Probable Pleural Effusion, possible Lung Opacity, probable Support Devices.
+patient64931/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Pleural Effusion. Probable Support Devices.
+patient64932/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64933/study1/view1_frontal.jpg,The chest X-ray is normal.
+patient64933/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64934/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.probable Atelectasis.probable Pleural Effusion.probable Support Devices
+patient64935/study1/view1_frontal.jpg,Cannot exclude Lung Opacity.
+patient64936/study1/view1_frontal.jpg,Probable Pleural Effusion, probable Lung Opacity, possible Edema.
+patient64937/study1/view1_frontal.jpg,cannot exclude Consolidation.possible Atelectasis
+patient64938/study1/view1_frontal.jpg,Probable Pneumothorax, possible Support Devices.
+patient64939/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Support Devices
+patient64940/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64940/study1/view2_lateral.jpg,cannot exclude Support Devices
+patient64941/study1/view1_frontal.jpg,cannot exclude Cardiomegaly
+patient64942/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient64943/study1/view1_frontal.jpg,Normal lung fields. No opacities or effusions. No evidence of pneumothorax or pleural thickening. No mediastinal abnormalities.
+patient64943/study1/view2_frontal.jpg,Normal lung fields.
+patient64944/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Edema. Possible Consolidation. Possible Atelectasis. Probable Pleural Effusion. Possible Support Devices.
+patient64945/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64945/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64946/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, probable Pleural Effusion, possible Support Devices.
+patient64947/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Support Devices. Lung Opacity is bilateral.
+patient64948/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly.
+patient64948/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64949/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.cannot exclude Atelectasis.possible Pleural Effusion.Support Devices
+patient64949/study1/view2_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, cannot exclude Support Devices. Lung Opacity is likely located on the left and right sides.
+patient64950/study1/view1_frontal.jpg,cannot exclude Atelectasis
+patient64951/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Support Devices, Lung Opacity is likely found on the left
+patient64951/study1/view2_lateral.jpg,cannot exclude Cardiomegaly.possible Support Devices
+patient64952/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion
+patient64952/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, probable Support Devices.
+patient64953/study1/view1_frontal.jpg,Probable Cardiomegaly. Possible Lung Opacity. Probable Edema. Cannot exclude Pleural Effusion.
+patient64954/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.Pleural Effusion
+patient64955/study1/view1_frontal.jpg,Normal lung fields. No pleural effusion or pneumothorax. No rib or sternal abnormalities. No mediastinal widening. No hilar or hilar lymphadenopathy. No lung nodules or masses. No pulmonary vascularity abnormalities.
+patient64955/study1/view2_lateral.jpg,Normal lung fields. No significant opacity, consolidation, or effusion. No rib or sternal abnormalities. No evidence of pneumothorax.
+patient64956/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No visible fractures or lytic lesions.* No signs of consolidation or opacity.* Normal cardiac silhouette.* No mediastinal widening or mass.* Normal diaphragmatic position and shape.* No pleural effusion or pneumothorax.* No abnormalities in the ribs or sternum.
+patient64956/study1/view2_lateral.jpg,Normal lung parenchyma. No abnormalities detected.
+patient64957/study1/view1_frontal.jpg,cannot exclude Pneumothorax
+patient64957/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64958/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, possible Pleural Effusion, probable Support Devices. Lung Opacity is bilateral, Edema is bilateral, Pleural Effusion is bilateral.
+patient64959/study1/view1_frontal.jpg,Cannot exclude Lung Lesion
+patient64959/study1/view2_lateral.jpg,Normal lung fields. No abnormalities detected.
+patient64960/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.probable Pleural Effusion.probable Support Devices.Lung Opacity: bilateral.Edema: bilateral.Pleural Effusion: left and right
+patient64961/study1/view1_frontal.jpg,cannot exclude Lung Opacity.possible Atelectasis.probable Pleural Effusion, left.Support Devices
+patient64962/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64963/study1/view1_frontal.jpg,Probable Lung Opacity, Probable Edema, Possible Pleural Effusion, Probable Support Devices
+patient64964/study1/view1_frontal.jpg,cannot exclude Atelectasis, possible Lung Opacity, probable Pleural Effusion, probable Support Devices
+patient64964/study1/view2_lateral.jpg,Cannot exclude Atelectasis. Possible Support Devices.
+patient64965/study1/view1_frontal.jpg,Probable Lung Opacity.
+patient64966/study1/view1_frontal.jpg,Possible Lung Opacity, cannot exclude Edema, possible Pneumothorax, probable Support Devices.
+patient64967/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pneumothorax.
+patient64967/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung fields.* Normal heart size and shape.* No visible fractures or bony abnormalities.* No pleural effusion or pneumothorax.* No visible mediastinal or hilar adenopathy.* No abnormal soft tissue densities or masses.* No evidence of consolidation or infiltrates.* No visible diaphragmatic or rib abnormalities
+patient64968/study1/view1_frontal.jpg,Probable Lung Opacity.
+patient64969/study1/view1_frontal.jpg,cannot exclude Cardiomegaly
+patient64969/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64969/study1/view3_lateral.jpg,Normal lung fields. No abnormalities detected.
+patient64970/study1/view1_frontal.jpg,Normal lung volumes and lucency. No visible fractures, effusions, or masses. No evidence of pneumothorax or pneumomediastinum. No abnormal density or opacity.
+patient64970/study1/view2_frontal.jpg,Support Devices
+patient64971/study1/view1_frontal.jpg,The chest X-ray shows:..* No abnormalities or opacities.* Normal lung volumes and shape.* No evidence of pleural effusion or pneumothorax.* No abnormalities in the mediastinum.* Normal heart size and shape.* No fractures or lytic lesions.* No calcifications or nodules.* No abnormalities in the diaphragm or retrosternal space
+patient64972/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64972/study1/view2_lateral.jpg,Cannot exclude Lung Opacity.
+patient64973/study1/view1_frontal.jpg,Probable Lung Opacity, possible Pleural Effusion, cannot exclude Lung Opacity, possible Pleural Effusion on the left, probable Pleural Effusion on the right.
+patient64974/study1/view1_frontal.jpg,cannot exclude Fracture
+patient64975/study1/view1_frontal.jpg,Probable Lung Opacity, possible Pleural Effusion, cannot exclude Support Devices.
+patient64976/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64976/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64977/study1/view1_frontal.jpg,cannot exclude Pneumothorax, possible Support Devices
+patient64978/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient64978/study1/view2_lateral.jpg,Normal lung fields. No evidence of pneumothorax, pleural effusion, or mediastinal widening. The heart size and shape are normal. The diaphragms are intact and at the expected level.
+patient64979/study1/view1_frontal.jpg,Normal chest X-ray.
+patient64980/study1/view1_frontal.jpg,cannot exclude Pneumothorax, possible Pleural Effusion, probable Support Devices
+patient64980/study1/view2_lateral.jpg,cannot exclude Support Devices
+patient64981/study1/view1_frontal.jpg,Normal lung fields. No significant abnormalities or opacities detected.
+patient64981/study1/view2_lateral.jpg,The chest X-ray is normal, with no abnormalities detected.
+patient64982/study1/view1_frontal.jpg,Probable Pneumothorax, possible Pleural Effusion, cannot exclude Support Devices.
+patient64982/study1/view2_lateral.jpg,cannot exclude Pneumothorax.probable Pleural Effusion.cannot exclude Support Devices
+patient64983/study1/view1_frontal.jpg,Probable Lung Opacity, possible Atelectasis, possible Pneumothorax, possible Pleural Effusion, probable Support Devices.
+patient64984/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient64985/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pneumothorax, probable Pleural Effusion, Support Devices.
+patient64985/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64986/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, possible Pleural Effusion
+patient64986/study1/view2_frontal.jpg,cannot exclude Lung Opacity; possible Lung Lesion; cannot exclude Pneumothorax
+patient64986/study1/view3_lateral.jpg,The chest X-ray appears normal.
+patient64987/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices, Pneumothorax.
+patient64988/study1/view1_frontal.jpg,cannot exclude Edema.possible Fracture
+patient64989/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities.
+patient64989/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64990/study1/view1_frontal.jpg,Normal lung fields. No abnormalities detected.
+patient64990/study1/view2_lateral.jpg,The chest X-ray appears normal.
+patient64991/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Edema, probable Pleural Effusion, probable Support Devices
+patient64992/study1/view1_frontal.jpg,cannot exclude Lung Opacity; possible Atelectasis; possible Pleural Effusion
+patient64993/study1/view1_frontal.jpg,Probable Support Devices, cannot exclude Pneumothorax.
+patient64994/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pneumonia.
+patient64994/study1/view2_lateral.jpg,Normal chest X-ray.
+patient64995/study1/view1_frontal.jpg,Normal lung parenchyma. No significant abnormalities are seen.
+patient64996/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung parenchyma.* Normal mediastinal contours.* Normal diaphragmatic position and shape.* No evidence of pleural effusion or pneumothorax.* No fractures or bony abnormalities.* No abnormalities in the cardiac silhouette
+patient64996/study1/view2_lateral.jpg,Normal lung volumes and expansion..No visible fractures or bone abnormalities..No evidence of pleural effusion or pneumothorax..No visible mediastinal or hilar adenopathy..No lung parenchymal abnormalities.
+patient64997/study1/view1_frontal.jpg,The chest X-ray is normal.
+patient64997/study1/view2_lateral.jpg,The chest X-ray is normal, with no abnormalities detected.
+patient64998/study1/view1_frontal.jpg,cannot exclude Atelectasis
+patient64998/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient64999/study1/view1_frontal.jpg,Cannot exclude Enlarged Cardiomediastinum, possible Lung Opacity, probable Lung Lesion, probable Pneumothorax, probable Fracture.
+patient64999/study1/view2_lateral.jpg,Based on the provided data, the findings on the chest x-ray are:..* cannot exclude Lung Opacity.* possible Edema, located on the left and right sides.* possible Consolidation, located on the right side.* cannot exclude Fracture, located on the left and right sides
+patient65000/study1/view1_frontal.jpg,Possible Lung Opacity, possible Fracture
+patient65001/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices
+patient65002/study1/view1_frontal.jpg,cannot exclude Pneumothorax
+patient65002/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Pneumothorax
+patient65003/study1/view1_frontal.jpg,The chest X-ray is unremarkable.
+patient65003/study1/view2_lateral.jpg,The chest X-ray is normal. No abnormalities are seen.
+patient65004/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices
+patient65005/study1/view1_frontal.jpg,cannot exclude Cardiomegaly
+patient65006/study1/view1_frontal.jpg,Normal lung parenchyma, no abnormalities detected.
+patient65006/study1/view2_lateral.jpg,Normal chest X-ray.
+patient65007/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* Cannot exclude Lung Opacity.* Possible Atelectasis.* Probable Pneumothorax.* Possible Pleural Effusion.* Support Devices
+patient65008/study1/view1_frontal.jpg,cannot exclude Lung Opacity, cannot exclude Pleural Effusion, probable Support Devices
+patient65008/study1/view2_lateral.jpg,cannot exclude Enlarged Cardiomediastinum.possible Lung Opacity.cannot exclude Atelectasis.probable Support Devices
+patient65009/study1/view1_frontal.jpg,Normal lung fields. No opacities or effusions. The mediastinum is within normal limits. The diaphragms are intact and at the expected level. The heart size is normal. The lungs are fully expanded.
+patient65009/study1/view2_lateral.jpg,Normal lung fields. No significant opacity or consolidation. No pleural effusion or pleural thickening. No mediastinal or hilar lymphadenopathy. No fractures or rib abnormalities.
+patient65010/study1/view1_frontal.jpg,The chest X-ray shows:..* The lungs are clear and well-aerated..* The mediastinum is within normal limits..* The diaphragm is intact and symmetric..* The ribs and sternum are normal..* The heart size and shape are normal..* No abnormalities are visible.
+patient65010/study1/view2_lateral.jpg,Cannot exclude Lung Opacity. Possible Atelectasis.
+patient65010/study1/view3_lateral.jpg,cannot exclude Lung Opacity, possible Atelectasis
+patient65011/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, cannot exclude Pleural Effusion
+patient65011/study1/view2_frontal.jpg,cannot exclude Lung Opacity.cannot exclude Pleural Effusion.possible Lung Opacity (left).possible Pleural Effusion (left).possible Pleural Effusion (right)
+patient65012/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient65013/study1/view1_frontal.jpg,The chest X-ray shows:..* No abnormalities or pathologies detected..* Lung fields are clear and even..* No evidence of consolidation, effusion, or pneumothorax..* Heart size is normal..* No rib or sternal abnormalities..* No evidence of mediastinal widening or narrowing..* Diaphragms are intact and at a normal level..* No other abnormalities are seen.
+patient65013/study1/view2_frontal.jpg,Normal chest X-ray.
+patient65013/study1/view3_lateral.jpg,cannot exclude Lung Opacity
+patient65014/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, Lung Opacity left
+patient65015/study1/view1_frontal.jpg,cannot exclude Lung Opacity, cannot exclude Consolidation, possible Atelectasis, probable Pleural Effusion, cannot exclude Support Devices. ..Left Lung Opacity, left Consolidation, left Atelectasis, left Pleural Effusion, left Support Devices.
+patient65016/study1/view1_frontal.jpg,Cannot exclude Lung Opacity.
+patient65016/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Atelectasis
+patient65017/study1/view1_frontal.jpg,Normal lung parenchyma with no opacities or masses. No pleural effusion or pneumothorax. No mediastinal widening or abnormal soft tissue.
+patient65018/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient65018/study1/view2_lateral.jpg,Cannot exclude Lung Opacity
+patient65019/study1/view1_frontal.jpg,Normal lung parenchyma. No abnormalities detected.
+patient65020/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Lung Lesion. Probable Pneumothorax.
+patient65020/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient65021/study1/view1_frontal.jpg,cannot exclude Pneumothorax.possible Support Devices
+patient65022/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Atelectasis. Probable Pleural Effusion.
+patient65023/study1/view1_frontal.jpg,The chest x-ray shows:..* Possible Lung Opacity.* Cannot exclude Support Devices
+patient65024/study1/view1_frontal.jpg,Support Devices.
+patient65024/study1/view2_lateral.jpg,Normal chest X-ray with no significant findings.
+patient65025/study1/view1_frontal.jpg,Probable Lung Opacity, Probable Pleural Effusion, Possible Support Devices
+patient65026/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumonia, probable Atelectasis, cannot exclude Pleural Effusion; Lung Opacity is likely right-sided, Pneumonia is possible on both left and right sides, Atelectasis is possible on both left and right sides, Pleural Effusion is likely right-sided.
+patient65026/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Atelectasis.
+patient65027/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, cannot exclude Cardiomegaly, probable Support Devices.
+patient65027/study1/view2_lateral.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, probable Pleural Effusion, possible Support Devices
+patient65028/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema.
+patient65029/study1/view1_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient65029/study1/view2_lateral.jpg,cannot exclude Lung Opacity
+patient65030/study1/view1_frontal.jpg,cannot exclude Enlarged Cardiomediastinum, possible Cardiomegaly, probable Lung Opacity
+patient65030/study1/view2_lateral.jpg,Possible findings on the chest x-ray:..* Lung Opacity.* cannot exclude Edema.* possible Atelectasis.* Support Devices
+patient65031/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, cannot exclude Pneumothorax, possible Pleural Effusion, probable Support Devices
+patient65031/study1/view2_frontal.jpg,Probable Lung Opacity, Probable Pleural Effusion, Possible Atelectasis, cannot exclude Pneumothorax, Support Devices.
+patient65031/study1/view3_lateral.jpg,Cannot exclude Lung Opacity. Possible Atelectasis. Probable Pleural Effusion, located on the right.
+patient65032/study1/view1_frontal.jpg,Normal chest X-ray.
+patient65033/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Atelectasis.
+patient65033/study1/view2_lateral.jpg,The chest X-ray shows:..* Normal lung fields.* No visible fractures or bony abnormalities.* Normal cardiac silhouette.* No pleural effusions or pneumothorax.* No visible nodules or masses.* No mediastinal widening or shift.* Normal diaphragmatic position and shape
+patient65034/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Atelectasis. Probable Support Devices. Lung Opacity is likely bilateral.
+patient65034/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, probable Support Devices.
+patient65035/study1/view1_frontal.jpg,Cannot exclude Edema.Probable Support Devices
+patient65035/study1/view2_lateral.jpg,cannot exclude Edema, possible Support Devices
+patient65036/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Pneumothorax.cannot exclude Pneumothorax (left)
+patient65037/study1/view1_frontal.jpg,Possible findings on the chest x-ray include:..* Lung Opacity.* cannot exclude Atelectasis.* possible Pleural Effusion.* probable Support Devices
+patient65038/study1/view1_frontal.jpg,cannot exclude Lung Opacity, cannot exclude Lung Lesion, possible Pleural Effusion, probable Support Devices, possible Lung Opacity (left), possible Lung Lesion (left), possible Lung Lesion (right), possible Support Devices (left), possible Support Devices (right)
+patient65039/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices, Pneumothorax (left and right).
+patient65040/study1/view1_frontal.jpg,Probable Pleural Effusion, probable Pneumothorax, possible Atelectasis, cannot exclude Lung Opacity.
+patient65041/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Support Devices
+patient65042/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices
+patient65043/study1/view1_frontal.jpg,Possible Pneumothorax.
+patient65044/study1/view1_frontal.jpg,Probable Lung Opacity, probable Atelectasis, Pleural Effusion left and right.
+patient65045/study1/view1_frontal.jpg,Probable Lung Opacity.
+patient65046/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* Possible Lung Opacity.* Probable Pleural Effusion.* Support Devices
+patient65047/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, probable Support Devices
+patient65048/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, possible Atelectasis, probable Pleural Effusion, possible Support Devices.
+patient65049/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient65050/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient65050/study1/view2_frontal.jpg,Normal chest X-ray with no abnormalities detected.
+patient65051/study1/view1_frontal.jpg,Probable Edema.
+patient65051/study1/view2_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.Lung Opacity: possible left, possible right.Edema: possible left, possible right
+patient65052/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Atelectasis. Probable Pleural Effusion. Support Devices.
+patient65053/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, cannot exclude Consolidation, possible Pleural Effusion
+patient65054/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, Support Devices.
+patient65055/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pleural Effusion. Probable Support Devices, bilateral.
+patient65056/study1/view1_frontal.jpg,Probable Pneumothorax. Possible Atelectasis. Possible Lung Opacity. Probable Pleural Effusion. Support Devices.
+patient65057/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient65058/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion, cannot exclude Support Devices.Lung Opacity: left, right.Pleural Effusion: left, right
+patient65058/study1/view2_lateral.jpg,Probable Lung Opacity. Possible Atelectasis. Cannot exclude Pleural Effusion.
+patient65059/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* Probable Pleural Effusion.* Possible Lung Opacity.* Possible Edema.* Possible Consolidation.* Possible Atelectasis.* Probable Support Devices
+patient65060/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No evidence of consolidation, effusion, or pneumothorax.* No abnormalities in the mediastinum.* No fractures or rib abnormalities.* No pleural calcifications.* No other significant findings
+patient65060/study1/view2_lateral.jpg,Normal chest X-ray.
+patient65061/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, probable Pleural Effusion, Support Devices.
+patient65062/study1/view1_frontal.jpg,Normal chest X-ray.
+patient65063/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, cannot exclude Pleural Effusion, probable Support Devices.
+patient65064/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices, probable Lung Opacity on the left, possible Pleural Effusion on the left and right.
+patient65065/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema
+patient65066/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, cannot exclude Consolidation, probable Pleural Effusion, probable Support Devices.
+patient65067/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient65068/study1/view1_frontal.jpg,Probable Edema, Possible Atelectasis, probable Support Devices.
+patient65069/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Cannot exclude Pleural Effusion. Possible Support Devices. Lung Opacity is bilateral.
+patient65069/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Edema, possible Atelectasis, cannot exclude Pleural Effusion.
+patient65070/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.Pleural Effusion.probable Support Devices.Lung Opacity is bilateral.Edema is bilateral.Pleural Effusion is bilateral.Support Devices are bilateral
+patient65071/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, probable Support Devices.
+patient65072/study1/view1_frontal.jpg,The chest X-ray shows:..* No abnormalities or pathologies detected..* Heart size and shape are normal..* Lungs are clear with no visible opacities or infiltrates..* No evidence of pneumothorax or pleural effusion..* Bones and mediastinum are normal..* No other notable findings.
+patient65073/study1/view1_frontal.jpg,Possible Lung Opacity, possible Pleural Effusion, probable Support Devices.
+patient65074/study1/view1_frontal.jpg,Normal chest X-ray.
+patient65075/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Consolidation. Probable Pleural Effusion, likely located on the right. Probable Support Devices, likely located on both sides.
+patient65076/study1/view1_frontal.jpg,Normal chest X-ray.
+patient65077/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Atelectasis, possible Pleural Effusion, probable Support Devices.
+patient65078/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, probable Pleural Effusion, probable Support Devices
+patient65079/study1/view1_frontal.jpg,Probable Lung Opacity, possible Pleural Effusion, probable Support Devices.
+patient65080/study1/view1_frontal.jpg,Normal lung parenchyma. No abnormalities detected.
+patient65081/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Pleural Effusion, probable Support Devices
+patient65082/study1/view1_frontal.jpg,Cannot exclude Edema. Possible Atelectasis. Probable Support Devices.
+patient65083/study1/view1_frontal.jpg,Normal lung volumes and shape. No focal opacities or masses. No pleural effusion or pneumothorax. No rib or vertebral abnormalities. No mediastinal widening. No pulmonary vascularity abnormalities.
+patient65084/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pleural Effusion.
+patient65084/study1/view2_frontal.jpg,Probable Pleural Effusion, possible Atelectasis, cannot exclude Lung Opacity, probable Support Devices.
+patient65085/study1/view1_frontal.jpg,Possible Lung Opacity, possible Atelectasis, possible Pleural Effusion, probable Support Devices.
+patient65086/study1/view1_frontal.jpg,Cannot exclude Lung Opacity.
+patient65087/study1/view1_frontal.jpg,Normal lung fields with no significant abnormalities.
+patient65087/study1/view2_lateral.jpg,cannot exclude Enlarged Cardiomediastinum, possible Cardiomegaly, probable Lung Opacity, probable Support Devices, Enlarged Cardiomediastinum is likely bilateral, possible Lung Opacity is likely left-sided.
+patient65088/study1/view1_frontal.jpg,Possible Lung Opacity, probable Edema, probable Pleural Effusion, probable Support Devices.
+patient65089/study1/view1_frontal.jpg,Probable Lung Opacity, possible Pleural Effusion, probable Support Devices.
+patient65090/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient65090/study1/view2_lateral.jpg,The chest x-ray shows:..* Possible Lung Opacity.* Cannot exclude Fracture.* Possible Support Devices
+patient65091/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Consolidation, possible Pleural Effusion, probable Support Devices.
+patient65092/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Atelectasis. Probable Pleural Effusion. Support Devices.
+patient65093/study1/view1_frontal.jpg,Possible Lung Opacity, possible Edema, cannot exclude Pleural Effusion, probable Support Devices.
+patient65094/study1/view1_frontal.jpg,Based on the provided data, the findings on the chest x-ray are:..* Possible Pneumothorax.* Probable Lung Opacity.* Possible Pleural Effusion.* Cannot exclude Fracture.* Possible Support Devices
+patient65095/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Support Devices.
+patient65096/study1/view1_frontal.jpg,cannot exclude Pneumothorax, probable Support Devices
+patient65097/study1/view1_frontal.jpg,The chest X-ray shows:..* No significant abnormalities or pathologies detected.
+patient65097/study1/view2_lateral.jpg,Normal chest X-ray.
+patient65097/study1/view3_lateral.jpg,Normal lung volumes and lung fields..No evidence of pneumothorax or pleural effusion..No rib fractures or bony abnormalities..No mediastinal widening or abnormalities..No cardiac enlargement or abnormalities..No lung nodules or masses..No evidence of pulmonary edema or infiltrates..No diaphragmatic elevation or abnormalities..No evidence of pleural thickening or calcification..No other abnormalities noted.
+patient65098/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices.
+patient65099/study1/view1_frontal.jpg,Probable Edema. Possible Lung Opacity. Cannot exclude Pleural Effusion.
+patient65100/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient65101/study1/view1_frontal.jpg,Probable Lung Opacity, possible Consolidation, probable Pleural Effusion.
+patient65102/study1/view1_frontal.jpg,cannot exclude Atelectasis, possible Pleural Effusion, probable Support Devices
+patient65103/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, probable Support Devices, possible Fracture (likely bilateral).
+patient65104/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Pleural Effusion.
+patient65105/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pleural Other.
+patient65106/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pleural Effusion, Pleural Effusion
+patient65106/study1/view2_lateral.jpg,Probable Lung Opacity. Possible Atelectasis. Cannot exclude Pleural Effusion.
+patient65107/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Support Devices
+patient65108/study1/view1_frontal.jpg,Possible Lung Opacity, possible Pleural Effusion, probable Support Devices
+patient65109/study1/view1_frontal.jpg,Normal lung parenchyma. No significant abnormalities or opacities detected.
+patient65110/study1/view1_frontal.jpg,Normal lung parenchyma with no abnormalities detected.
+patient65111/study1/view1_frontal.jpg,Probable Pleural Effusion.
+patient65112/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* Cannot exclude Lung Opacity.* Possible Edema.* Possible Atelectasis.* Probable Pleural Effusion.* Support Devices
+patient65113/study1/view1_frontal.jpg,Probable Atelectasis, probable Pleural Effusion, possible Consolidation, possible Edema, cannot exclude Lung Opacity, Support Devices.
+patient65114/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, possible Cardiomegaly, probable Pleural Effusion, possible Support Devices.
+patient65115/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Support Devices
+patient65116/study1/view1_frontal.jpg,The findings on the chest x-ray are:..* Possible Lung Opacity.* Probable Pleural Effusion.* Support Devices
+patient65117/study1/view1_frontal.jpg,Probable Cardiomegaly, possible Lung Opacity, cannot exclude Edema, cannot exclude Pleural Effusion, probable Support Devices.
+patient65118/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly. Possible Fracture.
+patient65119/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Consolidation, cannot exclude Pneumothorax, cannot exclude Pleural Effusion.
+patient65120/study1/view1_frontal.jpg,Cannot exclude Lung Opacity.
+patient65121/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, cannot exclude Consolidation.
+patient65122/study1/view1_frontal.jpg,cannot exclude Cardiomegaly.possible Lung Opacity.probable Edema.probable Pleural Effusion.probable Support Devices
+patient65123/study1/view1_frontal.jpg,Possible Pneumothorax, cannot exclude Support Devices.
+patient65124/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, probable Atelectasis, possible Pleural Effusion, probable Support Devices; possible Lung Opacity in left, possible Edema in left, possible Atelectasis in left and right, possible Pleural Effusion in left, probable Support Devices in left and right.
+patient65125/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, possible Pleural Effusion, Support Devices.
+patient65126/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient65127/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Pleural Effusion.
+patient65128/study1/view1_frontal.jpg,Possible Lung Opacity, probable Support Devices
+patient65129/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Pleural Effusion, Support Devices
+patient65130/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, probable Pleural Effusion.
+patient65131/study1/view1_frontal.jpg,Possible findings on the chest x-ray include:..* Pleural Effusion.* Lung Opacity.* Atelectasis
+patient65132/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, probable Pleural Effusion, probable Support Devices
+patient65133/study1/view1_frontal.jpg,The chest x-ray shows:..* Probable Pleural Effusion.* Possible Atelectasis (bilateral).* Cannot exclude Lung Opacity
+patient65134/study1/view1_frontal.jpg,Cannot exclude Atelectasis. Probable Pneumothorax. Possible Support Devices.
+patient65135/study1/view1_frontal.jpg,Probable Pneumothorax.
+patient65136/study1/view1_frontal.jpg,Probable Lung Opacity, probable Pleural Effusion, possible Edema, possible Atelectasis, probable Support Devices.
+patient65137/study1/view1_frontal.jpg,Possible Lung Opacity, cannot exclude Pneumothorax, possible Pleural Effusion.
+patient65138/study1/view1_frontal.jpg,cannot exclude Edema, possible Support Devices
+patient65139/study1/view1_frontal.jpg,The findings on the chest x-ray are:..* Possible Lung Opacity.* Probable Support Devices.* Cannot exclude Atelectasis.* Possible Atelectasis on the left side.* Possible Atelectasis on the right side
+patient65140/study1/view1_frontal.jpg,Possible Lung Opacity, cannot exclude Pleural Effusion, probable Support Devices, bilateral Support Devices.
+patient65141/study1/view1_frontal.jpg,Cannot exclude Edema. Probable Support Devices.
+patient65142/study1/view1_frontal.jpg,Probable Lung Opacity
+patient65143/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, probable Support Devices, possible Lung Opacity on the left, probable Support Devices on the left and right.
+patient65144/study1/view1_frontal.jpg,cannot exclude Lung Opacity; possible Edema; probable Pleural Effusion; Support Devices
+patient65145/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient65146/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, possible Pleural Effusion, Support Devices
+patient65147/study1/view1_frontal.jpg,The chest X-ray appears normal with no abnormalities detected.
+patient65147/study1/view2_lateral.jpg,Normal lung volumes and densities. No significant opacities or effusions.
+patient65148/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices, Support Devices
+patient65149/study1/view1_frontal.jpg,cannot exclude Atelectasis, possible Support Devices
+patient65150/study1/view1_frontal.jpg,Possible Lung Opacity, cannot exclude Pleural Effusion, probable Pleural Effusion (left), probable Pleural Effusion (right)
+patient65150/study1/view2_lateral.jpg,Possible Lung Opacity, probable Pneumothorax, possible Support Devices.
+patient65151/study1/view1_frontal.jpg,Possible Lung Opacity, cannot exclude Pneumothorax.
+patient65152/study1/view1_frontal.jpg,Normal chest X-ray.
+patient65152/study1/view2_lateral.jpg,cannot exclude Support Devices
+patient65153/study1/view1_frontal.jpg,The chest X-ray is normal.
+patient65154/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Cannot exclude Lung Lesion. Possible Consolidation. Probable Pneumothorax.
+patient65155/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Support Devices, Lung Opacity (left), Lung Opacity (right), Edema (left), Support Devices (left), Support Devices (right)
+patient65156/study1/view1_frontal.jpg,Probable Lung Opacity, Probable Pleural Effusion, probable Support Devices (left and right).
+patient65157/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, possible Edema, possible Atelectasis, probable Pleural Effusion, probable Support Devices.
+patient65158/study1/view1_frontal.jpg,The chest X-ray shows:..* No significant abnormalities or pathologies detected.
+patient65159/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Cardiomegaly, possible Edema
+patient65160/study1/view1_frontal.jpg,Normal chest X-ray. No abnormalities detected.
+patient65161/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, possible Pleural Effusion, probable Support Devices
+patient65162/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Consolidation, possible Pneumonia, possible Pleural Effusion.
+patient65163/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices.
+patient65164/study1/view1_frontal.jpg,Probable Pleural Effusion, cannot exclude Lung Opacity, possible Pneumothorax, probable Support Devices.
+patient65165/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Consolidation, probable Atelectasis, cannot exclude Pneumothorax, probable Pleural Effusion.Lung Opacity: left and right, Consolidation: left and right, Atelectasis: left, Pleural Effusion: left and right
+patient65166/study1/view1_frontal.jpg,cannot exclude Lung Opacity
+patient65167/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, probable Support Devices
+patient65168/study1/view1_frontal.jpg,Probable Pleural Effusion. Possible Lung Opacity. Cannot exclude Edema.
+patient65169/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Edema. Cannot exclude Atelectasis. Probable Pleural Effusion.
+patient65170/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient65171/study1/view1_frontal.jpg,Probable Edema. Cannot exclude Cardiomegaly. Possible Support Devices.
+patient65172/study1/view1_frontal.jpg,Possible Lung Opacity, probable Pleural Effusion, probable Support Devices.
+patient65173/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly. Possible Lung Opacity. Probable Pleural Effusion.
+patient65174/study1/view1_frontal.jpg,The findings on the chest x-ray are:..* Possible Lung Opacity.* Possible Pleural Effusion.* Cannot exclude Support Devices
+patient65175/study1/view1_frontal.jpg,Possible Lung Opacity, probable Pleural Effusion.
+patient65176/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Pleural Effusion
+patient65177/study1/view1_frontal.jpg,Cannot exclude Edema.
+patient65178/study1/view1_frontal.jpg,Possible findings on the chest x-ray include:..* Lung Opacity.* cannot exclude Atelectasis.* possible Pleural Effusion.* probable Support Devices
+patient65179/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Pleural Effusion left. Probable Support Devices left and right.
+patient65180/study1/view1_frontal.jpg,Normal lung parenchyma. No abnormalities detected.
+patient65181/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema
+patient65182/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pneumothorax, probable Pleural Effusion, probable Support Devices
+patient65183/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Support Devices.
+patient65184/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung fields.* No pleural effusion.* No pneumothorax.* No mediastinal widening.* No rib fractures.* No abnormal densities or masses.* No cardiomegaly.* No pulmonary vascularity abnormalities
+patient65185/study1/view1_frontal.jpg,Support Devices
+patient65186/study1/view1_frontal.jpg,Cannot exclude Support Devices.
+patient65187/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Cardiomegaly, probable Edema
+patient65188/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, probable Atelectasis, probable Support Devices.
+patient65189/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pneumonia. Lung Opacity is likely located on the left. Pneumonia is possible on the left and right.
+patient65189/study1/view2_frontal.jpg,cannot exclude Lung Opacity
+patient65190/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices
+patient65191/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, possible Pneumothorax
+patient65192/study1/view1_frontal.jpg,Normal lung volumes and densities..No significant mediastinal widening..No pleural effusions or pneumothorax..No rib fractures or bony abnormalities..No abnormalities of the diaphragm..No other notable findings.
+patient65193/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Atelectasis. Probable Edema. Possible Support Devices.
+patient65194/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, Lung Opacity is likely bilateral.
+patient65195/study1/view1_frontal.jpg,The chest x-ray shows:..* Possible Lung Opacity.* Possible Lung Lesion (left and right).* Probable Pneumothorax (left).* Probable Pleural Effusion (left and right).* Probable Fracture (left and right).* Cannot exclude Support Devices (left)
+patient65196/study1/view1_frontal.jpg,cannot exclude Lung Opacity.possible Atelectasis.probable Pneumothorax.probable Pleural Effusion.probable Support Devices
+patient65197/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Atelectasis, probable Pneumothorax, probable Pleural Effusion.
+patient65198/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly
+patient65199/study1/view1_frontal.jpg,cannot exclude Pneumothorax
+patient65200/study1/view1_frontal.jpg,The chest X-ray appears normal.
+patient65201/study1/view1_frontal.jpg,Probable Lung Opacity, possible Atelectasis, probable Pleural Effusion, probable Support Devices.
+patient65202/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Edema. Probable Cardiomegaly. Probable Pleural Effusion. Probable Support Devices.
+patient65203/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, cannot exclude Consolidation, probable Pleural Effusion, probable Support Devices.
+patient65204/study1/view1_frontal.jpg,cannot exclude Lung Opacity; possible Lung Lesion; cannot exclude Consolidation; possible Pneumothorax; possible Pleural Effusion
+patient65204/study1/view2_lateral.jpg,cannot exclude Lung Opacity, possible Atelectasis
+patient65205/study1/view1_frontal.jpg,Cannot exclude Lung Opacity, possible Edema, probable Cardiomegaly.
+patient65206/study1/view1_frontal.jpg,Cannot exclude Edema. Possible Support Devices.
+patient65207/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Support Devices, Edema is likely in the left lung, Support Devices are likely in both left and right lungs.
+patient65208/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema, cannot exclude Consolidation, cannot exclude Support Devices.Lung Opacity: possible left, possible right; Edema: possible left, possible right; Consolidation: possible left, possible right; Support Devices: possible left, possible right
+patient65209/study1/view1_frontal.jpg,Probable Lung Opacity, probable Edema, possible Atelectasis, probable Pleural Effusion, probable Support Devices.
+patient65210/study1/view1_frontal.jpg,Probable Pneumothorax, possible Atelectasis, cannot exclude Lung Opacity, possible Pleural Effusion.
+patient65211/study1/view1_frontal.jpg,Cannot exclude Edema.Probable Support Devices
+patient65212/study1/view1_frontal.jpg,Probable Lung Opacity, possible Edema, probable Pleural Effusion, probable Support Devices.
+patient65213/study1/view1_frontal.jpg,Normal chest X-ray with no significant findings.
+patient65214/study1/view1_frontal.jpg,Cannot exclude Cardiomegaly, possible Lung Opacity, probable Pleural Effusion, probable Support Devices. Lung Opacity is likely bilateral, Pleural Effusion is likely bilateral, Support Devices are likely left-sided.
+patient65214/study1/view2_lateral.jpg,Cannot exclude Lung Opacity, possible Pleural Effusion, probable Support Devices.
+patient65215/study1/view1_frontal.jpg,Cannot exclude Pneumothorax, possible Support Devices.
+patient65216/study1/view1_frontal.jpg,Probable Lung Opacity. Possible Edema. Cannot exclude Pleural Effusion.
+patient65217/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Support Devices, probable located on the left side, possible located on the right side.
+patient65218/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Support Devices, Lung Opacity is likely located on the left, Edema is likely located on the left.
+patient65219/study1/view1_frontal.jpg,cannot exclude Support Devices
+patient65220/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pleural Effusion. Probable Support Devices, bilateral.
+patient65221/study1/view1_frontal.jpg,cannot exclude Lung Opacity.possible Pleural Effusion.probable Support Devices, bilateral
+patient65222/study1/view1_frontal.jpg,Probable Lung Opacity.
+patient65223/study1/view1_frontal.jpg,Probable Lung Opacity, possible Pneumothorax, Pleural Effusion (left), Pleural Effusion (right), probable Support Devices.
+patient65224/study1/view1_frontal.jpg,The findings on the chest x-ray are:..Cannot exclude Lung Opacity.Possible Atelectasis.Probable Pleural Effusion (left)
+patient65225/study1/view1_frontal.jpg,Possible findings on the chest x-ray:..* cannot exclude Lung Opacity.* possible Atelectasis.* probable Pneumothorax.* probable Support Devices
+patient65226/study1/view1_frontal.jpg,The findings on the chest x-ray are:..* Possible Lung Opacity.* Probable Pleural Effusion.* Support Devices.* Cannot exclude Edema
+patient65227/study1/view1_frontal.jpg,Probable Pleural Effusion. Possible Edema. Lung Opacity cannot be excluded. Support Devices are present.
+patient65228/study1/view1_frontal.jpg,The chest X-ray shows:..* Normal lung volumes and expansion.* Clear lung fields with no opacities or infiltrates.* Normal heart size and shape.* No pleural effusion or fluid.* No rib or bone abnormalities.* Normal diaphragmatic position.* No mediastinal widening or mass.* No abnormal air spaces or consolidations
+patient65229/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Pleural Effusion, cannot exclude Support Devices
+patient65230/study1/view1_frontal.jpg,cannot exclude Cardiomegaly, possible Lung Opacity, probable Edema
+patient65231/study1/view1_frontal.jpg,Probable Lung Opacity, possible Pneumothorax, probable Pleural Effusion, Support Devices.
+patient65232/study1/view1_frontal.jpg,cannot exclude Lung Opacity, possible Edema, probable Support Devices
+patient65233/study1/view1_frontal.jpg,cannot exclude Lung Opacity, cannot exclude Edema, probable Atelectasis, possible Pleural Effusion, probable Support Devices, left Lung Opacity, left Edema, left Atelectasis, left Support Devices, right Atelectasis, right Support Devices
+patient65234/study1/view1_frontal.jpg,Probable Pleural Effusion, possible Edema, possible Lung Opacity, probable Support Devices.
+patient65235/study1/view1_frontal.jpg,Cannot exclude Lung Opacity. Possible Pneumothorax. Probable Support Devices, likely located on the left.
+patient65235/study1/view2_lateral.jpg,The chest x-ray shows:..* Probable Lung Opacity.* Possible Atelectasis.* Possible Pneumothorax.* Probable Support Devices
+patient65235/study1/view3_lateral.jpg,The chest x-ray shows:..* Possible Lung Opacity.* Possible Atelectasis.* Possible Pneumothorax.* Probable Support Devices
+patient65236/study1/view1_frontal.jpg,Cannot exclude Lung Opacity.
+patient65237/study1/view1_frontal.jpg,Normal chest X-ray. No abnormalities detected.
+patient65238/study1/view1_frontal.jpg,The chest x-ray shows:..* Possible Atelectasis.* Probable Pneumothorax.* Possible Lung Opacity.* Support Devices.* Possible Lung Opacity in the left lung.* Possible Pneumothorax in the left lung.* Possible Atelectasis in the left lung
+patient65239/study1/view1_frontal.jpg,Probable Cardiomegaly. Possible Lung Opacity. Probable Edema. Probable Pleural Effusion.
+patient65240/study1/view1_frontal.jpg,Possible findings on the chest x-ray include:..* cannot exclude Lung Opacity.* probable Pleural Effusion, likely located on the right.* probable Support Devices, likely located on the right
