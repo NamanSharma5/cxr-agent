@@ -1,0 +1,111 @@
+"Findings:
+
+The chest X-ray shows:
+
+* Cannot exclude Enlarged Cardiomediastinum
+* Probable Cardiomegaly
+* Possible Edema
+* Cannot exclude Atelectasis
+
+The Enlarged Cardiomediastinum is possibly located on both sides, with no confident lateral location.","Findings:
+
+The chest X-ray reveals possible Lung Opacity. 
+
+There is possible Edema, which is likely bilateral, as both left and right locations are reported. 
+
+The report cannot exclude Cardiomegaly. 
+
+The X-ray shows probable Pleural Effusion, with the effusion likely located on the left side, as the confidence score is higher for this location.","Findings:
+
+* Cannot exclude Lung Opacity
+* Possible Lung Lesion
+* Possible Consolidation
+* Probable Pneumonia
+* Cannot exclude Atelectasis
+* Probable Pneumothorax
+
+Note: Lung Opacity is likely bilateral, given the presence of pathology detection on both sides.","Findings:
+
+* Cannot exclude Cardiomegaly
+* Probable Lung Opacity
+* Edema is present
+* Cannot exclude Consolidation
+* Probable Pleural Effusion
+* Pleural Effusion is likely located on both sides","Findings:
+
+* Cannot exclude Cardiomegaly
+* Possible Lung Opacity
+* Probable Edema
+* Probable Atelectasis
+* Possible Pleural Effusion","Findings:
+
+* Cannot exclude Enlarged Cardiomediastinum
+* Probable Cardiomegaly
+* Possible Lung Opacity
+* Possible Edema
+* Enlarged Cardiomediastinum is likely bilateral","Findings:
+
+* Lung Opacity: possible
+* Edema: probable
+* Consolidation: possible
+* Atelectasis: cannot exclude","Findings:
+
+* Atelectasis: probable","Findings:
+
+Edema: cannot exclude
+Consolidation: possible
+Atelectasis: possible
+
+Consolidation: possible, located on the left
+Atelectasis: possible, located on both the left and right","Findings:
+
+* Lung Opacity: possible
+* Atelectasis: probable, bilateral","Findings:
+
+The chest X-ray shows possible Lung Opacity. There is probable Atelectasis, which is bilateral. Cannot exclude Pleural Effusion.","Findings:
+Edema - cannot exclude","Findings:
+
+The chest X-ray shows possible Lung Opacity, possible Consolidation, and probable Atelectasis. 
+
+The Lung Opacity is likely bilateral, as it cannot be excluded. 
+
+The Consolidation is also likely bilateral, as it cannot be excluded. 
+
+The Atelectasis is likely bilateral, as it is present on both the left and right sides.","Findings:
+
+The chest X-ray shows possible Enlarged Cardiomediastinum, possible Cardiomegaly, and possible Lung Opacity. Cannot exclude Edema. 
+
+Enlarged Cardiomediastinum is likely bilateral, as it is detected with similar confidence scores on both the left and right sides.","Findings:
+
+* Cannot exclude Lung Opacity
+* Possible Consolidation
+* Probable Pleural Effusion","Findings:
+
+Lung Opacity: cannot exclude
+Consolidation: possible
+Atelectasis: probable, bilateral
+Pneumothorax: possible, bilateral
+Pleural Effusion: probable, left","Findings:
+
+The chest X-ray shows:
+
+* Atelectasis: cannot exclude","Findings:
+
+* Lung Opacity: cannot exclude
+* Edema: possible
+* Pleural Effusion: probable
+
+Note: The lateral locations of these pathologies could not be confidently determined.","Findings:
+
+* Possible Atelectasis
+* Cannot exclude Cardiomegaly","Findings:
+The chest X-ray shows possible Edema.","Findings:
+
+* Cardiomegaly: possible
+* Lung Opacity: probable
+* Edema: probable
+* Consolidation: cannot exclude
+* Atelectasis: possible
+* Pleural Effusion: probable","Findings:
+
+The chest X-ray shows possible Lung Opacity. There is also possible Edema, which is likely bilateral. Additionally, the study cannot exclude Cardiomegaly.",

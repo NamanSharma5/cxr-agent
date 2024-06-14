@@ -1,0 +1,178 @@
+10183775,Findings:
+
+The chest X-ray shows:
+
+* Cannot exclude Enlarged Cardiomediastinum
+* Probable Cardiomegaly
+* Possible Edema
+* Cannot exclude Atelectasis
+
+The Enlarged Cardiomediastinum is possibly located on both sides, with no confident lateral location.
+10268877,Findings:
+
+The chest X-ray reveals possible Lung Opacity. 
+
+There is possible Edema, which is likely bilateral, as both left and right locations are reported. 
+
+The report cannot exclude Cardiomegaly. 
+
+The X-ray shows probable Pleural Effusion, with the effusion likely located on the left side, as the confidence score is higher for this location.
+11052935,Findings:
+
+* Cannot exclude Lung Opacity
+* Possible Lung Lesion
+* Possible Consolidation
+* Probable Pneumonia
+* Cannot exclude Atelectasis
+* Probable Pneumothorax
+
+Note: Lung Opacity is likely bilateral, given the presence of pathology detection on both sides.
+11197890,Here is the findings section of the radiology report:
+
+**FINDINGS:**
+
+The chest X-ray shows a normal lung silhouette with no evidence of pneumothorax, pleural effusion, or mediastinal widening. The lungs are aeration is even and symmetric, with no visible consolidation, nodularity, or masses. The diaphragms are intact and at a normal level. The cardiac silhouette is normal in size and shape. The trachea is midline and patent. The thoracic spine is aligned normally. No foreign bodies or tubes are visible. The lung fields are clear and free of any obvious abnormalities.
+11500818,**Findings:**
+
+The chest X-ray shows a normal radiographic appearance of the lungs, mediastinum, and diaphragm. The lungs are symmetrically inflated with no evidence of consolidation, effusion, or pneumothorax. The vascular structures, including the aorta and pulmonary arteries, are normal in size and shape. The diaphragm is intact and at the expected level. The cardiac silhouette is normal in size and shape. The bony thorax, including the ribs and sternum, is normal in appearance.
+11644926,Findings:
+
+* Cannot exclude Cardiomegaly
+* Probable Lung Opacity
+* Edema is present
+* Cannot exclude Consolidation
+* Probable Pleural Effusion
+* Pleural Effusion is likely located on both sides
+11717909,Findings:
+
+* Cannot exclude Cardiomegaly
+* Possible Lung Opacity
+* Probable Edema
+* Probable Atelectasis
+* Possible Pleural Effusion
+11921090,Findings:
+
+* Cannot exclude Enlarged Cardiomediastinum
+* Probable Cardiomegaly
+* Possible Lung Opacity
+* Possible Edema
+* Enlarged Cardiomediastinum is likely bilateral
+11924226,Findings:
+
+Atelectasis: cannot exclude
+12085050,Findings:
+
+A possible Fracture is identified.
+12386201,Findings:
+
+* Lung Opacity: cannot exclude
+* Edema: cannot exclude
+* Atelectasis: probable
+12503812,Findings:
+
+* Lung Opacity: possible
+* Edema: probable
+* Consolidation: possible
+* Atelectasis: cannot exclude
+12536467,Findings:
+
+* Atelectasis: probable
+12937037,Findings:
+
+Edema: cannot exclude
+Consolidation: possible
+Atelectasis: possible
+
+Consolidation: possible, located on the left
+Atelectasis: possible, located on both the left and right
+12998617,Findings:
+
+* Lung Opacity: possible
+* Atelectasis: probable, bilateral
+13914812,Findings:
+
+The chest X-ray shows possible Lung Opacity. There is probable Atelectasis, which is bilateral. Cannot exclude Pleural Effusion.
+13947388,**FINDINGS**
+
+The chest X-ray is normal. The lungs are aeration is even and bilateral, with no evidence of consolidation, effusion, or pneumothorax. The mediastinum is within normal limits. The diaphragms are intact and at the expected level. The cardiac silhouette is normal in size and shape. The ribs and bony thorax are normal. There is no evidence of pleural calcification or ossification. The lung fields are clear of any visible lung nodules or masses. The overall appearance of the chest X-ray is normal.
+14473057,Findings:
+Edema - cannot exclude
+15452636,**FINDINGS**
+
+The chest X-ray demonstrates a normal cardiac silhouette and mediastinum. The lungs are aeration is normal, with no evidence of consolidation, effusion, or pneumothorax. The diaphragms are flat and parallel. The bony thorax is normal, with no evidence of fractures or osteolytic/osteoblastic lesions. The lung fields are clear of any visible pulmonary nodules or masses. The pleura is smooth and even. The trachea is midline. The soft tissues of the thorax are normal.
+15857729,Findings:
+
+The chest X-ray shows possible Lung Opacity, possible Consolidation, and probable Atelectasis. 
+
+The Lung Opacity is likely bilateral, as it cannot be excluded. 
+
+The Consolidation is also likely bilateral, as it cannot be excluded. 
+
+The Atelectasis is likely bilateral, as it is present on both the left and right sides.
+16049879,Findings:
+
+The chest X-ray shows possible Enlarged Cardiomediastinum, possible Cardiomegaly, and possible Lung Opacity. Cannot exclude Edema. 
+
+Enlarged Cardiomediastinum is likely bilateral, as it is detected with similar confidence scores on both the left and right sides.
+16306599,Findings:
+
+Atelectasis: cannot exclude
+16313531,Findings:
+
+* Cannot exclude Lung Opacity
+* Possible Consolidation
+* Probable Pleural Effusion
+16865871,Findings:
+
+* Lung Opacity: possible
+* Edema: probable
+* Atelectasis: cannot exclude
+* Pleural Effusion: cannot exclude
+16957065,**FINDINGS:**
+
+The chest X-ray is normal. The lungs are aeration is even and bilateral. The heart is of normal size and shape. The mediastinum is normal in width and shape. The diaphragm is intact and at the level of the 8th thoracic vertebra. The bony thorax is normal. No evidence of pneumothorax, pleural effusion, or other abnormalities is seen. The lungs are clear of any opacity or consolidation. The trachea is midline.
+17561996,**FINDINGS**
+
+The chest X-ray demonstrates a normal lung parenchyma with no evidence of consolidation, effusion, or pleural thickening. The lung fields are clear, with no visible nodules or masses. The mediastinum is within normal limits, with no evidence of lymphadenopathy or widening of the mediastinum. The diaphragms are intact and at an appropriate level. The cardiac silhouette is normal, with no evidence of cardiomegaly or effusion. The ribs and bony thorax are normal.
+18007398,Findings:
+
+Lung Opacity: cannot exclude
+Consolidation: possible
+Atelectasis: probable, bilateral
+Pneumothorax: possible, bilateral
+Pleural Effusion: probable, left
+18038196,**Findings:**
+
+The chest X-ray is normal. The lungs are aeration is even and bilateral. The mediastinum is of normal width and contour. The diaphragms are flat and symmetric. The cardiac silhouette is normal. The pleural spaces are clear. The bony thorax is normal with no evidence of fractures or degenerative changes. The lungs show no evidence of consolidation, effusion, or nodularity. The hilar regions are normal. The aortic knob is normal in size and shape. The trachea is midline. The lung fields are clear of any visible abnormalities.
+18113771,Findings:
+
+The chest X-ray shows:
+
+* Atelectasis: cannot exclude
+18437840,Findings:
+
+* Lung Opacity: cannot exclude
+* Edema: possible
+* Pleural Effusion: probable
+
+Note: The lateral locations of these pathologies could not be confidently determined.
+18512911,Findings:
+
+* Possible Atelectasis
+* Cannot exclude Cardiomegaly
+18552428,Findings:
+The chest X-ray shows possible Edema.
+18767957,Findings:
+
+* Cardiomegaly: possible
+* Lung Opacity: probable
+* Edema: probable
+* Consolidation: cannot exclude
+* Atelectasis: possible
+* Pleural Effusion: probable
+19079797,Findings:
+
+Edema: possible
+19680874,Findings:
+
+The chest X-ray shows possible Lung Opacity. There is also possible Edema, which is likely bilateral. Additionally, the study cannot exclude Cardiomegaly.
