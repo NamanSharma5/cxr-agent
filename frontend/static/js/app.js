@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
 
-                    <div class="metric-title">Is Report Dangerous)?</div>
+                    <div class="metric-title">Is Report Dangerous?</div>
                     <div class = "rubric-score">
                         <div class="rubric-options">
                         <label><input type="radio" name="dangerous-report-model-${modelNumber}" value="1"> Yes!</label>

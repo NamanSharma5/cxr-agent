@@ -54,6 +54,12 @@ cheXpert_pathologies = ['No Finding','Enlarged Cardiomediastinum','Cardiomegaly'
         'Pleural Effusion','Pleural Other','Fracture','Support Devices']
 
 
+# VinDr paths
+vindr_test_set_path = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/VinDr-CXR/test_set_three_splits/VinDr_test_test_split.txt")
+vindr_output_folder = Path("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/base_agent/evaluation/VinDr") 
+test_png_dset_path = Path('/vol/biodata/data/chest_xray/VinDr-CXR/1.0.0_png_512/raw/test')
+
+
 def dump_outputs_to_files(model_outputs: dict, output_folder: Path):
     for image_id, model_dict in model_outputs.items():
         for model_name, model_output in model_dict.items():
@@ -71,12 +77,32 @@ if __name__ == "__main__":
     gemini = GeminiFlashGeneration()
 
     model_outputs = defaultdict(dict)
-    with open(cheXpert_test_ground_truth_path) as chexpert_test_file:
-        for index, line in enumerate(chexpert_test_file):
-            if index <= 302:
-                continue
+
+    collected_image_ids = set()
+    with open("/vol/biomedic3/bglocker/ugproj2324/nns20/cxr-agent/base_agent/evaluation/VinDr/sample.txt") as f:
+        for line in f.readlines():
+            image_id = line.strip()
+            collected_image_ids.add(image_id)
+
+    all_image_ids = set() 
+    with open("/vol/biomedic3/bglocker/ugproj2324/nns20/datasets/VinDr-CXR/test_set_three_splits/VinDr_test_test_split.txt") as f:
+        for line in f.readlines():
+            image_id = line.strip()
+            all_image_ids.add(image_id)
+
+    missing_image_ids = all_image_ids.difference(collected_image_ids)
+
+    with open(vindr_test_set_path) as test_image_file:
+        for index, line in enumerate(test_image_file):
+           
             image_id = line.strip().split(",")[0]
-            image_path = cheXpert_test_path / image_id
+            if image_id not in missing_image_ids:
+                continue
+            collected_image_ids = set()
+
+            # image_path = cheXpert_test_path / image_id
+            image_path = test_png_dset_path / f"{image_id}.png"
+
             pathology_confidences, localised_pathologies, chexagent_e2e = GenerationEngine.detect_and_localise_pathologies(
                 image_path=image_path,
                 pathology_detector=pathology_detector,
@@ -116,7 +142,7 @@ if __name__ == "__main__":
                         model_outputs[image_id]['llama3_agent'] = future.result()
 
             if index % FILE_DUMP_RATE == 0:
-                dump_outputs_to_files(model_outputs, cheXpert_output_folder)
+                dump_outputs_to_files(model_outputs, vindr_output_folder)
                 model_outputs = defaultdict(dict)
         
         dump_outputs_to_files(model_outputs, cheXpert_output_folder)
